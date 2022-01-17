@@ -2,7 +2,7 @@
 
 ## Extras
 
-* [home](README.md)
+* [introductie](README.md)
 
 ***
 
