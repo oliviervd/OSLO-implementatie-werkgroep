@@ -63,3 +63,45 @@ Datasetcatalogus.beschrijving: {
 }
 
 ```
+
+### Datasetcatalogus.heeftLicentie  <a href="#docs-internal-guid-3008e947-7fff-0d38-6eb4-d964064fae99" id="docs-internal-guid-3008e947-7fff-0d38-6eb4-d964064fae99"></a>
+
+documenteert de toegekende licentie aan de dataset catalogus in kwestie. Binnen het project wordt hier steeds de licentie public domain aan toegekend en volgt hierbij de vastgelegde licentie voor het Vlaams Open Data Portaal.
+
+* type: object&#x20;
+* gebasseerd op: [http://purl.org/dc/terms/license](http://purl.org/dc/terms/license)
+
+```
+Datasetcatalogus.heeftLicentie: {
+ @id: "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+```
+
+### Datasetcatalogus.heeftUitgever
+
+binnen het project is de uitgever van de dataset catalogus Stad Gent. Voor het beschrijven van de agent wordt [Agent.naam](http://xmlns.com/foaf/0.1/name) gehanteerd. Een agent kan in meerdere talen beschreven worden. De gewenste interpretatie van de kardinaliteit is: per taal 1 waarde.&#x20;
+
+* Type: object
+* Gebaseerd op: [http://purl.org/dc/terms/publisher](http://purl.org/dc/terms/publisher)
+
+```
+Datasetcatalogus.heeftUitgever: {
+ @id: "https://stad.gent/", 
+ Agent.naam: {
+  @value: "Stad Gent", 
+  @language: "nl"
+ }
+}
+```
+
+### Datasetcatalogus.heeftDataset&#x20;
+
+container met hierin de beschrijvende metadata en distributie van de datasets beschreven in de data set catalogus. Voor de leesbaarheid van dit document te bewaken wordt de structuur van een dataset hieronder in een apart deel verder besproken.
+
+* Type: array
+* Gebaseerd op: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)
+
+```
+Dataset.catalogus.heeftDataset: []
+```
+
