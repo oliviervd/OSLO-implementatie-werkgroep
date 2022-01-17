@@ -95,3 +95,97 @@ Object.identificator [
     label: "objectnummer"
   }
 ```
+
+### MaterieelDing.beheerder
+
+Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘instelling.naam’. Het concept verwijst naar de beheerder van het mensgemaakt object. Voor het verwijzen naar de beheerder wordt gebruik gemaakt van het Wikidata record.&#x20;
+
+* Type: string
+* Gebaseerd op:
+
+```
+MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
+```
+
+### MensgemaaktObject.maaktDeelUitVan <a href="#docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855" id="docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855"></a>
+
+Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘collectie’. Objecten worden door de beherende instellingen geaggregeerd in verschillende deelcollecties.&#x20;
+
+Elk van deze deelcollecties krijgt het type: “Collectie” en wordt beschreven door middel van het veld entiteit.beschrijving. Indien de collectiebeschrijving verwijst naar een door een externe bron gepubliceerd concept wordt dit verder gedocumenteerd via entiteit.type.
+
+Hierin verwijst @id naar de URI van het beschreven concept, gepaard met het label en de taal waarin dit label beschreven staat. Een tweede @id wordt toegekend om te verwijzen naar de invulinstructies in CEST met betrekking tot het veld waarin deze informatie in de bron beschreven staat.&#x20;
+
+```
+MensgemaaktObject.maaktDeelUitVan: [
+ {
+  @id: "https://stad.gent/id/concept/530009136", 
+  @type: "Collectie", 
+  Entiteit.beschrijving: "huishoudelijke apparaten", 
+  Entiteit.type: [
+    {
+    @id: "https://vocab.getty.edu/aat/300257284", 
+    Label: {
+     @value: "huishoudelijke apparaten", 
+     @language: "nl"
+    }
+   }, 
+   {
+    @id: "cest:Naam_Collectie", 
+    label: "collectie"
+   }
+  ]
+ }, 
+  @id: "https://stad.gent/id/concept/530009137", 
+  @type: "Collectie", 
+  Entiteit.beschrijving: "Novan", 
+  Entiteit.type: [ 
+   {
+    @id: "cest:Naam_Collectie", 
+    label: "collectie"
+   }
+  ]
+ }
+]
+
+
+```
+
+### Entiteit.classificatie
+
+Object kan onder verschillende classificaties getypeerd worden, waaronder ‘objectcategorie’ en ‘objectnaam’. Onderscheid wordt gemaakt door het toekennen van Entiteit.type waarin verwezen wordt naar CEST.
+
+Classificatie.getypeerdeEntiteit verwijst naar de URI van het object. Classificatie.toegekendType verwijst naar het type van classificatie a.d.h.v. een externe autoriteit (bijv. Getty Vocabularies).
+
+```
+Entiteit.classificatie:[{
+ @type: "Classificatie",
+ Classificatie.getypeerdeEntiteit:  "https://stad.gent/id/mensgemaaktobject/dmg/530027903",
+ Classificatie.toegekendType:{
+  @id: "http://vocab.getty.edu/aat/300208278",
+  skos:prefLabel:{
+   @value: "mixer",
+   @language: "nl"
+  }
+ },
+ Entiteit.type:{
+  @id: "cest:Term_objectnaam",
+  label: "objectnaam"
+ }
+},
+{
+ @type: "Classificatie",
+ Classificatie.getypeerdeEntiteit: "https://stad.gent/id/mensgemaaktobject/dmg/530027903",
+ Classificatie.toegekendType:{
+  @id: "http://vocab.getty.edu/aat/300055100",
+  skos:prefLabel:{
+   @value: "productverpakking",
+   @language: "nl"
+  }
+ },
+ Entiteit.type:{
+  @id: "cest:Term_objectnaam",
+  label: "objectnaam"
+ }
+}
+]
+```
