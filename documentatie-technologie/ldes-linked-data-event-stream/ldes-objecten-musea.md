@@ -189,3 +189,90 @@ Entiteit.classificatie:[{
 }
 ]
 ```
+
+### MensgemaaktObject.titel <a href="#docs-internal-guid-d8672be9-7fff-763e-9e8d-d388387dbc23" id="docs-internal-guid-d8672be9-7fff-763e-9e8d-d388387dbc23"></a>
+
+Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘titel’. Het concept verwijst naar de titel van het object, zoals toegekend door de beheerder.
+
+### Entiteit.beschrijving <a href="#docs-internal-guid-849a4a27-7fff-cbc6-6852-b173af81f3fb" id="docs-internal-guid-849a4a27-7fff-cbc6-6852-b173af81f3fb"></a>
+
+OSLO-standaard Cultureel Erfgoed Event. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘beschrijving’. Het concept verwijst naar de beschrijving van het object, zoals toegekend door de beheerder.
+
+* Type: object
+
+```
+Entiteit.beschrijving: {
+ @value: "Deze staafmixer ontving in 1959 het Gouden Kenteken van het Belgische Design Centre,  wat betekent dat hij werd erkend als een geslaagd voorbeeld van industrieel design. Het toestel was dan ook het resultaat van een samenwerking van een bekende Belgische producent van huishoudtoestellen met het befaamde ontwerpbureau van Raymond Loewy. Novamix was de eerste handmixer van Nova. Het onderscheid tussen de licht verschillende varianten van dit ontwerp in de collectie moet verder worden onderzocht. We verwierven dit exemplaar voor zijn bijzondere productverpakking. Dat er meerdere verpakkingen voor dit product bestaan, kan erop wijzen dat de mixer lang in productie was en dus goed verkocht. De steekkaart waarmee de jury van het Design Centre objecten selecteerde voor zijn tentoonstellingen, vermeldt dat de prijs 750 Belgische frank bedroeg, en dat de mixer het kwaliteitsmerk 'Cebec' kreeg. Dit exemplaar was vermoedelijk in gebruik door de broeders van het Scheppersinstituut in Wetteren.", 
+ @language: "nl"
+}
+```
+
+### Entiteit.wordtNaarVerwezenDoor <a href="#docs-internal-guid-4d5a0bab-7fff-aeb4-31dc-f00846e03758" id="docs-internal-guid-4d5a0bab-7fff-aeb4-31dc-f00846e03758"></a>
+
+Verwijst naar de vervaardiger, de rol van de vervaardiger en de datum van vervaardiging. Het project maak hierin een onderscheid aan de hand van de toegekende rol van de vervaardiger.
+
+\
+Enkel indien de rol “ontwerper” in het collectieregistratiesysteem aan een vervaardiger werd toegekend wordt het OSLO object Entiteit.wordtNaarVerwezenDoor gebruikt om te verwijzen naar de vervaardiging van een ConceptueelDing. Van het ConceptueelDing wordt datum vervaardiging gespecificeerd door ConceptueelDing.heeftCreatie en Gebeurtenis.tijd. De vervaardiger van een ConceptueelDing wordt aangeduid met Activiteit.uitgevoerdDoor, waaraan Entiteit.type wordt toegevoegd voor het bepalen van het CEST-veld. De rol van de vervaardiger wordt aangeduid door Rol.activiteit (uit OSLO-standaard Cultureel Erfgoed Event) en het toevoegen van Entiteit.type (uit OSLO-standaard Cultureel Erfgoed Event) voor het bepalen van het CEST-veld.  &#x20;
+
+Indien de rol van de vervaardiger ‘producent’ of ’uitvoerder’ is, zie MaterieelDing.productie.   &#x20;
+
+Het object (hier Entiteit) is de materialisering van een ‘conceptueel ding’, hieronder verstaan we het ontwerp. Voorbeeld hiervan is de .03 stoel van Maarten van Severen, deze stoel werd maar 1 maal ontworpen maar heeft verscheidene uitvoeringen (resulterende uit productie) waarvan fysieke objecten in de collectie van het Design Museum Gent.&#x20;
+
+Binnen het project _de Collectie van de Gentenaar_ wordt gefilterd op drie rollen:&#x20;
+
+* ontwerp
+* uitvoering&#x20;
+* Productie
+
+```
+Entiteit.wordtNaarVerwezenDoor:{
+ @type: "ConceptueelDing",
+ ConceptueelDing.heeftCreatie:{
+  @type: "Creatie",
+  Gebeurtenis.tijd:{
+   @value: "..",
+   @type: "http://id.loc.gov/datatypes/edtf/EDTF"
+  },
+  Activiteit.uitgevoerdDoor: {
+   @type: "Agent",
+   equivalent:{
+    @id: "https://stad.gent/id/agent/530000512",
+    @type: "Agent",
+    Label:{
+     @value: "Hankar, Paul", 
+     @language: "nl"
+    }
+   },
+   Entiteit.type:{
+    @id: "cest:Naam_vervaardiger",
+    label: "vervaardiger"
+   }
+  },
+  Gebeurtenis.plaats: {
+   @type: “Plaats”, 
+   equivalent: { 
+    @id: “http://vocab.getty.edu/tgn/7007868”
+    skos:prefLabel: {
+    }
+   }
+  }
+  @reverse:{
+   Rol.activiteit:{
+    @type: "Rol",
+    Rol.agent: "https://stad.gent/id/agent/530024154",
+    Rol.rol:{
+     @id: "http://vocab.getty.edu/aat/300025190",
+     skos:prefLabel:{
+      @value: "ontwerper",
+      @language: "nl"
+      }
+    },
+    Entiteit.type:{
+     @id: "cest: Rol_vervaardiger",
+     label: "vervaardiger.rol"
+    }
+   }
+  }
+ }
+}
+```
