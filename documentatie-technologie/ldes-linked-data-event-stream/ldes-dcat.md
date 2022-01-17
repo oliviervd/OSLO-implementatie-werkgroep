@@ -13,9 +13,7 @@ De verschillende datasets worden op een hoogste niveau beschrijven binnen de ove
 
 documenteert de gebruikte context&#x20;
 
-* type: array\
-  \
-  voorbeeld:
+* type: array
 
 ```
 {@context: 
