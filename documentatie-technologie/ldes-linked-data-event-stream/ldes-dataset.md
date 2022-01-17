@@ -92,10 +92,25 @@ Dataset.heeftUitgever: [
 ]
 ```
 
-\
+### heeftDistributie
+
+De distributie van een dataset. Hierin worden de linken opgenomen die verwijzen naar de gepubliceerde dataset. Daarnaast wordt hierin nogmaals de licentie van de gedistribueerde dataset opgenomen. Binnen het project geldt hier steeds dezelfde Creative Commons-licentie, CC0, dit conform aan de afspraken bij Vlaanderen.&#x20;
+
+* Type: object
+* Gebaseerd op: [http://www.w3.org/ns/dcat#distribution](http://www.w3.org/ns/dcat#distribution)
+
+```
+heeftDistributie: {
+ @type: "Distributie",
+ toegangsURL: "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus", 
+ dcterms:conformsTo: "https://w3id.org/tree", 
+ Distributie.heeftLicentie: {
+  @id: "https://creativecommons.org/publicdomain/zero/1.0/"
+ }
+}
 
 
-
+```
 
 
 
