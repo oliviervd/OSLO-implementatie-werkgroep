@@ -55,4 +55,43 @@ Voor het beschrijven van erfgoeddata met betrekking tot objecten in de musea wor
 ]
 ```
 
-\
+### @id&#x20;
+
+### @type
+
+### Dcterms:isVersionOf
+
+### prov:generatedAtTime
+
+### foaf:page
+
+### Object.identificator&#x20;
+
+Uit de OSLO-standaard Cultureel Erfgoed Object. Beschrijving van de verschillende identificatiecodes die toegekend zijn aan specifiek object of een onderdeel van dat object, zoals objectnummer (zoals toegekend in het collectieregistratiesysteem adlib) en priref (het database-nummer van het object in adlib). Het onderscheid tussen objectnummer en priref wordt gemaakt door het toevoegen van een label onder Entiteit.type.&#x20;
+
+Het type van de string slaat op het identificatiesysteem, de string zelf op de eigenlijke identificator.&#x20;
+
+* type: array&#x20;
+* Gebaseerd op:&#x20;
+
+<mark style="background-color:orange;">Opmerking CEST (meemoo): is het hier nodig om de bron van het nummer toe te kennen. Dit nummer verwijst naar wie het nummer heeft toegekend.</mark>&#x20;
+
+```
+Object.identificator [
+ {
+  @type: "Identificator", 
+  Identificator.identificator: {
+   @value: "530027903",
+   @type: "https://stad.gent/id/identificatiesysteem/priref"
+  }
+ }, 
+  @type: "Identificator",
+  Identificator.identificator: {
+   @value: "2021-0002",
+   @type: "https://stad.gent/id/identificatiesysteem/objectnummer"
+},
+  Entiteit.type: {
+    @id: "cest:Waarde_objectnummer",
+    label: "objectnummer"
+  }
+```
