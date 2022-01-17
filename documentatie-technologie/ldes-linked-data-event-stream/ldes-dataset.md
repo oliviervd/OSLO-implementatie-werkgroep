@@ -9,12 +9,6 @@ De dataset catalogus omvat verschillende datasets. In totaal worden er binnen he
 
 De structuur van deze vier unieke cases wordt hieronder verder toegelicht. Dit aangezien elke specifieke case een unieke mapping vereist.
 
-### @id
-
-### @type
-
-### Tree:view&#x20;
-
 ### Dataset.titel
 
 Titel van de dataset in kwestie, hier wordt steeds het label (@label) en de taal (@language) meegegeven. Een dataset kan titels in meerdere talen kennen. De gewenste interpretatie van de cardinaliteit is: per taal 1 waarde.
