@@ -6,7 +6,7 @@
 
 ***
 
-* [implementatie](implementatie/README.md)
+* [Implementatie](implementatie/README.md)
   * [Lessons learned](implementatie/strategie-implementatie.md)
 * [documentatie technologie](documentatie-technologie/README.md)
   * [LDES - Linked Data Event Stream](documentatie-technologie/ldes-linked-data-event-stream/README.md)
