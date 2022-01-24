@@ -6,8 +6,6 @@ description: >-
 
 # Lessons learned
 
-Sinds 2021 wordt in de oproep _inhaalbeweging digitale collectiedata_ onder het luik “inzetten van collectiedata als open data en het zichtbaar maken/valoriseren van de collectie(data)” specifieke aandacht gevestigd op de implementatie van de uitwisselingsstandaard **OSLO-Cultureel Erfgoed**. Deze standaard kwam tot stand op initiatief van het departement Cultuur, Jeugd en Media en Digitaal Vlaanderen en werd vormgegeven door een werkgroep van experten op zowel cultureel als data vlak. Het heeft als opzet het verbinden van organisaties over de domeinen heen door het implementeren van gedeelde standaarden. Op die manier kan ook cultureel erfgoed data deel uitmaken van de **Vlaamse dataspace**.
-
 Het transformeren van digitale collectiedata naar Linked Open Data is op heden een technische en financiële uitdaging voor de cultureel erfgoedsector. De OSLO-standaard stimuleert het inzetten op Linked Open Data. Dit neemt echter de uitdagingen niet weg. CoGhent heeft dankzij Europese subsidies als eerste een vertaling kunnen maken van digitale collectiedata naar de OSLO-standaard. De hieronder opgesomde stappen zijn **lessons learned** die CoGhent graag deelt met het cultureel erfgoedveld. Ze bieden geen oplossing maar omvatten suggesties voor een bredere implementatie van de OSLO-standaard binnen de cultuursector.&#x20;
 
 Naast de lessons learned is er ook een **open source tool** ontwikkeld: de **Linked Data Event Stream**. CoGhent lanceert hierbij een warme oproep om met de LDES aan de slag te gaan of te gebruiken als inspiratie om met Linked Open Data aan de slag te gaan.&#x20;
