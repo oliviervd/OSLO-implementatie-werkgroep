@@ -67,6 +67,8 @@ Voor het beschrijven van erfgoeddata met betrekking tot objecten in de musea wor
 
 ### Object.identificator&#x20;
 
+![](../../.gitbook/assets/id.png)
+
 Uit de OSLO-standaard Cultureel Erfgoed Object. Beschrijving van de verschillende identificatiecodes die toegekend zijn aan specifiek object of een onderdeel van dat object, zoals objectnummer (zoals toegekend in het collectieregistratiesysteem adlib) en priref (het database-nummer van het object in adlib). Het onderscheid tussen objectnummer en priref wordt gemaakt door het toevoegen van een label onder Entiteit.type.&#x20;
 
 Het type van de string slaat op het identificatiesysteem, de string zelf op de eigenlijke identificator.&#x20;
