@@ -117,7 +117,7 @@ Elk van deze deelcollecties krijgt het type: “Collectie” en wordt beschreven
 
 Hierin verwijst @id naar de URI van het beschreven concept, gepaard met het label en de taal waarin dit label beschreven staat. Een tweede @id wordt toegekend om te verwijzen naar de invulinstructies in CEST met betrekking tot het veld waarin deze informatie in de bron beschreven staat.&#x20;
 
-![](<../../.gitbook/assets/id (1).png>)
+![](<../../.gitbook/assets/id (2).png>)
 
 ```
 MensgemaaktObject.maaktDeelUitVan: [
