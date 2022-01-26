@@ -67,8 +67,6 @@ Voor het beschrijven van erfgoeddata met betrekking tot objecten in de musea wor
 
 ### Object.identificator&#x20;
 
-![](<../../.gitbook/assets/id (3).png>)
-
 Uit de OSLO-standaard Cultureel Erfgoed Object. Beschrijving van de verschillende identificatiecodes die toegekend zijn aan specifiek object of een onderdeel van dat object, zoals objectnummer (zoals toegekend in het collectieregistratiesysteem adlib) en priref (het database-nummer van het object in adlib). Het onderscheid tussen objectnummer en priref wordt gemaakt door het toevoegen van een label onder Entiteit.type.&#x20;
 
 Het type van de string slaat op het identificatiesysteem, de string zelf op de eigenlijke identificator.&#x20;
@@ -77,6 +75,8 @@ Het type van de string slaat op het identificatiesysteem, de string zelf op de e
 * Gebaseerd op:&#x20;
 
 <mark style="background-color:orange;">Opmerking CEST (meemoo): is het hier nodig om de bron van het nummer toe te kennen. Dit nummer verwijst naar wie het nummer heeft toegekend.</mark>&#x20;
+
+![](<../../.gitbook/assets/id (3).png>)
 
 ```
 Object.identificator [
@@ -100,10 +100,12 @@ Object.identificator [
 
 ### MaterieelDing.beheerder
 
-Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘instelling.naam’. Het concept verwijst naar de beheerder van het mensgemaakt object. Voor het verwijzen naar de beheerder wordt gebruik gemaakt van het Wikidata record.&#x20;
+Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘instelling.naam’. Het concept verwijst naar de beheerder van het mensgemaakt object. Voor het verwijzen naar de beheerder wordt gebruik gemaakt van het Wikidata record.
 
 * Type: string
 * Gebaseerd op:
+
+![](../../.gitbook/assets/materiaalding\_beheerder.png)
 
 ```
 MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
@@ -159,6 +161,8 @@ MensgemaaktObject.maaktDeelUitVan: [
 Object kan onder verschillende classificaties getypeerd worden, waaronder ‘objectcategorie’ en ‘objectnaam’. Onderscheid wordt gemaakt door het toekennen van Entiteit.type waarin verwezen wordt naar CEST.
 
 Classificatie.getypeerdeEntiteit verwijst naar de URI van het object. Classificatie.toegekendType verwijst naar het type van classificatie a.d.h.v. een externe autoriteit (bijv. Getty Vocabularies).
+
+![](../../.gitbook/assets/Entiteit\_classificatie.png)
 
 ```
 Entiteit.classificatie:[{
