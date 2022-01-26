@@ -10,11 +10,11 @@ Het transformeren van digitale collectiedata naar Linked Open Data is op heden e
 
 De eerste 4 stappen worden voornamelijk op het individuele niveau van de cultureel erfgoedinstelling genomen, de vijfde en laatste stap kan zowel op individueel niveau als in samenwerkingsverband uitgevoerd worden.&#x20;
 
-### 1. Integreer OSLO in je digitale strategie
+### 1. Zorg dat je een digitale strategie hebt&#x20;
 
 De keuze voor het implementeren van bepaalde standaarden, zoals de OSLO-standaard, moet zijn grond hebben in de digitale strategie van de cultureel erfgoedinstelling. Welke doelstellingen wens je te bereiken door het toepassen van de OSLO-standaard, zowel op strategisch als op operationeel niveau? Bepaal wat, voor wie en waarom je de OSLO-standaard op (bepaalde) datasets wilt implementeren. Op deze manier kan je de scope helder definiëren en kan je gericht aan de slag gaan.   &#x20;
 
-Het is belangrijk dat Linked Open Data &#x20;
+Linked Open Data is een tool dat mogelijkheden schept voor vernetwerking van de cultureel erfgoedsector en het aansterken en verlichten van de eigen interne werking. Het is echter geen vereiste om Linked Open Data op te nemen in je digitale strategie; wel is het belangrijk om voldoende ruimte te laten om te reflecteren over het gebruik van Linked Open Data. Zoals hierboven reeds vermeld, weet waarom je met Linked Open Data aan de slag gaat.&#x20;
 
 ### **2. Aligneer registratie met het CEST-invulboek**
 
