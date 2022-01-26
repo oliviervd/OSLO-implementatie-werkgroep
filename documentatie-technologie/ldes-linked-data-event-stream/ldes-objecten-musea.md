@@ -162,7 +162,7 @@ Object kan onder verschillende classificaties getypeerd worden, waaronder ‘obj
 
 Classificatie.getypeerdeEntiteit verwijst naar de URI van het object. Classificatie.toegekendType verwijst naar het type van classificatie a.d.h.v. een externe autoriteit (bijv. Getty Vocabularies).
 
-![](../../.gitbook/assets/Entiteit\_classificatie.png)
+![](../../.gitbook/assets/Entiteit.classificatie)
 
 ```
 Entiteit.classificatie:[{
