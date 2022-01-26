@@ -202,6 +202,8 @@ Entiteit.classificatie:[{
 
 Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘titel’. Het concept verwijst naar de titel van het object, zoals toegekend door de beheerder.
 
+![](../../.gitbook/assets/MensgemaaktObject.titel.png)
+
 ```
 MensgemaaktObject.titel: {
     @value: "Vaas 53 met dahlia",
@@ -216,6 +218,8 @@ MensgemaaktObject.titel: {
 OSLO-standaard Cultureel Erfgoed Event. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘beschrijving’. Het concept verwijst naar de beschrijving van het object, zoals toegekend door de beheerder.
 
 * Type: object
+
+![](<../../.gitbook/assets/dataflow-Page-2 (4).png>)
 
 ```
 Entiteit.beschrijving: {
