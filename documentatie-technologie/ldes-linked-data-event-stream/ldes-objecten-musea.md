@@ -141,7 +141,7 @@ MensgemaaktObject.maaktDeelUitVan: [
  }, 
   @id: "https://stad.gent/id/concept/530009137", 
   @type: "Collectie", 
-  Entiteit.beschrijving: "Novan", 
+  Entiteit.beschrijving: "Nova", 
   Entiteit.type: [ 
    {
     @id: "cest:Naam_Collectie", 
