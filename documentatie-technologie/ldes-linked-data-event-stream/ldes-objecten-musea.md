@@ -213,6 +213,16 @@ MensgemaaktObject.titel: {
 
 [communica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fprod.digipolis.hubs.delving.org%2Ffragments%2Fmuseum;https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%3Fs%20cidoc%3AP102\_has\_title%20%3Ftitle%20.%0A%7D\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)
 
+```
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+SELECT *
+WHERE {
+?s a cidoc:E22_Man-Made_Object .
+  ?s cidoc:P102_has_title ?title .
+  FILTER(regex(?title, "vrouw", "i")).
+}
+```
+
 ### Entiteit.beschrijving <a href="#docs-internal-guid-849a4a27-7fff-cbc6-6852-b173af81f3fb" id="docs-internal-guid-849a4a27-7fff-cbc6-6852-b173af81f3fb"></a>
 
 OSLO-standaard Cultureel Erfgoed Event. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘beschrijving’. Het concept verwijst naar de beschrijving van het object, zoals toegekend door de beheerder.
