@@ -202,6 +202,8 @@ Entiteit.classificatie:[{
 
 Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘titel’. Het concept verwijst naar de titel van het object, zoals toegekend door de beheerder.
 
+* gebasseerd op: http://www.cidoc-crm.org/cidoc-crm/cidoc:P102\_has\_title
+
 ![](../../.gitbook/assets/MensgemaaktObject.titel.png)
 
 ```
