@@ -2,15 +2,13 @@
 description: samenvatting van gebruikte tools voor het implementeren van OSLO
 ---
 
-# tooling
-
-## Termennetwerken
+# Termennetwerken led
 
 Zoals beschreven in de strategie ([link met andere databronnen](strategie-tot-implementatie.md#3.-link-met-andere-databronnen)) is het belangrijk om bij het registreren voldoende rekening te houden voor het toekennen van URIs die verwijzen naar andere termennetwerken. Zo verrijk je niet enkel de fiches inhoudelijk, maar verzeker je ook dat de gepubliceerde data aansluiting en verbinding vindt met andere datasets.&#x20;
 
-### gebruikte termennetwerken: nationaal/regionaal
+## gebruikte termennetwerken: nationaal/regionaal
 
-#### [Inventaris onroerend erfgoed ](https://inventaris.onroerenderfgoed.be)
+### [Inventaris onroerend erfgoed ](https://inventaris.onroerenderfgoed.be)
 
 _Deze inventaris geeft je een overzicht van het waardevolle erfgoed in Vlaanderen. Zowel archeologisch, bouwkundig, landschappelijk als varend erfgoed zijn opgenomen, goed voor meer dan 90.000 erfgoedobjecten in totaal._&#x20;
 
@@ -39,19 +37,21 @@ InformatieObject.gaatOver: [
 {% endtab %}
 {% endtabs %}
 
-#### [databank kunstenpunt ](https://data.kunsten.be)
+### [databank kunstenpunt ](https://data.kunsten.be)
 
-#### fashion thesaurus (MoMU)
+####
 
-#### thesaurus van Belgische fotografen (FoMU)
+### fashion thesaurus (MoMU)
 
-### gebruikte termennetwerken: internationaaal
+### thesaurus van Belgische fotografen (FoMU)
 
-#### AAT (Getty Vocabularies)
+## gebruikte termennetwerken: internationaaal
 
-#### ULAN (Getty Vocabularies)
+### AAT (Getty Vocabularies)
 
-#### TGN (Getty Vocabularies)
+### ULAN (Getty Vocabularies)
+
+### TGN (Getty Vocabularies)
 
 
 
