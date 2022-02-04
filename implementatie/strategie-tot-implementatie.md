@@ -16,7 +16,7 @@ De keuze voor het implementeren van bepaalde standaarden, zoals de OSLO-standaar
 
 Linked Open Data is een tool dat mogelijkheden schept voor het uitwisselen van kennis en informatie, het 'vernetwerken' van de cultureel erfgoedsector en het aansterken en verlichten van de eigen interne werking. Linked Open Data is geen doel op zich en daarom geen vereiste om op te nemen in je digitale strategie; wel is het belangrijk om voldoende ruimte te laten om te reflecteren over het gebruik van Linked Open Data.&#x20;
 
-### **2. Aligneer registratie met het CEST-invulboek**
+### **2. Aligneer registratie met invulboek objecten**
 
 Linked Open Datagebruikers verwachten correcte informatie. Het is daarom belangrijk om in te zetten op data cleaning, interne registratieafspraken en het aligneren met het invulboek objecten.  Zo wordt de juiste informatie op de juiste plek weggeschreven en zorg je voor een uniforme interpretatie van de verschillende invulvelden.  &#x20;
 
