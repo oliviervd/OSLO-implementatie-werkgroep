@@ -10,7 +10,30 @@ Zoals beschreven in de strategie ([link met andere databronnen](strategie-tot-im
 
 ### gebruikte termennetwerken: nationaal/regionaal
 
-#### Inventaris onroerend erfgoed&#x20;
+#### [Inventaris onroerend erfgoed ](https://inventaris.onroerenderfgoed.be)
+
+{% tabs %}
+{% tab title="json-ld (LDES)" %}
+```
+InformatieObject.gaatOver: [
+    {
+        @type: "Entiteit",
+        Entiteit.type: [
+    {
+    @id: "https://inventaris.onroerenderfgoed.be/themas/2909",
+    skos:prefLabel: {
+        @value: "Kleine Vismarkt",
+        @language: "nl"
+        }
+    },
+    {
+        @id: "cest:Naam_geassocieerd_concept",
+        label: "associatie.onderwerp"
+    }
+]
+```
+{% endtab %}
+{% endtabs %}
 
 #### databank kunstenpunt&#x20;
 
