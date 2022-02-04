@@ -39,9 +39,11 @@ InformatieObject.gaatOver: [
 {% endtab %}
 {% endtabs %}
 
-#### databank kunstenpunt&#x20;
+#### [databank kunstenpunt ](https://data.kunsten.be)
 
 #### fashion thesaurus (MoMU)
+
+#### thesaurus van Belgische fotografen (FoMU)
 
 ### gebruikte termennetwerken: internationaaal
 
