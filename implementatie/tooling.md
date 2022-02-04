@@ -12,7 +12,9 @@ Zoals beschreven in de strategie ([link met andere databronnen](strategie-tot-im
 
 #### [Inventaris onroerend erfgoed ](https://inventaris.onroerenderfgoed.be)
 
-_Deze inventaris geeft je een overzicht van het waardevolle erfgoed in Vlaanderen. Zowel archeologisch, bouwkundig, landschappelijk als varend erfgoed zijn opgenomen, goed voor meer dan 90.000 erfgoedobjecten in totaal. Ben je op zoek naar specifiek erfgoed? Dan kan je onze inventaris heel gericht doorzoeken._
+_Deze inventaris geeft je een overzicht van het waardevolle erfgoed in Vlaanderen. Zowel archeologisch, bouwkundig, landschappelijk als varend erfgoed zijn opgenomen, goed voor meer dan 90.000 erfgoedobjecten in totaal._&#x20;
+
+wordt gebruikt voor het verwijzen naar afgebeelde gebouwen (zowel in het geval van associaties en iconografische beschrijvingen). Daarnaast kan het ook gebruikt worden voor het verwijzen naar een plaats waar het object zich bevindt tijdens een gegeven event (tentoonstelling, productie, vervaardiging, herkomst).
 
 {% tabs %}
 {% tab title="json-ld (LDES)" %}
