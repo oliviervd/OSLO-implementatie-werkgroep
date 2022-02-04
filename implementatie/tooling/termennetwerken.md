@@ -10,6 +10,15 @@ _Deze inventaris geeft je een overzicht van het waardevolle erfgoed in Vlaandere
 
 wordt gebruikt voor het verwijzen naar afgebeelde gebouwen (zowel in het geval van associaties en iconografische beschrijvingen). Daarnaast kan het ook gebruikt worden voor het verwijzen naar een plaats waar het object zich bevindt tijdens een gegeven event (tentoonstelling, productie, vervaardiging, herkomst).
 
+{% hint style="info" %}
+**correcte verwijzing: https://inventaris.onroerenderfgoed.be/themas/{id}**\
+****voorbeeld: https://inventaris.onroerenderfgoed.be/themas/2909\
+\
+in adlib/axiell via velden; \
+bron: https://inventaris.onroerenderfgoed.be/themas/\
+nummer: {id}
+{% endhint %}
+
 {% tabs %}
 {% tab title="json-ld (LDES)" %}
 ```
