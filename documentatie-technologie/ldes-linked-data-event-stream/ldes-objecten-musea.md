@@ -15,43 +15,42 @@ Voor het beschrijven van erfgoeddata met betrekking tot objecten in de musea wor
 * Dossier: [https://data.vlaanderen.be/doc/applicatieprofiel/dossier/](https://data.vlaanderen.be/doc/applicatieprofiel/dossier/)
 
 ```
-{
-    @context: [
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/cultureel-erfgoed-object-ap.jsonld",
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/persoon-basis.jsonld",
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/cultureel-erfgoed-event-ap.jsonld",
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/organisatie-basis.jsonld",
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/generiek-basis.jsonld",
-        "https://apidg.gent.be/opendata/adlib2eventstream/v1/context/dossier.jsonld",
-    {
-    dcterms:isVersionOf: {
-        @type: "@id"
-    },
-    prov: "http://www.w3.org/ns/prov#",
-    skos: "http://www.w3.org/2004/02/skos/core#",
-    label: "http://www.w3.org/2000/01/rdf-schema#label",
-    opmerking: "http://www.w3.org/2004/02/skos/core#note",
-    foaf: "http://xmlns.com/foaf/0.1/",
-    foaf:page: {
-        @type: "@id"
-    },
-    cest: "https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/",
-    inhoud: "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
-    la: "https://linked.art/ns/terms/",
-    conforms_to: {
-        @id: "dcterms:conformsTo",
-        @type: "@id",
-        @container: "@set"
-    },
-    equivalent: {
-        @id: "la:equivalent",
-        @type: "@id"
-    },
-    dig: "http://www.ics.forth.gr/isl/CRMdig/",
-    DigitalObject: {
-        @id: "dig:D1_Digital_Object"
-    }
-}
+@context: [
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/cultureel-erfgoed-object-ap.jsonld",
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/persoon-basis.jsonld",
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/cultureel-erfgoed-event-ap.jsonld",
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/organisatie-basis.jsonld",
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/generiek-basis.jsonld",
+	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/dossier.jsonld",
+	{
+		dcterms: isVersionOf: {
+			@type: "@id"
+		},
+		prov: "http://www.w3.org/ns/prov#",
+		skos: "http://www.w3.org/2004/02/skos/core#",
+		label: "http://www.w3.org/2000/01/rdf-schema#label",
+		opmerking: "http://www.w3.org/2004/02/skos/core#note",
+		foaf: "http://xmlns.com/foaf/0.1/",
+		foaf: page: {
+			@type: "@id"
+		},
+		cest: "https://www.projectcest.be/wiki/Publicatie:Invulboek_objecten/Veld/",
+		inhoud: "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
+		la: "https://linked.art/ns/terms/",
+		conforms_to: {
+			@id: "dcterms:conformsTo",
+			@type: "@id",
+			@container: "@set"
+		},
+		equivalent: {
+			@id: "la:equivalent",
+			@type: "@id"
+		},
+		dig: "http://www.ics.forth.gr/isl/CRMdig/",
+		DigitalObject: {
+			@id: "dig:D1_Digital_Object"
+		}
+	}
 ]
 ```
 
@@ -313,3 +312,154 @@ Entiteit.wordtNaarVerwezenDoor:{
  }
 }
 ```
+
+### MaterieelDing.productie
+
+
+
+```
+MaterieelDing.productie: [{
+		@type: "Productie",
+		Gebeurtenis.tijd: {
+			@value: "1900/1901",
+			@type: "http://id.loc.gov/datatypes/edtf/EDTF"
+		},
+		Productie.product: "https://stad.gent/id/mensgemaaktobject/dmg/530010095",
+		Activiteit.gebruikteTechniek: [{
+				@type: "TypeTechniek",
+				Entiteit.type: [{
+						@id: "http://vocab.getty.edu/aat/300231992",
+						skos: prefLabel: {
+							@value: "bekleden",
+							@language: "nl"
+						}
+					},
+					{
+						@id: "cest:Term_techniek",
+						label: "techniek"
+					}
+				]
+			},
+			{
+				@type: "TypeTechniek",
+				Entiteit.type: [{
+						@id: "http://vocab.getty.edu/aat/300053941",
+						skos: prefLabel: {
+							@value: "leerbewerken",
+							@language: "nl"
+						}
+					},
+					{
+						@id: "cest:Term_techniek",
+						label: "techniek"
+					}
+				]
+			}
+		],
+		Activiteit.uitgevoerdDoor: {
+			@type: "Agent",
+			equivalent: {
+				@id: "https://stad.gent/id/agent/530000494",
+				@type: "Agent",
+				label: {
+					@value: "onbekend",
+					@language: "nl"
+				}
+			},
+			Entiteit.type: {
+				@id: "cest:Naam_vervaardiger",
+				label: "vervaardiger"
+			}
+		},
+		@reverse: {
+			Rol.activiteit: {
+				@type: "Rol",
+				Rol.agent: "https://stad.gent/id/agent/530000494",
+				Rol.rol: {
+					@id: "http://vocab.getty.edu/page/aat/300386723",
+					skos: prefLabel: {
+						@value: "uitvoerder",
+						@language: "nl"
+					}
+				},
+				Entiteit.type: {
+					@id: "cest: Rol_vervaardiger",
+					label: "vervaardiger.rol"
+				}
+			}
+		}
+	},
+	{
+		@type: "Productie",
+		Gebeurtenis.tijd: {
+			@value: "1900/1901",
+			@type: "http://id.loc.gov/datatypes/edtf/EDTF"
+		},
+		Productie.product: "https://stad.gent/id/mensgemaaktobject/dmg/530010095",
+		Activiteit.gebruikteTechniek: [{
+				@type: "TypeTechniek",
+				Entiteit.type: [{
+						@id: "http://vocab.getty.edu/aat/300231992",
+						skos: prefLabel: {
+							@value: "bekleden",
+							@language: "nl"
+						}
+					},
+					{
+						@id: "cest:Term_techniek",
+						label: "techniek"
+					}
+				]
+			},
+			{
+				@type: "TypeTechniek",
+				Entiteit.type: [{
+						@id: "http://vocab.getty.edu/aat/300053941",
+						skos: prefLabel: {
+							@value: "leerbewerken",
+							@language: "nl"
+						}
+					},
+					{
+						@id: "cest:Term_techniek",
+						label: "techniek"
+					}
+				]
+			}
+		],
+		Activiteit.uitgevoerdDoor: {
+			@type: "Agent",
+			equivalent: {
+				@id: "https://stad.gent/id/agent/530000705",
+				@type: "Agent",
+				label: {
+					@value: "Wolfers, Philippe",
+					@language: "nl"
+				}
+			},
+			Entiteit.type: {
+				@id: "cest:Naam_vervaardiger",
+				label: "vervaardiger"
+			}
+		},
+		@reverse: {
+			Rol.activiteit: {
+				@type: "Rol",
+				Rol.agent: "https://stad.gent/id/agent/530000705",
+				Rol.rol: {
+					@id: "http://vocab.getty.edu/aat/300115251",
+					skos: prefLabel: {
+						@value: "opdrachtgever",
+						@language: "nl"
+					}
+				},
+				Entiteit.type: {
+					@id: "cest: Rol_vervaardiger",
+					label: "vervaardiger.rol"
+				}
+			}
+		}
+	}
+]
+```
+
