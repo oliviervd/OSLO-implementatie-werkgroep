@@ -315,6 +315,8 @@ Entiteit.wordtNaarVerwezenDoor:{
 
 ### MaterieelDing.productie
 
+Activiteit.gebruikteTechniek: \
+Activiteit.uitgevoerdDoor\
 
 
 ```
