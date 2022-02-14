@@ -257,6 +257,10 @@ Binnen het project _de Collectie van de Gentenaar_ wordt gefilterd op drie rolle
 * uitvoering&#x20;
 * Productie
 
+ONTWERP;&#x20;
+
+![](<../../.gitbook/assets/Untitled Diagram-Page-2 (1).png>)
+
 ```
 Entiteit.wordtNaarVerwezenDoor:{
  @type: "ConceptueelDing",
