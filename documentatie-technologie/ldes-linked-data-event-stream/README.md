@@ -13,7 +13,7 @@ De Linked Data Event Stream wordt als technologie voor het ontsluiten van OSLO d
 
 overkoepelende datasets;&#x20;
 
-|                          |                                                                                                                                                                                                                                  |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| thesaurus                | [https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus?generatedAtTime=2022-02-23T00:00:10.177Z](https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus?generatedAtTime=2022-02-23T00:00:10.177Z) |
-| personen en instellingen | [https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/personen?generatedAtTime=2022-02-23T00:00:09.640Z](https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/personen?generatedAtTime=2022-02-23T00:00:09.640Z)   |
+|                          |                                                                                                                                                                                         |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| thesaurus                | [https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus](https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus?generatedAtTime=2022-02-23T00:00:10.177Z) |
+| personen en instellingen | [https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/personen](https://apidgdv.gent.be/opendata/adlib2eventstream/v1/adlib/personen?generatedAtTime=2022-02-23T00:00:09.640Z)   |
