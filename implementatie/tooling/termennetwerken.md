@@ -27,7 +27,7 @@ InformatieObject.gaatOver: [
         @type: "Entiteit",
         Entiteit.type: [
     {
-    @id: " https://id.erfgoed.net/themas/2909",
+    @id: "https://id.erfgoed.net/themas/2909",
     skos:prefLabel: {
         @value: "Kleine Vismarkt",
         @language: "nl"
