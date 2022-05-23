@@ -113,13 +113,17 @@ Object.identificator: [
 Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Axiell Collections-veld ‘instelling.naam’. Het concept verwijst naar de beheerder van het mensgemaakt object. Voor het verwijzen naar de beheerder wordt gebruik gemaakt van het Wikidata record.
 
 * Type: string
-* Gebaseerd op:
+* Gebaseerd op: [http://www.cidoc-crm.org/cidoc-crm/P50\_has\_current\_keeper](http://www.cidoc-crm.org/cidoc-crm/P50\_has\_current\_keeper)
 
 ![](../../.gitbook/assets/materiaalding\_beheerder.png)
 
 ```
 MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
 ```
+
+{% hint style="info" %}
+[communica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fprod.digipolis.hubs.delving.org%2Ffragments%2Fmuseum;https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP50\_has\_current\_keeper%20%3Fkeeper.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in het veld MaterieelDing.beheerder&#x20;
+{% endhint %}
 
 ### MensgemaaktObject.maaktDeelUitVan <a href="#docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855" id="docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855"></a>
 
@@ -163,6 +167,8 @@ MensgemaaktObject.maaktDeelUitVan: [
  }
 ]
 ```
+
+
 
 ### Entiteit.classificatie
 
