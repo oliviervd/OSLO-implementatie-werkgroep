@@ -7,7 +7,11 @@ description: >-
 
 # LDES-DCAT
 
-De verschillende datasets worden op een hoogste niveau beschrijven binnen de overkoepelende DCAT. Deze dataset catalogus bevat een verzameling van Open Datasets.
+De verschillende datasets worden op een hoogste niveau beschrijven binnen de overkoepelende DCAT. Deze dataset catalogus bevat een verzameling van Open Datasets.&#x20;
+
+{% hint style="info" %}
+de LDES publicatie van de DCAT kan hier geraadplaagd worden; [https://apidg.gent.be/opendata/adlib2eventstream/v1/](https://apidg.gent.be/opendata/adlib2eventstream/v1/)
+{% endhint %}
 
 ### &#x20;@context <a href="#docs-internal-guid-67b30351-7fff-ad25-d2d9-c41aed4f2f5c" id="docs-internal-guid-67b30351-7fff-ad25-d2d9-c41aed4f2f5c"></a>
 
@@ -29,6 +33,8 @@ documenteert de gebruikte context&#x20;
 ```
 
 ### &#x20;@id + @type <a href="#docs-internal-guid-67b30351-7fff-ad25-d2d9-c41aed4f2f5c" id="docs-internal-guid-67b30351-7fff-ad25-d2d9-c41aed4f2f5c"></a>
+
+Verwijzing naar de Catalogus van datasets voor de Collectie van de Gentenaar.&#x20;
 
 ```
 @id: "https://stad.gent/id/dcat/coghent
@@ -102,6 +108,9 @@ container met hierin de beschrijvende metadata en distributie van de datasets be
 * Gebaseerd op: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)
 
 ```
-Dataset.catalogus.heeftDataset: []
+Dataset.catalogus.heeftDataset: [
+    ...
+]
 ```
 
+voor de structuur per dataset kan men terecht op de volgende [pagina](ldes-dataset.md).&#x20;
