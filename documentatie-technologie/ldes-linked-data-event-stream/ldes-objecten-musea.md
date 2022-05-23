@@ -109,7 +109,7 @@ Object.identificator: [
 ```
 
 {% hint style="info" %}
-[Comunica query ](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20adms%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fadms%23%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.w3.org%2Fns%2Fadms%23Identifier%0A%20%20%3Fs%20adms%3Aidentifier%20%3Fid.%20%23%23%20fetch%20skolem%20\(blank%20node\)%0A%20%20%23%23%20http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23notation%0A%20%20%3Fid%20skos%3Anotation%20%3Fx%20%23%23%20fetch%20value%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F)voor het opvragen van de waarden in Object.identificator
+[Comunica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0APREFIX%20adms%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fadms%23%3E%0APREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fobject%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.w3.org%2Fns%2Fadms%23Identifier%0A%20%20%3Fobject%20adms%3Aidentifier%20%3Fid.%20%23%23%20fetch%20skolem%20\(blank%20node\)%0A%20%20%23%23%20http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23notation%0A%20%20%3Fid%20skos%3Anotation%20%3Fidentificator%20%23%23%20fetch%20value%0A%7D%0ALIMIT%20100\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in Object.identificator
 {% endhint %}
 
 ### MaterieelDing.beheerder
@@ -126,7 +126,7 @@ MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
 ```
 
 {% hint style="info" %}
-[communica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP50\_has\_current\_keeper%20%3Fkeeper.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in het veld MaterieelDing.beheerder&#x20;
+[Comunica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP50\_has\_current\_keeper%20%3Fkeeper.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in het veld MaterieelDing.beheerder.
 {% endhint %}
 
 ### MensgemaaktObject.maaktDeelUitVan <a href="#docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855" id="docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855"></a>

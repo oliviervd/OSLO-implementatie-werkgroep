@@ -11,6 +11,7 @@
   * [implementatie voorbeelden](implementatie/implementatie-voorbeelden.md)
   * [tooling](implementatie/tooling/README.md)
     * [termennetwerken](implementatie/tooling/termennetwerken.md)
+    * [SPARQL queries (recepten)](implementatie/tooling/sparql-queries-recepten.md)
 * [documentatie technologie](documentatie-technologie/README.md)
   * [LDES - Linked Data Event Stream](documentatie-technologie/ldes-linked-data-event-stream/README.md)
     * [LDES-DCAT](documentatie-technologie/ldes-linked-data-event-stream/ldes-dcat.md)
