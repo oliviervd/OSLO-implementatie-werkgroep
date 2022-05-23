@@ -87,23 +87,25 @@ Het type van de string slaat op het identificatiesysteem, de string zelf op de e
 ![](<../../.gitbook/assets/id (3) (1).png>)
 
 ```
-Object.identificator [
- {
-  @type: "Identificator", 
-  Identificator.identificator: {
-   @value: "530027903",
-   @type: "https://stad.gent/id/identificatiesysteem/priref"
-  }
- }, 
-  @type: "Identificator",
-  Identificator.identificator: {
-   @value: "2021-0002",
-   @type: "https://stad.gent/id/identificatiesysteem/objectnummer"
-},
-  Entiteit.type: {
-    @id: "cest:Waarde_objectnummer",
-    label: "objectnummer"
-  }
+Object.identificator: [
+    {
+        @type: "Identificator",
+        Identificator.identificator: {
+            @value: "530014607",
+            @type: "https://stad.gent/id/identificatiesysteem/priref"
+        }
+    },
+    {
+        @type: "Identificator",
+        Identificator.identificator: {
+            @value: "3277",
+            @type: "https://stad.gent/id/identificatiesysteem/objectnummer"
+    },
+    Entiteit.type: {
+        @id: "cest:Waarde_objectnummer",
+        label: "objectnummer"
+    }
+}]
 ```
 
 ### MaterieelDing.beheerder
@@ -160,8 +162,6 @@ MensgemaaktObject.maaktDeelUitVan: [
   ]
  }
 ]
-
-
 ```
 
 ### Entiteit.classificatie
