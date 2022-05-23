@@ -6,7 +6,7 @@ description: recepten voor het bevragen van OSLO datasets;
 
 ## SPARQL Queries ikv. Cultural Data Lab (CoGhent)
 
-#### Query voor het zoeken op substring in een titel.&#x20;
+### zoeken op substring in een titel.&#x20;
 
 onderstaande query bevraagt de event stream van het Design Museum Gent voor het ophalen van alle objecten waar NOVA voorkomt als deel van de titel.&#x20;
 
