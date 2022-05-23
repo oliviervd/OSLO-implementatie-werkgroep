@@ -1,3 +1,7 @@
+---
+layout: landing
+---
+
 # introductie
 
 ## Handboek OSLO Erfgoeddata

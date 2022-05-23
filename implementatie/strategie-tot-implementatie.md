@@ -1,7 +1,7 @@
 ---
 description: >-
-  OSLO-cultureel erfgoed als uitwisselingsstandaard voor het Vlaamse culturele
-  erfgoedveld
+  Strategie geformuleerd binnen de werking van het Cultural Data Lab adhv.
+  bevindingen binnen het project de Collectie van de Gentenaar.
 ---
 
 # strategie tot implementatie
