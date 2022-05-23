@@ -122,7 +122,7 @@ MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
 ```
 
 {% hint style="info" %}
-[communica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fprod.digipolis.hubs.delving.org%2Ffragments%2Fmuseum;https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP50\_has\_current\_keeper%20%3Fkeeper.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in het veld MaterieelDing.beheerder&#x20;
+[communica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP50\_has\_current\_keeper%20%3Fkeeper.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van de waarden in het veld MaterieelDing.beheerder&#x20;
 {% endhint %}
 
 ### MensgemaaktObject.maaktDeelUitVan <a href="#docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855" id="docs-internal-guid-376fc7ba-7fff-be09-2033-49f727d01855"></a>
@@ -132,6 +132,11 @@ Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Ax
 Elk van deze deelcollecties krijgt het type: “Collectie” en wordt beschreven door middel van het veld entiteit.beschrijving. Indien de collectiebeschrijving verwijst naar een door een externe bron gepubliceerd concept wordt dit verder gedocumenteerd via entiteit.type.
 
 Hierin verwijst @id naar de URI van het beschreven concept, gepaard met het label en de taal waarin dit label beschreven staat. Een tweede @id wordt toegekend om te verwijzen naar de invulinstructies in CEST met betrekking tot het veld waarin deze informatie in de bron beschreven staat.&#x20;
+
+
+
+* Type: object&#x20;
+* gebasseerd op: [http://www.cidoc-crm.org/cidoc-crm/P46i\_forms\_part\_of](http://www.cidoc-crm.org/cidoc-crm/P46i\_forms\_part\_of)
 
 ![](<../../.gitbook/assets/id (4).png>)
 
@@ -168,7 +173,9 @@ MensgemaaktObject.maaktDeelUitVan: [
 ]
 ```
 
-
+{% hint style="info" %}
+Communica query (SPARQL) voor het ophalen van de waarden onder MensgemaaktObject.maaktDeeluitVan.
+{% endhint %}
 
 ### Entiteit.classificatie
 
@@ -253,6 +260,10 @@ Entiteit.beschrijving: {
  @language: "nl"
 }
 ```
+
+{% hint style="info" %}
+[Comunica query](http://query.linkeddatafragments.org/#datasources=https%3A%2F%2Fstad.gent%2Fsparql\&query=PREFIX%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0ASELECT%20\*%0AWHERE%20%7B%0A%3Fs%20a%20cidoc%3AE22\_Man-Made\_Object%20.%0A%20%20%23%23%20http%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2FP50\_has\_current\_keeper%20%0A%20%20%3Fs%20cidoc%3AP3\_has\_note%20%3Fbeschrijving.%0A%7D%0A%0A\&httpProxy=http%3A%2F%2Fproxy.linkeddatafragments.org%2F) voor het opvragen van waarden onder Entititeit.beschrijving.
+{% endhint %}
 
 ### Entiteit.wordtNaarVerwezenDoor <a href="#docs-internal-guid-4d5a0bab-7fff-aeb4-31dc-f00846e03758" id="docs-internal-guid-4d5a0bab-7fff-aeb4-31dc-f00846e03758"></a>
 
