@@ -14,6 +14,15 @@ Voor het beschrijven van erfgoeddata met betrekking tot objecten in de musea wor
 * Generiek basis: [https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/](https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/)
 * Dossier: [https://data.vlaanderen.be/doc/applicatieprofiel/dossier/](https://data.vlaanderen.be/doc/applicatieprofiel/dossier/)
 
+ter aanvulling wordt gebruik gemaakt van:&#x20;
+
+* [w3c standaard ](https://www.w3.org/)
+* [DCMI](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) (Dublin Core) Metadata Terms
+* [FOAF Vocabulary Specification](http://xmlns.com/foaf/0.1/).&#x20;
+* [linked art ](https://linked.art/)
+
+indien mogelijk wordt [gerefereerd naar de corresponderende beschrijving in CEST](https://www.projectcest.be/wiki/Publicatie:Invulboek\_objecten/Profielen/Basisregistratie\_als\_OSLO\_JSON-LD). Op deze manier is het mogelijk om de herkomst van de ingevulde waarde terug te traceren naar het corresponderende veld in Adlib/Axiell Collections. Voor het koppelen van beide standaarden werd nauw samengewerkt met meemoo.&#x20;
+
 ```
 @context: [
 	"https://apidg.gent.be/opendata/adlib2eventstream/v1/context/cultureel-erfgoed-object-ap.jsonld",
@@ -75,7 +84,7 @@ Het type van de string slaat op het identificatiesysteem, de string zelf op de e
 
 <mark style="background-color:orange;">Opmerking CEST (meemoo): is het hier nodig om de bron van het nummer toe te kennen. Dit nummer verwijst naar wie het nummer heeft toegekend.</mark>&#x20;
 
-![](<../../.gitbook/assets/id (3).png>)
+![](<../../.gitbook/assets/id (3) (1).png>)
 
 ```
 Object.identificator [
