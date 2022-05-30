@@ -89,4 +89,20 @@ owl:sameAs: [
 
 ### ULAN (Getty Vocabularies)
 
+{% tabs %}
+{% tab title="JSON-ld" %}
+```
+owl:sameAs: [
+    "http://vocab.getty.edu/ulan/500277269",
+    "https://www.wikidata.org/entity/Q1855386",
+    "VAIact-0006085"
+],
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 ### TGN (Getty Vocabularies)
