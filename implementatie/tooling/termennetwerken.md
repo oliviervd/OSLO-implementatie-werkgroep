@@ -44,7 +44,9 @@ InformatieObject.gaatOver: [
 
 ### [databank kunstenpunt](https://data.kunsten.be)
 
-####
+Databank Kunstenpunt biedt een rijke lijst van personen, instellingen en locaties uit het performatieve kunsten veld.&#x20;
+
+
 
 ### fashion thesaurus (MoMU)
 
