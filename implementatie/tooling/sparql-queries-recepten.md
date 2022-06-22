@@ -32,4 +32,34 @@ live demo: [Comunica](http://query.linkeddatafragments.org/#datasources=https%3A
 live demo: [Virtuoso](https://stad.gent/sparql?default-graph-uri=\&query=PREFIX+cidoc%3A+%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Fcidoc-crm%2F%3E%0D%0ASELECT+DISTINCT+%3Ftitle+%3Fbeschrijving+FROM+%3Chttp%3A%2F%2Fstad.gent%2Fldes%2Fdmg%3E+%0D%0AWHERE+%7B+%0D%0A++%3Fobject+cidoc%3AP102\_has\_title+%3Ftitle.+%0D%0A++FILTER+%28regex%28%3Ftitle%2C+%22NOVA%22%2C+%22i%22%29%29.%0D%0A++%3Fobject+cidoc%3AP3\_has\_note+%3Fbeschrijving+%0D%0A%7D+%0D%0A%0D%0ALIMIT+100\&format=text%2Fhtml\&timeout=0\&debug=on) (triple store stad Gent)
 {% endhint %}
 
-### zoeken op werken gemaakt door  vervaardiger "x".
+### zoeken op objecten adhv. narrower term.
+
+onderstaande query vertrekt van een Broader Term (BT), in dit geval _seating furniture_ en zoekt naar alle objecten in de collectie van Design Museum Gent die behoren tot een sub term of narrower term (NT) van seating furniture
+
+```
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX cidoc: <http://www.cidoc-crm.org/cidoc-crm/>
+select ?narrowtypelabel ?title
+where {
+  # Concept you are interested in
+  BIND (<http://vocab.getty.edu/aat/300037769> as ?concept)
+  
+  # Retrieve broader concept from AAT
+  ?concept <http://www.w3.org/2004/02/skos/core#broader> ?broadertype .
+  ?broadertype skos:prefLabel ?broadertypelabel .
+
+  # Retrieve all concepts that are narrower than this broader concept
+  ?broadertype <http://www.w3.org/2004/02/skos/core#narrower>+ ?narrowtype .
+  ?narrowtype skos:prefLabel ?narrowtypelabel .
+  FILTER (lang(?broadertypelabel) = "en")
+  FILTER (lang(?narrowtypelabel) = "en")
+  
+  # Retrieve objects from Datahub
+   ?object cidoc:P102_has_title ?title ;
+           cidoc:P2_has_type [ owl:sameAs ?narrowtype ] .
+}
+
+LIMIT 1000
+```
