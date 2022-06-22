@@ -7,6 +7,7 @@
 ***
 
 * [Implementatie](implementatie/README.md)
+  * [20220622\_nota's](implementatie/20220622\_notas.md)
   * [strategie tot implementatie](implementatie/strategie-tot-implementatie.md)
   * [implementatie voorbeelden](implementatie/implementatie-voorbeelden.md)
   * [tooling](implementatie/tooling/README.md)
