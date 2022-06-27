@@ -4,6 +4,20 @@ description: recepten voor het bevragen van OSLO datasets;
 
 # SPARQL queries (recepten)
 
+## Bronnen
+
+
+
+| instelling                                   |                                      dcat                                      |
+| -------------------------------------------- | :----------------------------------------------------------------------------: |
+| personen en instellingen (alle instellingen) |        [http://stad.gent/ldes/personen](http://stad.gent/ldes/personen)        |
+| thesaurus (alle instellingen)                |       [http://stad.gent/ldes/thesaurus](http://stad.gent/ldes/thesaurus)       |
+| industriemuseum                              | [http://stad.gent/ldes/industriemuseum](http://stad.gent/ldes/industriemuseum) |
+| archief gent                                 |         [http://stad.gent/ldes/archief](http://stad.gent/ldes/archief)         |
+| design museum gent                           |             [http://stad.gent/ldes/dmg](http://stad.gent/ldes/dmg)             |
+| huis van alijn                               |             [http://stad.gent/ldes/hva](http://stad.gent/ldes/hva)             |
+| STAM                                         |            [http://stad.gent/ldes/stam](http://stad.gent/ldes/stam)            |
+
 ## SPARQL Queries ikv. Cultural Data Lab (CoGhent)
 
 onderstaande overzicht schept een beeld van wat soort queries (bevragingen) kunnen geformuleerd worden over de collectie na implementatie van OSLO. Dit overzicht focust zich met voornaam op de collecties gepubliceerd binnen CoGhent en zijn het resultaat van werksessies binnen de programmatie van het Cultural Data Lab.&#x20;
