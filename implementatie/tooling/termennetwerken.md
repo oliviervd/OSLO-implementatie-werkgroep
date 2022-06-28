@@ -93,6 +93,14 @@ Getty Vocabularies, onderdeel van het Getty Research Institute, bevat verschille
 * **Union List of Artists Names** (ULAN): deze databank bevat namen en biografische informatie van artiesten, architecten, bedrijven, ... die werkzaam zijn binnen de kunstwereld.
 * **Getty Thesaurus of Geographic Names** (TGN): plaatsnamen, hiërarchische context van historische en archeologische sites, dorpen, landen, naties enzovoort, kunnen worden opgezocht in de databank van TGN.
 
+Ter illustratie:
+
+![](../../.gitbook/assets/image.png)
+
+
+
+
+
 {% tabs %}
 {% tab title="JSON-ld" %}
 ```
