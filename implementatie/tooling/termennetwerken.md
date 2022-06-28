@@ -85,9 +85,13 @@ owl:sameAs: [
 {% endtab %}
 {% endtabs %}
 
-### AAT (Getty Vocabularies)
+### Getty Vocabularies
 
-### ULAN (Getty Vocabularies)
+Getty Vocabularies, onderdeel van het Getty Research Institute, bevat verschillende soorten databanken. Elke databank bevat een andere thesaurus, met een focus op een ander thema zoals bijvoorbeeld kunst, architectuur of archiefmateriaal. De thesauri die binnen het project van Collectie van de Gentenaar gebruikt worden:
+
+* **Art & Arthictecture Thesaurus** (AAT): gebruikers kunnen hier termen, definities van objecten, stijlen, materialen, ... terugvinden die gelinkt zijn aan kunst en architectuur.
+* **Union List of Artists Names** (ULAN): deze databank bevat namen en biografische informatie van artiesten, architecten, bedrijven, ... die werkzaam zijn binnen de kunstwereld.
+* **Getty Thesaurus of Geographic Names** (TGN): plaatsnamen, hiërarchische context van historische en archeologische sites, dorpen, landen, naties enzovoort, kunnen worden opgezocht in de databank van TGN.
 
 {% tabs %}
 {% tab title="JSON-ld" %}
@@ -104,5 +108,3 @@ owl:sameAs: [
 
 {% endtab %}
 {% endtabs %}
-
-### TGN (Getty Vocabularies)
