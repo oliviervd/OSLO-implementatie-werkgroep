@@ -7,7 +7,6 @@
 ***
 
 * [Implementatie](implementatie/README.md)
-  * [20220622\_nota's](implementatie/20220622\_notas.md)
   * [strategie tot implementatie](implementatie/strategie-tot-implementatie.md)
   * [implementatie voorbeelden](implementatie/implementatie-voorbeelden.md)
   * [tooling](implementatie/tooling/README.md)
@@ -22,3 +21,9 @@
     * [LDES-thesaurus](documentatie-technologie/ldes-linked-data-event-stream/ldes-thesaurus.md)
     * [LDES-agenten](documentatie-technologie/ldes-linked-data-event-stream/ldes-agenten.md)
     * [LDES-tentoonstellingen](documentatie-technologie/ldes-linked-data-event-stream/ldes-tentoonstellingen.md)
+
+## Group 1
+
+* [Werkgroep notes](group-1/werkgroep-notes/README.md)
+  * [20220629-werkgroep2-notes](group-1/werkgroep-notes/20220629-werkgroep2-notes.md)
+  * [20220622-werkgroep1-notes](group-1/werkgroep-notes/20220622-werkgroep1-notes.md)
