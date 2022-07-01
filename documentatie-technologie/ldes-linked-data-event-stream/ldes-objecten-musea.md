@@ -290,7 +290,7 @@ Binnen het project _de Collectie van de Gentenaar_ wordt gefilterd op drie rolle
 * uitvoering&#x20;
 * Productie
 
-ONTWERP;&#x20;
+#### ConceptueelDing.heeftCreatie (ontwerp)
 
 ![](<../../.gitbook/assets/Untitled Diagram-Page-2 (1).png>)
 
@@ -347,15 +347,11 @@ Entiteit.wordtNaarVerwezenDoor:{
 }
 ```
 
-### MaterieelDing.productie
-
-Activiteit.gebruikteTechniek: \
-Activiteit.uitgevoerdDoor\
-
+#### ConceptueelDing.heeftCreatie (uitvoering + productie) 
 
 ```
 MaterieelDing.productie: [{
-		@type: "Productie",
+	@type: "Productie",
 		Gebeurtenis.tijd: {
 			@value: "1900/1901",
 			@type: "http://id.loc.gov/datatypes/edtf/EDTF"
@@ -499,3 +495,4 @@ MaterieelDing.productie: [{
 ]
 ```
 
+### MaterieelDing.productie
