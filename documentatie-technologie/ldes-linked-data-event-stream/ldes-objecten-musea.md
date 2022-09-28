@@ -1,8 +1,8 @@
 # LDES-objecten (musea)
 
-Binnen het project _de collectie van de gentenaar_ wordt gebruik gemaakt van de invulinstructies zoals beschreven in het [CEST-invulboek](https://www.projectcest.be/wiki/Invulboek\_objecten). Het naleven en toepassen van deze instructies vormen een cruciale schakel voor het correct transformeren van de data uit adlib naar de OSLO standaard.&#x20;
+Binnen het project _de collectie van de gentenaar_ wordt gebruik gemaakt van de invulinstructies zoals beschreven in het [CEST-invulboek](https://www.projectcest.be/wiki/Invulboek\_objecten). Het naleven en toepassen van deze instructies vormen een cruciale schakel voor het correct transformeren van de data uit adlib naar data gebruikmakende van OSLO applicatieprofielen.&#x20;
 
-De OSLO-standaarden worden aangevuld met de Linked Art-standaard.&#x20;
+De OSLO-standaarden worden aangevuld met de Linked Art-standaard (bijvoorbeeld voor het refereren naar de manifesten).&#x20;
 
 ### @context&#x20;
 
