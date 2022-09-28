@@ -55,7 +55,7 @@ Dataset.contactinfo: {
 
 ### Dataset.toegankelijkheid&#x20;
 
-De toegankelijkheid categorie van de dataset. Voor Open Data is de waarde hiervan steeds PUBLIC. Hierin volgt het de afspraken zoal gemaakt bij Vlaanderen.&#x20;
+De toegankelijkheid categorie van de dataset. Voor Open Data is de waarde hiervan steeds PUBLIC. Hierin volgt het de afspraken zoals gemaakt bij Vlaanderen.&#x20;
 
 * Type: string
 * Gebaseerd op: [https://dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights](https://dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights)
