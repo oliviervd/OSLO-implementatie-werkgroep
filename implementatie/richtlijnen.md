@@ -202,12 +202,12 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
 * Gebruik **@id** om de persistente URI te documenteren voor de Entiteit waarop het JSON-object betrekking heeft.&#x20;
 *   Het gebruik van **@id** is **verplicht** voor de (hoofd-)Entiteit waarop de root van het JSON-document betrekking heeft.
 
-    ```
+    ```json
     { "@id":"https://stad.gent/id/mensgemaaktobject/dmg/530008250/2022-06-22T00:00:50.901Z"}
     ```
 * Het gebruik van **@id**  is **aanbevolen** voor de Entiteiten die een eigenschap van de hoofdEntiteit karakteriseren.&#x20;
 
-```
+```json
 {
 "@id":"https://stad.gent/id/mensgemaaktobject/dmg/530008250/2022-06-22T00:00:50.901Z",
 "@type":"MensgemaaktObject"
@@ -223,7 +223,7 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
 
 *   &#x20;Het gebruik van **@id**  is **verplicht** wanneer je een Entiteiten wil mappen naar een Veld in het Invulboek Objecten waar zich de beschrijvingsregels bevinden voor de inhoud van het JSON-object.&#x20;
 
-    ```
+    ```json
     {
     "@id":"https://stad.gent/id/mensgemaaktobject/dmg/530008250/2022-06-22T00:00:50.901Z",
     "@type":"MensgemaaktObject"
@@ -242,7 +242,7 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
     ```
 *   Gebruik de eigenschap "**wordtGeïdentificeerdDoor**" en "**Identificator**" om lokale objectnummers en andere interne identificatienummers te documenteren.
 
-    ```
+    ```json
     {
     "@id":"https://stad.gent/id/mensgemaaktobject/dmg/530008250/2022-06-22T00:00:50.901Z",
     "@type":"MensgemaaktObject"
@@ -258,7 +258,7 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
     ```
 * Gebruik de eigenschap "**isHetzelfdeAls**" om je Entiteit te mappen met een equivalente Entiteit in een anderen bron&#x20;
 
-```
+```json
 "@id":"https://stad.gent/id/mensgemaaktobject/dmg/530008250/2022-06-22T00:00:50.901Z",
 "@type":"MensgemaaktObject"
 "heeftType":{
