@@ -19,11 +19,11 @@ documenteert de gebruikte context&#x20;
 
 * type: array
 
-```
+```json
 {@context: 
 ["https://apidg.gent.be/opendata/adlib2eventstream/v1/context/DCAT-AP-VL.jsonld",
 {
- dcterms: "http://purl.org/dc/terms/",
+ dcterms: "http://purl.onrg/dc/terms/",
  ldes: "https://w3id.org/ldes#",
  tree: "https://w3id.org/tree#",
  tree:view: {
@@ -36,8 +36,8 @@ documenteert de gebruikte context&#x20;
 
 Verwijzing naar de Catalogus van datasets voor de Collectie van de Gentenaar.&#x20;
 
-```
-@id: "https://stad.gent/id/dcat/coghent
+```json
+@id: "https://stad.gent/id/dcat/coghent",
 @type: "Datasetcatalogus"
 ```
 
@@ -48,7 +48,7 @@ titel van de catalogus, hier wordt steeds het (@label) en de taal (@language) me
 * type: object
 * gebasseerd op: [http://purl.org/dc/terms/title](http://purl.org/dc/terms/title)
 
-```
+```json
 Datasetcatalogus.titel: {
  @value: "Catalogus Coghent", 
  @language: "nl"
@@ -62,7 +62,7 @@ korte beschrijving van waarover de datasetcatalogus handelt.
 * type: object&#x20;
 * gebasseerd op: [http://purl.org/dc/terms/description](http://purl.org/dc/terms/description)
 
-```
+```json
 Datasetcatalogus.beschrijving: {
  @value: "Catalogus van datasets voor de Collectie van de Gentenaar",          
  @language: "nl"
@@ -77,7 +77,7 @@ documenteert de toegekende licentie aan de dataset catalogus in kwestie. Binnen 
 * type: object&#x20;
 * gebasseerd op: [http://purl.org/dc/terms/license](http://purl.org/dc/terms/license)
 
-```
+```json
 Datasetcatalogus.heeftLicentie: {
  @id: "https://creativecommons.org/publicdomain/zero/1.0/"
 }
@@ -90,7 +90,7 @@ binnen het project is de uitgever van de dataset catalogus Stad Gent. Voor het b
 * Type: object
 * Gebaseerd op: [http://purl.org/dc/terms/publisher](http://purl.org/dc/terms/publisher)
 
-```
+```json
 Datasetcatalogus.heeftUitgever: {
  @id: "https://stad.gent/", 
  Agent.naam: {
@@ -107,7 +107,7 @@ container met hierin de beschrijvende metadata en distributie van de datasets be
 * Type: array
 * Gebaseerd op: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)
 
-```
+```json
 Dataset.catalogus.heeftDataset: [
     ...
 ]
