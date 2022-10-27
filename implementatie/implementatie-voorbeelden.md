@@ -2,9 +2,9 @@
 
 ## Collectie van de Gentenaar (Stad Gent)
 
-Binnen het project de [Collectie van de Gentenaar](https://www.collectie.gent/), welk gefinancierd wordt met Europese middelen binnen het Urban Innovation Actions programma, werd het OSLO applicatie profiel geimplementeerd voor het publiceren van cultureel erfgoeddata in Linked Data Event Streams. Hierdoor is het piloot voor de implementering en publicatie van erfgoeddata volgens het OSLO applicatieprofiel.&#x20;
+Binnen het project de [Collectie van de Gentenaar](https://www.collectie.gent/), welk gefinancierd wordt met Europese stimuleringsmiddelen binnen het Urban Innovation Actions programma, werd het OSLO applicatie profiel geimplementeerd voor het publiceren van cultureel erfgoeddata als [Linked Data Event Streams](https://semiceu.github.io/LinkedDataEventStreams/) (j[son-ld](https://en.wikipedia.org/wiki/JSON-LD)). Hierdoor is het piloot voor de implementering en publicatie van erfgoeddata volgens het OSLO applicatieprofiel.&#x20;
 
-Event streams werden gebubliceerd voor:&#x20;
+Event streams werden gebubliceerd binnen het project van de volgende organisatiies:&#x20;
 
 * Design Museum Gent&#x20;
 * Archief Gent&#x20;
