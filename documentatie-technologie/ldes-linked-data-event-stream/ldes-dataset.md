@@ -18,7 +18,7 @@ Titel van de dataset in kwestie, hier wordt steeds het label (@label) en de taal
 * Type: object&#x20;
 * Gebaseerd op: [http://purl.org/dc/terms/title](http://purl.org/dc/terms/title)
 
-```
+```json
 Dataset.titel: {
  @value: "thesaurus van Archief Gent, Design Museum Gent, Het Huis van Alijn (Gent), Industriemuseum, STAM (Gent)",
  @language: "nl"
@@ -32,7 +32,7 @@ Korte beschrijving waarover de dataset handelt. hier wordt steeds het label (@la
 * Type: object&#x20;
 * Gebaseerd op: [http://purl.org/dc/terms/description](http://purl.org/dc/terms/description)
 
-```
+```json
 Dataset.beschrijving: {
  @value: "Event stream van de Adlib database 'thesaurus' van de   instelling: Archief Gent, Design Museum Gent, Het Huis van Alijn (Gent), Industriemuseum, STAM (Gent)",
  @language: "nl"
@@ -46,7 +46,7 @@ Voor elke gepubliceerde dataset voorziet het project contactinfo die verwijst na
 * Type: object
 * Gebaseerd op: [http://www.w3.org/ns/dcat#contactPoint](http://www.w3.org/ns/dcat#contactPoint)
 
-```
+```json
 Dataset.contactinfo: {
  @type: "contactinfo",
  Contactinfo.eMail: "data@designmuseumgent.be"
@@ -55,12 +55,12 @@ Dataset.contactinfo: {
 
 ### Dataset.toegankelijkheid&#x20;
 
-De toegankelijkheid categorie van de dataset. Voor Open Data is de waarde hiervan steeds PUBLIC. Hierin volgt het de afspraken zoal gemaakt bij Vlaanderen.&#x20;
+De toegankelijkheid categorie van de dataset. Voor Open Data is de waarde hiervan steeds PUBLIC. Hierin volgt het de afspraken zoals gemaakt bij Vlaanderen.&#x20;
 
 * Type: string
 * Gebaseerd op: [https://dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights](https://dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights)
 
-```
+```json
 Dataset.toegankelijkheid: "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
 ```
 
@@ -71,7 +71,7 @@ Verwijzing naar de uitgever van de dataset. In sommige gevallen kunnen dit meerd
 * Type: object of array (indien meerdere uitgevers)&#x20;
 * Gebaseerd op:&#x20;
 
-```
+```json
 Dataset.heeftUitgever: [
  {
   @id: "http://www.wikidata.org/entity/Q41776192", 
@@ -95,7 +95,7 @@ De distributie van een dataset. Hierin worden de linken opgenomen die verwijzen 
 * Type: object
 * Gebaseerd op: [http://www.w3.org/ns/dcat#distribution](http://www.w3.org/ns/dcat#distribution)
 
-```
+```json
 heeftDistributie: {
  @type: "Distributie",
  toegangsURL: "https://apidg.gent.be/opendata/adlib2eventstream/v1/adlib/thesaurus", 
