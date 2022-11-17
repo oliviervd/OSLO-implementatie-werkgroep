@@ -22,7 +22,7 @@ description: recepten voor het bevragen van OSLO datasets;
 
 onderstaande overzicht schept een beeld van wat soort queries (bevragingen) kunnen geformuleerd worden over de collectie na implementatie van OSLO. Dit overzicht focust zich met voornaam op de collecties gepubliceerd binnen CoGhent en zijn het resultaat van werksessies binnen de programmatie van het Cultural Data Lab.&#x20;
 
-Elke Query wordt geilustreerd aan de hand van een live demo via Comunica (query enging voor het uitvoeren van gefedereerde zoekopdrachten) als ook via de Virtuoso, de SPARQL endpoint van de stad Gent.&#x20;
+Elke Query wordt geilustreerd aan de hand van een live demo via Comunica (query engine voor het uitvoeren van gefedereerde zoekopdrachten) als ook via de Virtuoso, de SPARQL endpoint van de stad Gent.&#x20;
 
 ### zoeken op substring in een titel.&#x20;
 
