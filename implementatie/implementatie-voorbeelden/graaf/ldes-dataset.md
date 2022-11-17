@@ -9,7 +9,7 @@ De dataset catalogus omvat verschillende datasets. In totaal worden er binnen he
 
 De structuur van deze vier unieke cases wordt hieronder verder toegelicht. Dit aangezien elke specifieke case een unieke mapping vereist.
 
-![](<../../.gitbook/assets/Naamloos (3).png>)
+![](<../../../.gitbook/assets/Naamloos (3).png>)
 
 ### Dataset.titel
 

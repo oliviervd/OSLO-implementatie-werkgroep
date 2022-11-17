@@ -4,7 +4,11 @@ description: >-
   bevindingen binnen het project de Collectie van de Gentenaar.
 ---
 
-# strategie tot implementatie
+# Visie
+
+Deze pagina beschrijft de algemene visie van de werkgroep op de implementatie van oslo
+
+
 
 Het transformeren van digitale collectiedata naar Linked Open Data is op heden een technische en financiële uitdaging voor de cultureel erfgoedsector. De OSLO-standaard stimuleert het inzetten op Linked Open Data. Dit neemt echter de uitdagingen niet weg. CoGhent heeft dankzij een uitgebreid consortium en Europese subsidies als eerste een vertaling kunnen maken van digitale collectiedata naar de OSLO-standaard. De hieronder opgesomde stappen zijn **lessons learned** die CoGhent graag deelt met het cultureel erfgoedveld. Ze bieden geen oplossing maar omvatten suggesties voor een bredere implementatie van de OSLO-standaard binnen de cultuursector.&#x20;
 

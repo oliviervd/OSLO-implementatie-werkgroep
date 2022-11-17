@@ -84,7 +84,7 @@ Het type van de string slaat op het identificatiesysteem, de string zelf op de e
 
 <mark style="background-color:orange;">Opmerking CEST (meemoo): is het hier nodig om de bron van het nummer toe te kennen. Dit nummer verwijst naar wie het nummer heeft toegekend.</mark>&#x20;
 
-![](<../../.gitbook/assets/id (3) (1).png>)
+![](<../../../.gitbook/assets/id (3) (1).png>)
 
 ```
 Object.identificator: [
@@ -121,7 +121,7 @@ Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Ax
 * Type: string
 * Gebaseerd op: [http://www.cidoc-crm.org/cidoc-crm/P50\_has\_current\_keeper](http://www.cidoc-crm.org/cidoc-crm/P50\_has\_current\_keeper)
 
-![](../../.gitbook/assets/materiaalding\_beheerder.png)
+![](../../../.gitbook/assets/materiaalding\_beheerder.png)
 
 ```
 MaterieelDing.beheerder: "http://wikidata.org/entity/Q1809071"
@@ -146,7 +146,7 @@ Hierin verwijst @id naar de URI van het beschreven concept, gepaard met het labe
 * Type: object&#x20;
 * gebasseerd op: [http://www.cidoc-crm.org/cidoc-crm/P46i\_forms\_part\_of](http://www.cidoc-crm.org/cidoc-crm/P46i\_forms\_part\_of)
 
-![](<../../.gitbook/assets/id (4).png>)
+![](<../../../.gitbook/assets/id (4).png>)
 
 ```
 MensgemaaktObject.maaktDeelUitVan: [
@@ -191,7 +191,7 @@ Object kan onder verschillende classificaties getypeerd worden, waaronder ‘obj
 
 Classificatie.getypeerdeEntiteit verwijst naar de URI van het object. Classificatie.toegekendType verwijst naar het type van classificatie a.d.h.v. een externe autoriteit (bijv. Getty Vocabularies).
 
-![](../../.gitbook/assets/Entiteit.classificatie)
+![](../../../.gitbook/assets/Entiteit.classificatie)
 
 ```
 Entiteit.classificatie:[{
@@ -233,7 +233,7 @@ Uit de OSLO-standaard Cultureel Erfgoed Object. Wordt toegekend aan het Adlib/Ax
 
 * gebasseerd op: http://www.cidoc-crm.org/cidoc-crm/cidoc:P102\_has\_title
 
-![](../../.gitbook/assets/MensgemaaktObject.titel.png)
+![](../../../.gitbook/assets/MensgemaaktObject.titel.png)
 
 ```
 MensgemaaktObject.titel: {
@@ -260,7 +260,7 @@ OSLO-standaard Cultureel Erfgoed Event. Wordt toegekend aan het Adlib/Axiell Col
 
 * Type: object
 
-![](<../../.gitbook/assets/dataflow-Page-2 (4).png>)
+![](<../../../.gitbook/assets/dataflow-Page-2 (4).png>)
 
 ```
 Entiteit.beschrijving: {
@@ -292,7 +292,7 @@ Binnen het project _de Collectie van de Gentenaar_ wordt gefilterd op drie rolle
 
 #### ConceptueelDing.heeftCreatie (ontwerp)
 
-![](<../../.gitbook/assets/Untitled Diagram-Page-2 (1).png>)
+![](<../../../.gitbook/assets/Untitled Diagram-Page-2 (1).png>)
 
 ```
 Entiteit.wordtNaarVerwezenDoor:{

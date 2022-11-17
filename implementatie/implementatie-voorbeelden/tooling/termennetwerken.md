@@ -1,6 +1,6 @@
 # termennetwerken
 
-Zoals beschreven in de strategie ([link met andere databronnen](../strategie-tot-implementatie.md#3.-link-met-andere-databronnen)) is het belangrijk om bij het registreren voldoende rekening te houden voor het toekennen van URIs die verwijzen naar andere termennetwerken. Zo verrijk je niet enkel de fiches inhoudelijk, maar verzeker je ook dat de gepubliceerde data aansluiting en verbinding vindt met andere datasets.
+Zoals beschreven in de strategie ([link met andere databronnen](../../strategie-tot-implementatie/#3.-link-met-andere-databronnen)) is het belangrijk om bij het registreren voldoende rekening te houden voor het toekennen van URIs die verwijzen naar andere termennetwerken. Zo verrijk je niet enkel de fiches inhoudelijk, maar verzeker je ook dat de gepubliceerde data aansluiting en verbinding vindt met andere datasets.
 
 ## gebruikte termennetwerken: nationaal/regionaal
 
@@ -95,7 +95,7 @@ Getty Vocabularies, onderdeel van het Getty Research Institute, bevat verschille
 
 Ter illustratie:
 
-![](../../.gitbook/assets/image.png)
+![](../../../.gitbook/assets/image.png)
 
 
 

@@ -16,6 +16,18 @@ Agenda
 
 * vgl Invulboek Basisregistratie in OSLO JSON-LD vs Coghent LDES
 
+Verslag
+
+*
+
+Actiepunten
+
+*
+
+
+
+
+
 ### Naamgeving
 
 Entiteiten: Upper Camel Case bvb. MensgemaaktObject
