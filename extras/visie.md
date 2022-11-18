@@ -22,9 +22,7 @@ Linked Open Data is een tool dat mogelijkheden schept voor het uitwisselen van k
 
 ### **2. Aligneer registratie met invulboek objecten**
 
-Linked Open Datagebruikers verwachten correcte informatie. Het is daarom belangrijk om in te zetten op data cleaning, interne registratieafspraken en het aligneren met het invulboek objecten.  Zo wordt de juiste informatie op de juiste plek weggeschreven en zorg je voor een uniforme interpretatie van de verschillende invulvelden.  &#x20;
-
-**I**ndien nodig dient hier een data cleaning traject aan vooraf te gaan. Hiervoor kan eventueel beroep gedaan worden op de projectsubsidies in het kader van de inhaalbewegingen digitale collectiedata.
+Linked Open Datagebruikers verwachten correcte informatie. Het is daarom belangrijk om in te zetten op data cleaning, interne registratieafspraken en het aligneren met het invulboek objecten.  Zo wordt de juiste informatie op de juiste plek weggeschreven en zorg je voor een uniforme interpretatie van de verschillende invulvelden. **I**ndien nodig dient hier een data cleaning traject aan vooraf te gaan.&#x20;
 
 ### **3. Link met andere databronnen**
 
