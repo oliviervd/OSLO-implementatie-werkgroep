@@ -1,47 +1,38 @@
 ---
 description: >-
-  Alle opnames en archiefdocumenten met betrekking tot het TV-programma Boer en
-  Tuinder (1958-1988) op een geïntegreerde manier doorzoekbaar maken voor
-  collectiebeheerders, erfgoedpartners en digital hu
+  Navigatieapplicatie die persoonsdata van gesneuvelde soldaten uit WOI en
+  geografische data combineert en voorbezoekers van het slageld vna Passendale
+  een gepersonaliseerde wandel/fietstocht genereert.
 ---
 
 # Use Case
 
 ## Data
 
-De afleveringen zijn verspreid over twee collecties, het VRT-archief en het filmarchief van het voormalige ministerie van Landbouw, bewaard bij Cinematek. Geen van beide collecties is waarschijnlijk volledig, maar zij vullen elkaar aan.&#x20;
+De databank [Passchendaele Archives Database](https://archives.passchendaele.be/nl/) verzamelt historische persoonsgegevens van militairen die sneuvelden in WO1. Het onderzoek naar deze militairen start met een aanvraag van familieleden. Veel militairen zijn tot op vandaag vermist (zie Menin Gate, Tyne Cot Memorial). Familieleden kregen vaak het antwoord dat hun partner, zoon of broer sneuvelde “in France or Belgium”, zonder verdere uitleg. Hierdoor zijn nabestaanden meer dan 100 jaar later nog steeds op zoek naar antwoorden. Historisch onderzoek kan deze vragen beantwoorden.
 
-Bij VRT zijn er **238 afleveringen** die nog niet over een basisannotatie beschikken, 58 aflevering hebben een basisannotatie en 174 afleveringen zijn op dit moment uitgebreid beschreven. De periode van 1958 t.e.m. 1970, kent een redelijke graad van ontsluiting. 213 van de 276 afleveringen uit de periode 1970-1988 hebben echter geen basisannotering.&#x20;
+Met het onderzoek wil het museum drie vragen beantwoorden:
 
-De collectie van Cinematek is complementair met de collectie bewaard door de VRT. In totaal beschikt Cinematek over **129 afleveringen** uit de periode 1977-1988, zonder beschrijving, allen met Betacam-SP n U-Matic en VHS als drager.
+1. Wie was die persoon?
+2. Waar kwam hij om het leven?
+3. Wat waren de omstandigheden van zijn overlijden?
 
-Voor het inhaalbeweging worden 470 afleveringen gedetailleerd beschreven, zowel de gehele aflevering als de afzonderlijke segmenten. Segmenten worden beschreven in op een gestructureerde manier in een vrije tekstveld (d.w.z. via tijdscodes en labels) Deze beschrijving wordt gemaakt in de Rural History Filmdatabank die conform het EBUCORE beschrijvingsmodel werkt.&#x20;
+De gegevens in de databank zijn verzameld uit publiek toegankelijke bronnen. Het gaat enerzijds om gegevens uit nationale slachtofferlijsten (The Commonwealth War Graves Commission, Volksbund Deutsche Kriegsgräberfürsorge, etc.) nationale en internationale archieven (bv. The National Archives, National Library of Canada, etc.), literatuur (bv. regimentsgeschiedenissen), gegevens uit historische objecten en objecten/documentatie (digitaal) ter beschikking gesteld door nabestaanden.&#x20;
 
-*
-  * beschrijven van een volledige aflevering
-  * beschrijven van aparte segmenten adhv tijdscodes, vrije tekst
-  * basisbeschrijving > er wordt een beschrijvingsmodel opgesteld obv Ebucore
-  * voor de segmenten toevoegen tijdsnotaties en beschrijvingen als vrij tekst in apart veld
-  * speech-to-text, wordt ook in een apart veld geregistreerd
-* koppelingen met kopieën van de afleveringen in VRT, meemoo en cinematek:
-*
-  * VRT: registrator registreert het inventarisnummer
-  * meemoo: registrator zoekt het VRT inventarisnummer in hetarchief.be / of / VRT bezorgt een export van de meemoo pids met de vrt inventarisnummers
-  * cinematek: CAG krijgt een lijst met cinematek ids van cinematek.&#x20;
-* verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen:
-*
-  * VIAF
-  * ULAN
-  * RKD artist
-  * Wikipedia (engelstalig)
-  * imdb (permalink naar vervaardigers)
-  * ODIS (handmatig)
-* links naar foto’s van opnames in het archief van de VRT:
-*
-  * aanvankelijk wordt door de registrator een code voor de foto opgenomen in de data
-  * als de rechten op de foto’s geklaard zijn, kan CAG een download krijgen die dan opgeladen wordt in de CAG beeldbank.&#x20;
-  * Tot slot kan dan gekoppeld worden tussen de VRT code en de foto in de beeldbank.&#x20;
-* koppeling met archiefmateriaal uit het archief van de regisseur bij KADOC
-*
-  * de archieven worden gedigitaliseerd en zullen online toegankelijk gemaakt worden via LIAS
-  * registrator zoekt in de ScopeArchiv inventaris naar relevante documentatie en legt de links in CAGnet tussen dossiers en afleveringen.
+Belangrijk aspect hierbij is dat het museum geen ‘eigenaar/producent’ is van de oorspronkelijk bronnen en gegevens. Onze bijdrage is transformatief: we verzamelen, verwerken en bundelen gegevens uit verschillende bronnen tot een nieuw product.
+
+De databank bevat:
+
+* persoonsgegevens (bv. geboortedatum, sterfplaats (eigennaam))
+* militaire persoonsgegevens (bv. eenheid, rang, datum van indiensttreding)
+* geografische data:&#x20;
+  * Plaatsen (bv. Mosselmarkt, Passendale)
+  * Coördinaten (bv. sterfplaats)
+* beeldmateriaal (bv. portretfoto’s)
+* onderzoeksresultaten (in tekstvorm; zie “mijn verhaal”)
+* bronnen (link met archieven, boeken, artikelen, websites etc.)
+
+De databank ontstond in 2006 en is sinds 2016 digitaal. Deze relationele databank (MySQL) is organisch ontstaan en is over de jaren heen aangepast aan de veranderende noden van het museum. Ook vandaag staan er verbeteringen/ wijzigingen op de planning, zoals de connecties van personen met objecten (bv. bronnen of collectiestukken) of evenementen (bv. de ‘[Inname van Westhoek](https://en.wikipedia.org/wiki/Capture\_of\_Westhoek)’).
+
+Een subset van deze dataset wordt via geoportaal ‘[Namen in het Landschap](https://passchendaele.be/kenniscentrum-2/namen-in-het-landschap/)’ publiek toegankelijke en doorzoekbaar gemaakt. Dit online portaal geeft weer waar meer dan 1.400 gesneuvelde Canadezen sneuvelden of vermoedelijk begraven werden. Door persoonlijke en militaire data toe te voegen, wil het museum deze verhalen bewaren en ontsluiten. Iedereen kan hiertoe bijdragen door informatie op het portaal te delen.
+
