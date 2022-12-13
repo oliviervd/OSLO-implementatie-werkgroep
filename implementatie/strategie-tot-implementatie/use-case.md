@@ -7,6 +7,10 @@ description: >-
 
 # Use Case
 
+## Use-case OSLO
+
+##
+
 ## Data
 
 De afleveringen van _Boer en Tuinder_ zijn verspreid over twee collecties, het VRT-archief en het filmarchief van het voormalige ministerie van Landbouw, bewaard bij Cinematek. Geen van beide collecties is waarschijnlijk volledig, maar zij vullen elkaar aan.&#x20;
@@ -40,3 +44,10 @@ Al deze data wordt vastgelegd in de Rural History Filmdatabank, van waaruit ze o
 *
   * de archieven worden gedigitaliseerd en zullen online toegankelijk gemaakt worden via LIAS
   * registrator zoekt in de ScopeArchiv inventaris naar relevante documentatie en legt de links in CAGnet tussen dossiers en afleveringen.
+
+## Doelgroep
+
+
+
+## Verwachte hergebruik
+
