@@ -47,7 +47,23 @@ workshop tekening
 
 ### Publication
 
+| Voorbeeld        | CAG                                                                                           | OSLO                                                                                                                                          |
+| ---------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type: production |                                                                                               |                                                                                                                                               |
+| Familienaam      | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft familienaam]-(string)  | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft achternaam]-(TaalString)                  |
+| Voornaam         | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft voornaam]-(string)     | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft voornaam]-(TaalString)                    |
+| Organisatienaam  | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft naam]-(string)         | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[heeft voorkeursnaam]-(TaalString)           |
+| Rol              | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft rol]-(string)          | (ZelfstandigeExperssie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[rol]-(TypeRol)-(heeft waarde)-\[TaalString] |
+| productieland    | {Film)-\[heeft als productieplaats]-(productieplaats)-\[heeft waarde]-(string)                |                                                                                                                                               |
+| productiejaar    | {Film)-\[wordt gemaakt door]-(Event)\[heeft tijdspanne]-(tijdspanne)-\[heeft waarde]-(string) |                                                                                                                                               |
+
 ### Description
+
+| CAG                                                                                   | OSLO                                                                         |   |
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | - |
+| {Film)-\[wordt beschreven door]-(tekst)\[heeft waarde]-(string)                       | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |   |
+| {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |   |
+| {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string) |                                                                              |   |
 
 ### Rights
 
