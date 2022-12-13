@@ -48,7 +48,32 @@ De databank ontstond in 2006 en is sinds 2016 digitaal. Deze relationele databan
 
 Een subset van deze dataset wordt via geoportaal ‘[Namen in het Landschap](https://passchendaele.be/kenniscentrum-2/namen-in-het-landschap/)’ publiek toegankelijke en doorzoekbaar gemaakt. Dit online portaal geeft weer waar meer dan 1.400 gesneuvelde Canadezen sneuvelden of vermoedelijk begraven werden. Door persoonlijke en militaire data toe te voegen, wil het museum deze verhalen bewaren en ontsluiten. Iedereen kan hiertoe bijdragen door informatie op het portaal te delen.
 
-## Doelgroep
+## Verwachte (her)gebruik
+
+**Gebruik**
+
+Toeristen gebruiken de applicatie.
+
+**Hergebruik**
+
+Eens vernetwerking van deze verschillende datasets voor de specifieke use-case van de routeplanner gebeurd is, kunnen andere afnemers met hun specifieke use-case aan de slag.
+
+**Organisaties en onderzoekers** kunnen gegevens uit de kennisbank hergebruiken voor:
+
+* onderzoek:
+  * door de mogelijkheid om complexe vragen te stellen en de voordelen van grote datasets.
+* collectiemobiliteit:
+  * door de toegenomen zichtbaarheid van minder bekende of internationale collecties
+* publiekswerking:
+  * door te toegenomen vindbaarheid van informatie
+* het opzetten van organisatie-overschrijdende toepassingen:
+* bv. gezamenlijke fototheken, cartotheken, cartografische toepassingen, etc.
+
+Grote, middelgrote en kleine **organisaties versterken elkaars werking en interne processen** door het publiceren en verrijken van WOI-gegevens.
+
+* De verwachting is dat grote en middelgrote organisaties de grootste producenten van gegevens zullen zijn en middelgrote en kleine organisaties de grootste hergebruikers zullen zijn.
+* Het voordeel voor de producenten van gegevens is dat hergebruikers vaak organisaties zijn met een beperkte focus. Hierdoor kunnen zij specifieke of niche gegevens bijdragen en gegevens producenten aanvullen of corrigeren.
+* Het verzamelen en transformeren van gegevens kost door de mogelijkheid tot hergebruik en de toegenomen zichtbaarheid minder tijd en middelen.
 
 **Doelgroep OSLO voor organisatie-overschrijdende kennisbank**
 
@@ -66,23 +91,3 @@ Organisaties en onderzoekers buiten het WOI-erfgoedveld:
 * Zij kunnen gegevens hergebruiken en koppelen (bv. Red Star Museum en hun databank rond emigratie naar Canada.)
 
 **Doelgroep bezoekersapplicatie OSLO en geografische data:**
-
-## Verwachte hergebruik
-
-**Organisaties en onderzoekers** kunnen gegevens uit de kennisbank hergebruiken voor:
-
-* onderzoek:
-  * door de mogelijkheid om complexe vragen te stellen en de voordelen van grote datasets.
-* collectiemobiliteit:
-  * door de toegenomen zichtbaarheid van minder bekende of internationale collecties
-* publiekswerking:
-  * door te toegenomen vindbaarheid van informatie
-* het opzetten van organisatie-overschrijdende toepassingen:
-* bv. gezamenlijke fototheken, cartotheken, cartografische toepassingen, etc.
-
-\
-Grote, middelgrote en kleine **organisaties versterken elkaars werking en interne processen** door het publiceren en verrijken van WOI-gegevens.
-
-* De verwachting is dat grote en middelgrote organisaties de grootste producenten van gegevens zullen zijn en middelgrote en kleine organisaties de grootste hergebruikers zullen zijn.
-* Het voordeel voor de producenten van gegevens is dat hergebruikers vaak organisaties zijn met een beperkte focus. Hierdoor kunnen zij specifieke of niche gegevens bijdragen en gegevens producenten aanvullen of corrigeren.
-* Het verzamelen en transformeren van gegevens kost door de mogelijkheid tot hergebruik en de toegenomen zichtbaarheid minder tijd en middelen.
