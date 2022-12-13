@@ -1,17 +1,21 @@
 ---
 description: >-
-  Navigatieapplicatie die persoonsdata van gesneuvelde soldaten uit WOI en
-  geografische data combineert en voorbezoekers van het slageld vna Passendale
-  een gepersonaliseerde wandel/fietstocht genereert.
+  Bezoekers van het Memoriaal gebruiken een routeplanner om een
+  gepersonaliseerde wandel- of fietstocht uit te stippelen om die plekken in
+  Passendale te bezoeken waarmee zij een persoonlijke band hebben
 ---
 
 # Use Case
 
-**Use-case OSLO**
+De applicatie combineert persoonsdata van gesneuvelde soldaten uit WOI en geografische data om unieke gepersonaliseerde routes te genereren.
 
-**Use-case OSLO voor organisatie-overschrijdende kennisbank**
+Memoriaal Passchendaele 1917 zit in een regionaal netwerk van erfgoedinstellingen die vergelijkbare collecties en werking hebben: Flanders Fields Museum, Talbot House, Lijssenthoek, IJzertoren, CO7 en WHI(Willem Segers van de Belgian War Dead databank).&#x20;
 
-Het Passchendaele Museum is geïnteresseerd om haar gegevens als LOD te publiceren vanuit een algemene visie op de mogelijkheden van LOD voor het brede WOI-erfgoedveld. Deze mogelijkheden zijn gebaseerd op vijf principes:
+Het Passchendaele Museum is geïnteresseerd om haar gegevens als LOD te publiceren vanuit een algemene visie op de mogelijkheden van LOD voor het brede WOI-erfgoedveld.&#x20;
+
+De meest relevante usecase van LOD voor het WOI-erfgoedveld is het creëren van een **organisatie-overschrijdende kennisbank van actoren, plaatsen, evenementen en objecten** en hun onderling verband. Deze kennisbank verbindt de interne databanken van organisaties met elkaar.
+
+Deze mogelijkheden zijn gebaseerd op vijf principes:
 
 1. Het (internationale) WOI-erfgoedveld bestaat uit verschillende (erfgoed)organisaties en (professionele of amateur) onderzoekers die gelijkaardige collecties beheren of onderzoeksresultaten produceren die voor het volledige erfgoedveld relevant zijn.
 2. Deze organisaties en onderzoekers stellen gelijkaardige vragen en gebruiken hetzelfde bronnen bronmateriaal.
@@ -19,13 +23,13 @@ Het Passchendaele Museum is geïnteresseerd om haar gegevens als LOD te publicer
 4. De kennisdeling van onderzoeksresultaten en gegevens tussen organisaties is beperkt en externe collecties zijn moeilijk vindbaar. Onderzoeken en de transformatie van bronnenmateriaal naar gegevens wordt vaak herhaald.
 5. WOI-onderzoek vertrekt vaak vanuit complexe vragen dat actoren, plaatsen, evenementen en objecten met elkaar in verband brengen (bv. de historische waarde van objecten hangt af van de historische context).
 
-De meest relevante usecase van LOD voor het WOI-erfgoedveld is het creëren van een **organisatie-overschrijdende kennisbank van actoren, plaatsen, evenementen en objecten** en hun onderling verband. Deze kennisbank verbindt de interne databanken van organisaties met elkaar. Het doel hiervan is drievoudig:
+Het doel hiervan is drievoudig:
 
 1. Het creëren van een gezamenlijk corpus van WOI gegevens en hergebruik ervan mogelijk maken.
 2. Het bundelen van de krachten van verschillende organisaties.
 3. Het faciliteren van complexe vragen in functie van onderzoek, collectiemobiliteit en publiekswerking.
 
-Memoriaal Passchendaele 1917 zit in een regionaal netwerk van erfgoedinstellingen die vergelijkbare collecties en werking hebben: Flanders Fields Museum, Talbot House, Lijssenthoek, IJzertoren, CO7 en WHI(Willem Segers van de Belgian War Dead databank). Memoriaal Passchendaele 1917 is naar aanleiding van dit traject met een rondvraag begonnen i.v.m. technische infrastructuur, (technische) partners, noden/wensen en mogelijke koppelingen i.v.m. hergebruik.
+Memoriaal Passchendaele 1917 is naar aanleiding van dit traject met een rondvraag begonnen i.v.m. technische infrastructuur, (technische) partners, noden/wensen en mogelijke koppelingen i.v.m. hergebruik.
 
 **Use-case bezoekersapplicatie OSLO en geografische data:**
 
