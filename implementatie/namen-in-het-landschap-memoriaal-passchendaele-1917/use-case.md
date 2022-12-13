@@ -31,17 +31,7 @@ Memoriaal Passchendaele 1917 is naar aanleiding van dit traject met een rondvraa
 
 ## Data
 
-De databank [Passchendaele Archives Database](https://archives.passchendaele.be/nl/) verzamelt historische persoonsgegevens van militairen die sneuvelden in WO1. Het onderzoek naar deze militairen start met een aanvraag van familieleden. Veel militairen zijn tot op vandaag vermist (zie Menin Gate, Tyne Cot Memorial). Familieleden kregen vaak het antwoord dat hun partner, zoon of broer sneuvelde “in France or Belgium”, zonder verdere uitleg. Hierdoor zijn nabestaanden meer dan 100 jaar later nog steeds op zoek naar antwoorden. Historisch onderzoek kan deze vragen beantwoorden.
-
-Met het onderzoek wil het museum drie vragen beantwoorden:
-
-1. Wie was die persoon?
-2. Waar kwam hij om het leven?
-3. Wat waren de omstandigheden van zijn overlijden?
-
-De gegevens in de databank zijn verzameld uit publiek toegankelijke bronnen. Het gaat enerzijds om gegevens uit nationale slachtofferlijsten (The Commonwealth War Graves Commission, Volksbund Deutsche Kriegsgräberfürsorge, etc.) nationale en internationale archieven (bv. The National Archives, National Library of Canada, etc.), literatuur (bv. regimentsgeschiedenissen), gegevens uit historische objecten en objecten/documentatie (digitaal) ter beschikking gesteld door nabestaanden.&#x20;
-
-Belangrijk aspect hierbij is dat het museum geen ‘eigenaar/producent’ is van de oorspronkelijk bronnen en gegevens. Onze bijdrage is transformatief: we verzamelen, verwerken en bundelen gegevens uit verschillende bronnen tot een nieuw product.
+De databank [Passchendaele Archives Database](https://archives.passchendaele.be/nl/) verzamelt historische persoonsgegevens van militairen die sneuvelden in WO1. De gegevens in de databank zijn verzameld uit publiek toegankelijke bronnen. Het gaat enerzijds om gegevens uit nationale slachtofferlijsten (The Commonwealth War Graves Commission, Volksbund Deutsche Kriegsgräberfürsorge, etc.) nationale en internationale archieven (bv. The National Archives, National Library of Canada, etc.), literatuur (bv. regimentsgeschiedenissen), gegevens uit historische objecten en objecten/documentatie (digitaal) ter beschikking gesteld door nabestaanden.
 
 De databank bevat:
 
