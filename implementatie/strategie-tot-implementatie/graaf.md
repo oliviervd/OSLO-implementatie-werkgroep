@@ -1,3 +1,7 @@
+---
+description: Modellering van een filmopname uit de Rural Film database.
+---
+
 # Graaf
 
 workshop tekening
@@ -8,68 +12,38 @@ workshop tekening
 
 ### Identification
 
-#### Film Number
-
-vb. F000001 (Object identificationcode)
-
-* ebucore: /ebucore:identifier/dc:identifier
-* CAG pattern:&#x20;
-  * (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft waarde]-(string)
-  * {Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string)
-* OSLO pattern:
-  * (ZelfstandigeExpressie)-\[identificator]-(Identificator)-(identificator)-\[GetypeerdeString]
-  * (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString)
-
-#### Film Number Domain
-
-vb. Centrum Agrarische Geschiedenis
-
-EBUCORE pattern
-
-* /
-
-CAG pattern
-
-* {Film)-\[wordt geidentificeerd door]-(Identificatienummer)-\[toegekend door]-(Actor)-\[heeft naam]-(string)
-
-OSLO pattern
-
-* (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[toegekend door]-(Agent)-\[naam]-(TaalString)
-
-JSON-LD
-
-```json
-{
-  @context:"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
-  "@type":"ZelfstandigeExpressie",
-  "identificator":{
-    "@type":"Identificator",
-    "identificator":{
-      "@type":"GetypeerdeString",
-      "@value":"F000001"},
-      "type":{
-        "@type":"TypeEntiteit",
-       "skos:prefLabel":{
-         "@type":"TaalString",
-         "@value":"Object identificatiecode",
-         "@language":"nl"}
-      },
-    "toegekend door":{
-      "@type":"Agent",
-      "naam":{
-        "@type":"TaalString",
-        "@value":"Centrum Agrarische Geschiedenis",
-        "@language":"nl"}
-    }  
-  }
- }
-```
+| Voorbeeld                                     | CAG                                                                                                         | OSLO                                                                                                                    |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| _Type_: Objectnummer                          | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string)   | <p>(ZelfstandigeExpressie)-[identificator]-(Identificator)-[type]-(Type Entiteit)-[skos:prefLabel]-(TaalString)<br></p> |
+| _Waarde_ : F000001                            | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft waarde]-(string)                         | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[identificator]-(GetypeerdeString)                            |
+| _Bron_ : Centrum voor Agrarische Geschiedenis | (Film)-\[wordt geidentificeerd door]-(Identificatienummer)-\[toegekend door]-(Actor)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[toegekend door]-(Agent)-\[naam]-(TaalString)                 |
 
 ### Title
 
+| Voorbeeld                            | CAG                                                                             | OSLO                                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Waarde: "Frischer Wind In Streudorf" | {Film)-\[heeft als titel]-(titel)-\[heeft waarde]-(string)                      | (ZelfstandigeExpressie)-\[titel]-(TaalObject)-\[inhoud]-(String)                                     |
+| Type: "main title"                   | {Film)-\[heeft als titel]-(titel)\[heeft type]-(Concept)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[titel]-(TaalObject)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString) |
+| Taal:"de"                            | {Film)-\[heeft als titel]-(titel)-\[heeft taal]-(string)                        | (ZelfstandigeExpressie)-\[titel]-(TaalObject)-(taal)-\[Taalcode]                                     |
+|                                      |                                                                                 |                                                                                                      |
+
 ### Commission
 
+| Voorbeeld                   | CAG                                                                                         | OSLO                                                                                                                                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type: order                 | {Film)-\[is besteld door]-(Event)-\[heeftType]-(Concept)-\[heeft naam]-(string)             | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString)                          |
+| Familienaam: Borel          | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft familienaam]-(string) | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString)         |
+| Voornaam: Victor            | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft voornaam]-(string)    | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)           |
+| organisatienaam: Boerenbond | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft naam]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[agent]--(Organisatie)-\[heeft voorkeursnaam]-(TaalString) |
+| Rol: orderer                | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft type]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString)      |
+
 ### Creation
+
+| Voorbeeld             | CAG                                                                                                                                                   | OSLO                                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Achternaam: Nackaerts | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft familienaam]-(string)                                                           | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString) |
+| Voornaam: Hein        | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft voornaam]-(string)                                                              | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)   |
+| Rol: Director         | {Film)-\[is geregiseerd door]-(Event)-\[is uitgevoerd door]-(Agent)-\[heeft rol]-(string)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(String) | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[rol]-(Type Rol)-\[skos:prefLabel]-(TaalString)    |
 
 ### Publication
 
