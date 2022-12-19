@@ -41,7 +41,38 @@ De verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen
 
 ### Gebruik
 
+* beter collectiebeheer, beter vindbare collecties binnen de instellingen
+* beter vindbaarheid op online portalen
+* toeleiding van de ene organisatie naar de andere
+
 ### Hergebruik
+
+* Onderzoekers (digital humanities, archeologen,  landbouwhistorici en filmhistorici):
+  * verbanden leggen tussen personen, onderwerpen, plaatsen
+  * nieuwe perspectieven op de dataset creëren > nieuwe classificaties toekennen
+  * documenteren van (veranderende) percepties door verschillende doelgroepen
+  * evolutie van landschap, landschapsparken, landbouwpraktijken,...
+  * studie naar/binnen filmgeschiedenis
 
 ### Doelgroep
 
+* erfgoedpartners (verrijking eigen beschrijvingen):&#x20;
+  * VRT: kan op dit moment nog geen OSLO data opnemen. Op termijn wordt OSLO relevant voor VRT. Opent voor VRT een perspectief op nut van linked data.
+  * Cinematek: kan op dit moment nog geen OSLO data opnemen. Op termijn goede integratie met hun FRBR gebaseerd datamodel.&#x20;
+  * KADOC: via CAGnet worden onderzoekers naar materiaal in LIAS en ODIS geleid.&#x20;
+  * meemoo: via CAGnet wordt verrijkte metadata aangeleverd die content die meemoo bewaard beter vindbaar en uitwisselbaar maakt.
+* Vlaams virtueel museum
+*   onderzoekers:
+
+    * OSLO data is bruikbaar voor digital humanities onderzoek:
+    * TV als historische bron gebruiken
+    * landbouwhistorici
+    * filmhistorici
+
+
+* doorzoekbaar op:
+  * agents in TV
+  * onderwerpen
+  * segmenten
+  * via tijdsnotatie (comma separated values mogelijk)
+  * speech to text (SRT?)
