@@ -56,7 +56,7 @@ Toeristen gebruiken de routeplannerapplicatie om een gepersonaliseerde route in 
 
 **Hergebruik**
 
-Eens vernetwerking van deze verschillende datasets voor de specifieke use-case van de routeplanner gebeurd is, kunnen andere afnemers met hun specifieke use-case aan de slag.
+Eens de vernetwerking van deze verschillende datasets voor de specifieke use-case van de routeplanner gebeurd is, kunnen andere afnemers met hun specifieke use-case aan de slag.
 
 **Organisaties en onderzoekers** kunnen gegevens uit de kennisbank hergebruiken voor:
 
