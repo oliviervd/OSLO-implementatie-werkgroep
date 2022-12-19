@@ -1,19 +1,12 @@
 ---
 description: >-
-  Onderzoekers, geïnteresseerden of theatermakers kunnen een overzichtelijke en
-  verrijkte dataset raadplegen over Poppentheater Taptoe via een portaal obv.
-  een graaf.
+  portaal obv. graaf: google style zoekinterface in oeuvre van Poppentheater
+  Taptoe.
 ---
 
 # Use Case
 
-De applicatie combineert data over de poppencollectie Taptoe bij Huis van Alijn met contextuele data over de immateriële erfgoedpraktijken die ermee geassocieerd zijn.
-
-Daarnaast contextualiseren ze de producties met data over podiumkunsten en literair werk waarom de producties eventueel gebaseerd zijn.
-
-Naast Huis van Alijn zit de collectie en het archief van Poppentheater Taptoe verspreid over een aantal andere instellingen. Huis van Alijn onderzoekt of LOD een technische oplossing is om een **organisatie-overschrijdende netwerk van databanken** over poppentheater te maken.&#x20;
-
-Het Huis van Alijn is niet de enige instelling die materiaal bewaart van Theater Taptoe. Het organisatiearchief en de poppen uit sociaal-geëngageerde voorstellingen werden door Luk De Bruyker geschonken aan het AMSAB-ISG. Ook het TOPIC - Museo y Centro Internacional de la Marioneta de Tolosa in Spanje bewaart een deel van de collectie. Informatie over de voorstellingen van Theater Taptoe is terug te vinden op de Kunstendatabank. Deze data bevatten een overzicht van makers, organisaties en podiumproducties. Wat betreft speltechnieken of internationale terminologie is de WEPA, World Encyclopaedia of Puppetry Arts, een belangrijke autoriteit.&#x20;
+## Use-case OSLO
 
 ## Data
 
@@ -26,22 +19,20 @@ De specifieke dataset waar het Huis van Alijn en Meemoo in de werkgroep implemen
 * 357 foto’s: digitale scans en digital born fotomateriaal
 * 68 audiovisuele dragers (analoog en digitaal): opnames van voorstellingen, interviews en demonstraties speltechnieken.
 
-## Verwachte hergebruik
+Het Huis van Alijn is niet de enige instelling die materiaal bewaart van Theater Taptoe. Het organisatie archief en poppen uit sociaal-geëngageerde voorstellingen werd door Luk De Bruyker geschonken aan het AMSAB-ISG. Ook het TOPIC - Museo y Centro Internacional de la Marioneta de Tolosa in Spanje bewaart een deel van de collectie. Informatie over voorstellingen van Theater Taptoe is terug te vinden op de Kunstendatabank, een overzicht van makers, organisaties en podiumproducties. Wat betreft speltechnieken of internationale terminologie is de WEPA, World Encyclopaedia of Puppetry Arts, een belangrijke autoriteit.&#x20;
+
+
+
+## Doelgroep
 
 Met de implementatie van OSLO zou het Huis van Alijn zich willen richten op twee type gebruikers:
 
 * Onderzoekers, geïnteresseerden of jonge theatermakers die een overzichtelijke en verrijkte dataset willen raadplegen en doorzoeken.
 * Developers die aan de slag willen gaan met de ruwe data.
 
-### Gebruik
-
-Onderzoekers, geïnteresseerden of theatermakers kunnen een overzichtelijke en verrijkte dataset raadplegen over Poppentheater Taptoe via een portaal obv. een graaf.
+## Verwachte hergebruik
 
 * Het oeuvre van Theater Taptoe, dat verspreid zit over verschillende instellingen, op een zichtbare plek samen te brengen voor raadpleging (of potentiële bruiklenen).
 * Jonge makers in contact te brengen met het erfgoed en het verleden van poppen-en figurentheater en op die manier een erfgoedpraktijk een stimulans te geven.
 * Het complexe web aan linken, netwerken, informele uitwisseling die in de collectie van Theater Taptoe te vinden is (linken tussen het creatieve proces en de uitvoering, contacten tussen personen en organisatie, inspiratie en immaterieel erfgoed) te ontsluiten en te visualiseren.
-
-### Hergebruik
-
-Om ontwikkelaars voor om het even welke use-case een applicatie te kunnen laten ontwikkelen, bieden we ook een ruwe dataset aan.
-
+* Developers te laten experimenteren met een ruwe dataset.&#x20;
