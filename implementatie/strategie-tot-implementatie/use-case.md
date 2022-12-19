@@ -1,13 +1,11 @@
 ---
 description: >-
-  Alle opnames en archiefdocumenten met betrekking tot het TV-programma Boer en
+  Opnames en archiefdocumenten met betrekking tot het TV-programma Boer en
   Tuinder (1958-1988) op een geïntegreerde manier doorzoekbaar maken voor
-  collectiebeheerders, erfgoedpartners en digital hu
+  collectiebeheerders, erfgoedpartners en onderzoekers
 ---
 
 # Use Case
-
-## Use-case OSLO
 
 ##
 
@@ -21,33 +19,29 @@ De collectie van **Cinematek** is complementair met de collectie bewaard door de
 
 Voor het inhaalbeweging worden **470 afleveringen** gedetailleerd beschreven, zowel de gehele aflevering als de afzonderlijke segmenten. Segmenten worden beschreven in op een gestructureerde manier in een vrije tekstveld (d.w.z. via tijdscodes en labels). Daarnaast wordt ook een automatisch gegenereerd transcriptie van de volledige aflevering gemaakt met behulp van speech-to-text technologie. Deze beschrijving legt ook koppelingen met digitale kopieen van de afleveringen die toegankelijk worden gemaakt door VRT, meemoo en cinematek.
 
-Al deze data wordt vastgelegd in de Rural History Filmdatabank, van waaruit ze online toegankelijk wordt gemaakt als EBUCORE XML data.
+Al deze data wordt vastgelegd in de Rural History Filmdatabank, van waaruit ze online toegankelijk wordt gemaakt als EBUCORE XML data, een standaard voor het beschrijven van radio en TV media assets.
 
-* &#x20;
+De verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen:
 
-
-
-* verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen:
-*
-  * VIAF
-  * ULAN
-  * RKD artist
-  * Wikipedia (engelstalig)
-  * imdb (permalink naar vervaardigers)
-  * ODIS (handmatig)
+* VIAF
+* ULAN
+* RKD artist
+* Wikipedia (engelstalig)
+* imdb (permalink naar vervaardigers)
+* ODIS (handmatig)
 * links naar foto’s van opnames in het archief van de VRT:
-*
-  * aanvankelijk wordt door de registrator een code voor de foto opgenomen in de data
-  * als de rechten op de foto’s geklaard zijn, kan CAG een download krijgen die dan opgeladen wordt in de CAG beeldbank.&#x20;
+  * Aanvankelijk wordt door de registrator een code voor de foto opgenomen in de data.
+  * Als de rechten op de foto’s geklaard zijn, kan CAG een download krijgen die dan opgeladen wordt in de CAG beeldbank.&#x20;
   * Tot slot kan dan gekoppeld worden tussen de VRT code en de foto in de beeldbank.&#x20;
 * koppeling met archiefmateriaal uit het archief van de regisseur bij KADOC
-*
-  * de archieven worden gedigitaliseerd en zullen online toegankelijk gemaakt worden via LIAS
-  * registrator zoekt in de ScopeArchiv inventaris naar relevante documentatie en legt de links in CAGnet tussen dossiers en afleveringen.
-
-## Doelgroep
-
-
+* de archieven worden gedigitaliseerd en zullen online toegankelijk gemaakt worden via LIAS
+* de registrator zoekt in de ScopeArchiv inventaris naar relevante documentatie en legt de links in CAGnet tussen dossiers en afleveringen.
 
 ## Verwachte hergebruik
+
+### Gebruik
+
+### Hergebruik
+
+### Doelgroep
 
