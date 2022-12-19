@@ -12,6 +12,14 @@ workshop tekening
 
 ### Identification
 
+
+
+| Titel          | Voorbeeld            | Veld                             | Pattern                                                                                                   |
+| -------------- | -------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identification | _Type_: Objectnummer | ebucore:identifier/dc:identifier | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string) |
+|                |                      |                                  |                                                                                                           |
+|                |                      |                                  |                                                                                                           |
+
 | Voorbeeld                                     | CAG                                                                                                         | OSLO                                                                                                                    |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | _Type_: Objectnummer                          | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string)   | <p>(ZelfstandigeExpressie)-[identificator]-(Identificator)-[type]-(Type Entiteit)-[skos:prefLabel]-(TaalString)<br></p> |

@@ -4,12 +4,6 @@
 
 ### Identification
 
-| Veld              | Oslo pattern                                                                                                    |
-| ----------------- | --------------------------------------------------------------------------------------------------------------- |
-| Filmnumber        | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-(identificator)-\[GetypeerdeString]                    |
-|                   | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString) |
-| Filmnumber Domain | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[toegekend door]-(Agent)-\[naam]-(TaalString)         |
-
 ```
 {
   @context:"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
