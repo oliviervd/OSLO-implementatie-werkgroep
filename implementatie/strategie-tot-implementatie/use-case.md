@@ -7,8 +7,6 @@ description: >-
 
 # Use Case
 
-##
-
 ## Data
 
 De afleveringen van _Boer en Tuinder_ zijn verspreid over twee collecties, het VRT-archief en het filmarchief van het voormalige ministerie van Landbouw, bewaard bij Cinematek. Geen van beide collecties is waarschijnlijk volledig, maar zij vullen elkaar aan.&#x20;
@@ -17,7 +15,7 @@ Bij **VRT** zijn er **238 afleveringen** die nog niet over een basisannotatie be
 
 De collectie van **Cinematek** is complementair met de collectie bewaard door de VRT. In totaal beschikt Cinematek over **129 afleveringen** uit de periode 1977-1988, zonder beschrijving, allen met Betacam-SP n U-Matic en VHS als drager.
 
-Voor het inhaalbeweging worden **470 afleveringen** gedetailleerd beschreven, zowel de gehele aflevering als de afzonderlijke segmenten. Segmenten worden beschreven in op een gestructureerde manier in een vrije tekstveld (d.w.z. via tijdscodes en labels). Daarnaast wordt ook een automatisch gegenereerd transcriptie van de volledige aflevering gemaakt met behulp van speech-to-text technologie. Deze beschrijving legt ook koppelingen met digitale kopieen van de afleveringen die toegankelijk worden gemaakt door VRT, meemoo en cinematek.
+Voor het inhaalbeweging worden **470 afleveringen** gedetailleerd beschreven, zowel de gehele aflevering als de afzonderlijke segmenten. Segmenten worden beschreven in op een gestructureerde manier in een vrije tekstveld (d.w.z. via tijdscodes en labels). Daarnaast wordt ook een automatisch gegenereerd transcriptie van de volledige aflevering gemaakt met behulp van speech-to-text technologie. Deze beschrijving legt ook koppelingen met digitale kopieen van de afleveringen die toegankelijk worden gemaakt door VRT, meemoo en Cinematek.
 
 Al deze data wordt vastgelegd in de Rural History Filmdatabank, van waaruit ze online toegankelijk wordt gemaakt als EBUCORE XML data, een standaard voor het beschrijven van radio en TV media assets.
 
@@ -31,8 +29,8 @@ De verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen
 * ODIS (handmatig)
 * links naar foto’s van opnames in het archief van de VRT:
   * Aanvankelijk wordt door de registrator een code voor de foto opgenomen in de data.
-  * Als de rechten op de foto’s geklaard zijn, kan CAG een download krijgen die dan opgeladen wordt in de CAG beeldbank.&#x20;
-  * Tot slot kan dan gekoppeld worden tussen de VRT code en de foto in de beeldbank.&#x20;
+  * Als de rechten op de foto’s geklaard zijn, kan CAG het beeld downloaden die dan opgeladen wordt in de CAG beeldbank.&#x20;
+  * Tot slot kan er dan gekoppeld worden tussen de VRT-code en de foto in de beeldbank.&#x20;
 * koppeling met archiefmateriaal uit het archief van de regisseur bij KADOC
 * de archieven worden gedigitaliseerd en zullen online toegankelijk gemaakt worden via LIAS
 * de registrator zoekt in de ScopeArchiv inventaris naar relevante documentatie en legt de links in CAGnet tussen dossiers en afleveringen.
@@ -41,11 +39,15 @@ De verrijking waarnaar gestreefd wordt, is in hoofdzaak personen en instellingen
 
 ### Gebruik
 
+Linked data vernetwerkt data gerelateerd aan de Boer en Tuinder collectie. Dit geeft voordelen voor zowel de externe gebruiker als voor de collectiebeheerders zelf wiens interne processen worden vergemakkelijkt:
+
+* betere vindbaarheid op online portalen
 * beter collectiebeheer, beter vindbare collecties binnen de instellingen
-* beter vindbaarheid op online portalen
 * toeleiding van de ene organisatie naar de andere
 
 ### Hergebruik
+
+
 
 * Onderzoekers (digital humanities, archeologen,  landbouwhistorici en filmhistorici):
   * verbanden leggen tussen personen, onderwerpen, plaatsen
