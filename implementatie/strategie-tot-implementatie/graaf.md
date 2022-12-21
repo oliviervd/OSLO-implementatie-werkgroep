@@ -14,35 +14,6 @@ workshop tekening
 
 
 
-| Veld           | Voorbeeld            | CAG pattern                      | OSLO pattern                                                                                              |
-| -------------- | -------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Identification | _Type_: Objectnummer | ebucore:identifier/dc:identifier | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string) |
-|                |                      |                                  |                                                                                                           |
-|                |                      |                                  |                                                                                                           |
-
-**JSON-LD sample**
-
-```
-{
-  @context:"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
-  "@type":"ZelfstandigeExpressie",
-  "identificator":{
-    "@type":"Identificator",
-    "identificator":{
-      "@type":"GetypeerdeString",
-      "@value":"F000001"},
-      "type":{
-        "@type":"TypeEntiteit",
-       "skos:prefLabel":{
-         "@type":"TaalString",
-         "@value":"Object identificatiecode",
-         "@language":"nl"}
-      },
-    }  
-  }
- }
-```
-
 | Veld | Voorbeeld                                     | CAG pattern                                                                                                 | OSLO pattern                                                                                                    |
 | ---- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | __   | _Type_: Objectnummer                          | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string)   | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString) |
