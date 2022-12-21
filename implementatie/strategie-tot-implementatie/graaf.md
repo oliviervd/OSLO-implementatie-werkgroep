@@ -14,7 +14,7 @@ workshop tekening
 
 
 
-| Titel          | Voorbeeld            | Veld                             | Pattern                                                                                                   |
+| Veld           | Voorbeeld            | Veld                             | Pattern                                                                                                   |
 | -------------- | -------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | Identification | _Type_: Objectnummer | ebucore:identifier/dc:identifier | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string) |
 |                |                      |                                  |                                                                                                           |
