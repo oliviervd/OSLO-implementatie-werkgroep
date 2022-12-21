@@ -4,7 +4,7 @@ description: Modellering van een filmopname uit de Rural Film database.
 
 # Graaf
 
-**Workshop tekening**
+Een heel schone film**Workshop tekening**
 
 <figure><img src="../../.gitbook/assets/caggraph.jpeg" alt=""><figcaption><p>workshop whiteboard</p></figcaption></figure>
 
@@ -101,74 +101,80 @@ description: Modellering van een filmopname uit de Rural Film database.
 | organisatienaam | Boerenbond | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft naam]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[agent]--(Organisatie)-\[heeft voorkeursnaam]-(TaalString) |
 | Rol             | orderer    | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft type]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString)      |
 
-****
-
-### Creation
-
-| Voorbeeld             | CAG                                                                                                                                                   | OSLO                                                                                                                 |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Achternaam: Nackaerts | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft familienaam]-(string)                                                           | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString) |
-| Voornaam: Hein        | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft voornaam]-(string)                                                              | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)   |
-| Rol: Director         | {Film)-\[is geregiseerd door]-(Event)-\[is uitgevoerd door]-(Agent)-\[heeft rol]-(string)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(String) | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[rol]-(Type Rol)-\[skos:prefLabel]-(TaalString)    |
-
 **JSON-LD sample**
 
 ```
-{
-  "@context":"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
-  "@type":"ZelfstandigeExpressie",
-  "creatie":{
-    "@type":"Creatie",
-    "activiteit":{
-      "@type":"Rol",
-      "agent":{
-      "@type":"Persoon",
-        "heeft achternaam":{
-        "@type":"Taalstring",
-        "@value":"Borel",
-        "@language":"nl"},
-        "heeft voornaam":{
-        "@type":"Taalstring",
-        "@value":"Victor",
-          "@language":"nl"}},
-      "rol":{
-      "@type":"Type Rol",
-      "skos:prefLabel":{
-      "@type":"Taalstring",
-      "@value":"director",
-      "@language":"en"}
+"{
+  ""@context"":""https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld"",
+  ""@type"":""ZelfstandigeExpressie"",
+  ""creatie"":{
+    ""@type"":""Creatie"",
+    ""activiteit"":{
+      ""@type"":""Rol"",
+      ""agent"":{
+      ""@type"":""Persoon"",
+        ""heeft achternaam"":{
+        ""@type"":""Taalstring"",
+        ""@value"":""Borel"",
+        ""@language"":""nl""},
+        ""heeft voornaam"":{
+        ""@type"":""Taalstring"",
+        ""@value"":""Victor"",
+          ""@language"":""nl""}},
+      ""rol"":{
+      ""@type"":""Type Rol"",
+      ""skos:prefLabel"":{
+      ""@type"":""Taalstring"",
+      ""@value"":""director"",
+      ""@language"":""en""}
     }
         }
     }
       
-  }
+  }"
 ```
+
+****
+
+### Creation
+
+| Veld       | Voorbeeld | CAG pattern                                                                                                                                           | OSLO pattern                                                                                                         |
+| ---------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Achternaam | Nackaerts | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft familienaam]-(string)                                                           | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString) |
+| Voornaam   | Hein      | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft voornaam]-(string)                                                              | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)   |
+| Rol        | Director  | {Film)-\[is geregiseerd door]-(Event)-\[is uitgevoerd door]-(Agent)-\[heeft rol]-(string)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(String) | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[rol]-(Type Rol)-\[skos:prefLabel]-(TaalString)    |
 
 ### Publication
 
-| Voorbeeld        | CAG                                                                                           | OSLO                                                                                                                                          |
-| ---------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Type: production |                                                                                               |                                                                                                                                               |
-| Familienaam      | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft familienaam]-(string)  | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft achternaam]-(TaalString)                  |
-| Voornaam         | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft voornaam]-(string)     | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft voornaam]-(TaalString)                    |
-| Organisatienaam  | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft naam]-(string)         | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[heeft voorkeursnaam]-(TaalString)           |
-| Rol              | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft rol]-(string)          | (ZelfstandigeExperssie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[rol]-(TypeRol)-(heeft waarde)-\[TaalString] |
-| productieland    | {Film)-\[heeft als productieplaats]-(productieplaats)-\[heeft waarde]-(string)                |                                                                                                                                               |
-| productiejaar    | {Film)-\[wordt gemaakt door]-(Event)\[heeft tijdspanne]-(tijdspanne)-\[heeft waarde]-(string) |                                                                                                                                               |
+| Veld                         | Voorbeeld                                               | CAG pattern                                                                                   | OSLO pattern                                                                                                                                  |
+| ---------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type: production             |                                                         |                                                                                               |                                                                                                                                               |
+| Producer Persoon familienaam | Vantomme                                                | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft familienaam]-(string)  | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft achternaam]-(TaalString)                  |
+| Producer Persoon voornaam    | Eric                                                    | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft voornaam]-(string)     | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Persoon)-\[heeft voornaam]-(TaalString)                    |
+| Producer Organisatie naam    | Aan- en Verkoopsgenootschap van de Belgische Boerenbond | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft naam]-(string)         | (ZelfstandigeExpressie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[heeft voorkeursnaam]-(TaalString)           |
+| Producer Rol                 | producer                                                | {Film)-\[is geproduceerd door]-(Event)-\[is producent]-(Agent)-\[heeft rol]-(string)          | (ZelfstandigeExperssie)-\[publicatieexpressie]-(Publicatie)-\[is uitgevoerd door]-(Organisatie)-\[rol]-(TypeRol)-(heeft waarde)-\[TaalString] |
+| productieland                | België                                                  | {Film)-\[heeft als productieplaats]-(productieplaats)-\[heeft waarde]-(string)                | (ZelfstandigeExpressie)-\[creatie]-(Locatie)-\[naam]-(TaalString)                                                                             |
+| productiejaar                | 1963                                                    | {Film)-\[wordt gemaakt door]-(Event)\[heeft tijdspanne]-(tijdspanne)-\[heeft waarde]-(string) |                                                                                                                                               |
+| Search Date                  | 1960-1963                                               | {Film)-\[wordt gemaakt door]-(Event)\[heeft type]-(concept)-\[heeft naam]-(string)            | (ZelfstandigeExpressie)-(expressie)-\[ExpressieCreatie]-\[tijd]-(Periode)                                                                     |
 
 ### Description
 
-| CAG                                                                                   | OSLO                                                                         |   |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | - |
-| {Film)-\[wordt beschreven door]-(tekst)\[heeft waarde]-(string)                       | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |   |
-| {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |   |
-| {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string) |                                                                              |   |
+| Veld                 | Voorbeeld               | CAG pattern                                                                           | OSLO pattern                                                                 |
+| -------------------- | ----------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Description          | Een heel schone film    | {Film)-\[wordt beschreven door]-(tekst)\[heeft waarde]-(string)                       | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |
+| Description Language | NL                      | {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |
+| Abstract             | A very beautyfull movie | {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |
+| Abstract Language    | EN                      | {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |
 
 ### Rights
 
 ## Film Copy
 
 ### Film Copy Number
+
+| Veld        | Voorbeeld | CAG pattern                                                                                           | OSLO pattern                                                                                                                |
+| ----------- | --------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Filmcopy id | 3282      | {Film)-\[heeft als drager]-(Filmkopie)-\[wordt geïdentificeerd door]-(ID-nr)-\[heeft waarde]-(string) | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[identificator]-(Identificator)-\[identificator]-(GetypeerdeString) |
 
 **JSON-LD sample**
 
@@ -201,54 +207,77 @@ description: Modellering van een filmopname uit de Rural Film database.
 }
 ```
 
+### Rights
+
 ### Provenance
+
+| Veld             | Voorbeeld                             | CAG pattern                                                                                                               | OSLO pattern                                                                                                                            |
+| ---------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Inventory Number | G9584bF                               | {Filmkopie)-\[wordt geidentificeerd door]-(Identificatiecode)\[heeft waarde]-(string)                                     |                                                                                                                                         |
+| Institution      | Cinematek                             | {Film)-\[heeft als drager]-(Filmkopie)-\[wordt bewaard door]-(Organisatie)-\[heeft naam]-(string)                         | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[beheerder]-(Agent)-\[naam]-(TaalString)                                        |
+| Repository       | A very beautyfull movie               | {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string)                                     | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString)                                                            |
+| Collection       | Filmcollectie Ministerie van Landbouw | {Film)-\[heeft als drager]-(Filmkopie)-\[is deel van]-(Collectie)-\[heeft naam]-(string)                                  | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[isOnderdeelVan]-(GecureerdeCollectie)-\[titel]-(TaalString)                    |
+| Owner            | FOD Economie                          | {Film)-\[heeft als drager]-(Filmkopie)-\[is deel van]-(Collectie)-\[is eigendom van]-(organisatie)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[isOnderdeelVan]-(GecureerdeCollectie)-\[eigenaar]-(Agent)-\[naam]-(TaalString) |
 
 **JSON-LD sample**
 
 ```
-"{
-  ""@context"":""https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld"",
-  ""@type"":""ZelfstandigeExpressie"",
-  ""drager"":{
-    ""@type"":""Mensgemaakt Object"",
-    ""beheerder"":{
-      ""@type"":""Agent"",
-      ""naam"":{
-        ""@type"":""TaalString"",
-        ""@value"":""Cinematek"",
-        ""@language"":""nl""}
+{
+  "@context":"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
+  "@type":"ZelfstandigeExpressie",
+  "drager":{
+    "@type":"Mensgemaakt Object",
+    "beheerder":{
+      "@type":"Agent",
+      "naam":{
+        "@type":"TaalString",
+        "@value":"Cinematek",
+        "@language":"nl"}
       },
-    ""isOnderdeelVan"":{
-      ""@type"":""GecureerdeCollectie"",
-      ""titel"":{
-        ""@type"":""TaalString"",
-        ""@value"":""Filmcollectie Ministerie van Landbouw"",
-        ""@language"":""nl""},
-      ""curator"":{
-        ""@type"":""Agent"",
-        ""naam"":{
-          ""@type"":""TaalString"",
-          ""@value"":""Cinematek"",
-          ""@language"":""nl""}
+    "isOnderdeelVan":{
+      "@type":"GecureerdeCollectie",
+      "titel":{
+        "@type":"TaalString",
+        "@value":"Filmcollectie Ministerie van Landbouw",
+        "@language":"nl"},
+      "curator":{
+        "@type":"Agent",
+        "naam":{
+          "@type":"TaalString",
+          "@value":"Cinematek",
+          "@language":"nl"}
         },
-      ""eigenaar"":{
-        ""@type"":""Agent"",
-        ""naam"":{
-          ""@type"":""TaalString"",
-          ""@value"": ""FOD Economie"",
-          ""@language"":""nl""}
+      "eigenaar":{
+        "@type":"Agent",
+        "naam":{
+          "@type":"TaalString",
+          "@value": "FOD Economie",
+          "@language":"nl"}
       }
       }
       }
-}"
+}
 ```
 
-###
+### Rights
 
 ### Format
+
+| Veld           | Voorbeeld | CAG pattern                                                             | OSLO pattern |
+| -------------- | --------- | ----------------------------------------------------------------------- | ------------ |
+| Carrier Type   | film      | {Filmkopie)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(string) |              |
+| Carrier Format | 8 mm      | {Filmkopie)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(string) |              |
+
+### Rights
 
 ### Extent
 
 ### Condition
+
+| Veld           | Voorbeeld | CAG pattern                                                                                            | OSLO pattern       |
+| -------------- | --------- | ------------------------------------------------------------------------------------------------------ | ------------------ |
+| Condition      |           | {Filmkopie)-\[heeft conditie]-(Conditie)-\[heeft naam]-(string)                                        | slecht             |
+| Condition Note |           | {Filmkopie)-\[heeft conditie]-(Conditie)-\[heeft beschrijving]-(Beschrijving)=\[heeft waarde]-(string) | er zit een vlek op |
+|                |           |                                                                                                        |                    |
 
 ### Rights
