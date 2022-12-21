@@ -36,12 +36,6 @@ workshop tekening
          "@value":"Object identificatiecode",
          "@language":"nl"}
       },
-    "toegekend door":{
-      "@type":"Agent",
-      "naam":{
-        "@type":"TaalString",
-        "@value":"Centrum Agrarische Geschiedenis",
-        "@language":"nl"}
     }  
   }
  }
@@ -52,6 +46,33 @@ workshop tekening
 | __   | _Type_: Objectnummer                          | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft type]-(Concept)-\[heeft naam]-(string)   | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString) |
 | __   | _Waarde_ : F000001                            | (Film)-\[wordt geïdentificeerd door]-(Identificatienummer)-\[heeft waarde]-(string)                         | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[identificator]-(GetypeerdeString)                    |
 | __   | _Bron_ : Centrum voor Agrarische Geschiedenis | (Film)-\[wordt geidentificeerd door]-(Identificatienummer)-\[toegekend door]-(Actor)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[identificator]-(Identificator)-\[toegekend door]-(Agent)-\[naam]-(TaalString)         |
+
+```
+{
+  @context:"https://data.cagnet.be/doc/osloapplicatieprofiel/context/cinema-rural.jsonld",
+  "@type":"ZelfstandigeExpressie",
+  "identificator":{
+    "@type":"Identificator",
+    "identificator":{
+      "@type":"GetypeerdeString",
+      "@value":"F000001"},
+      "type":{
+        "@type":"TypeEntiteit",
+       "skos:prefLabel":{
+         "@type":"TaalString",
+         "@value":"Object identificatiecode",
+         "@language":"nl"}
+      },
+    "toegekend door":{
+      "@type":"Agent",
+      "naam":{
+        "@type":"TaalString",
+        "@value":"Centrum Agrarische Geschiedenis",
+        "@language":"nl"}
+    }  
+  }
+ }
+```
 
 ### Title
 
