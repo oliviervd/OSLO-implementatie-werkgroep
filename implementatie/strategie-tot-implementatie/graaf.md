@@ -29,9 +29,9 @@ workshop tekening
     "identificator":{
       "@type":"GetypeerdeString",
       "@value":"F000001"},
-      "type":{
-        "@type":"TypeEntiteit",
-       "skos:prefLabel":{
+   "type":{
+     "@type":"TypeEntiteit",
+     "skos:prefLabel":{
          "@type":"TaalString",
          "@value":"Object identificatiecode",
          "@language":"nl"}
