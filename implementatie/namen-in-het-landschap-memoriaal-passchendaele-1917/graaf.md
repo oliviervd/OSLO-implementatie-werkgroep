@@ -328,37 +328,145 @@
 }
 </code></pre>
 
-Achternaam persoon
+### Herdenking
 
-| Veld | Voorbeeld | MMP197 pattern | OSLO pattern |
-| ---- | --------- | -------------- | ------------ |
-|      |           |                |              |
-|      |           |                |              |
-|      |           |                |              |
+| Veld     | Voorbeeld                   | MMP197 pattern                                                                                                              | OSLO pattern                                                                                                                                                                                                                                                                                                                             |
+| -------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| memorial | (type)                      | (Persoon)-\[wordtHerdachtIn]-(Herdenking)-\[heeftVeruiterlijkingIn]-(Object)-\[heeftType]-(Type)                            | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P20 had specific purpose]-(cidoc:E65 Creation)-\[cidoc:P94 has created]-(cidoc:E28 Conceptual Object)-\[cidoc:P108 has produced (was produced by)]-(cidoc:E22 Human-Made Object)-\[cidoc:P2 has type]-(cidoc:E55 Type)                                               |
+| (naam)   | Ypres (Menin Gate) Memorial | (Persoon)-\[wordtHerdachtIn]-(Herdenking)-\[heeftVeruiterlijkingIn]-(Object)-\[heeftNaam]-(Naam)                            | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P20 had specific purpose]-(cidoc:E65 Creation)-\[cidoc:P94 has created]-(cidoc:E28 Conceptual Object)-\[cidoc:P108 has produced (was produced by)]-(cidoc:E22 Human-Made Object)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation)                   |
+| panel    | (type)                      | (Persoon)-\[wordtHerdachtIn]-(Herdenking)-\[heeftVeruiterlijkingIn]-(Object)-\[isOnderdeelVan]-(Object)-\[heeftType]-(Type) | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P20 had specific purpose]-(cidoc:E65 Creation)-\[cidoc:P94 has created]-(cidoc:E28 Conceptual Object)-\[cidoc:P108 has produced (was produced by)]-(cidoc:E22 Human-Made Object)-\[P46 is composed of]-(E22 Human-Made Object)-\[cidoc:P2 has type]-(cidoc:E55 Type) |
 
-Achternaam persoon
+**JSON-LD sample**
 
-| Veld | Voorbeeld | MMP197 pattern | OSLO pattern |
-| ---- | --------- | -------------- | ------------ |
-|      |           |                |              |
-|      |           |                |              |
-|      |           |                |              |
+```
+{
+  "@type": "Persoon",
+  "was onderwerp van": {
+    "@type": "Evenement",
+    "had een specifiek doel": {
+      "@type": "Creatie",
+      "heeft gecreëerd": {
+        "@type": "Conceptueel object",
+        "heeft geproduceerd": {
+          "@type": "Mensgemaakt object",
+          "is onderdeel van": {
+            "@type": "Mensgemaakt object",
+            "heeft type": {
+              "@type": "String",
+              "@value": "Memorial",
+              "@language": "en"
+            }
+            "heeft naam": {
+              "@type": "String",
+              "@value": "Ypres (Menin Gate) Memorial",
+              "@language": "en"
+            }
+          }
+          "heeft naam": {
+            "@type": "Concept",
+            "heeft naam": {
+              "@type": "String",
+              "@value": "16B"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
 
-Achternaam persoon
+### Begraving
 
-| Veld | Voorbeeld | MMP197 pattern | OSLO pattern |
-| ---- | --------- | -------------- | ------------ |
-|      |           |                |              |
-|      |           |                |              |
-|      |           |                |              |
 
-Achternaam persoon
 
-| Veld | Voorbeeld | MMP197 pattern | OSLO pattern |
-| ---- | --------- | -------------- | ------------ |
-|      |           |                |              |
-|      |           |                |              |
-|      |           |                |              |
+| Veld     | Voorbeeld         | MMP197 pattern                                                                                                                             | OSLO pattern                                                                                                                                                                                                                                                                   |
+| -------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| cemetery | (type)            | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Plaats)-\[valtOnder]-(Plaats)-\[heeftType]-(Type)                             | (oslo:Persoon)-\[cidoc:P12 was present at]-(cidoc:E5 Event)-\[cidoc:P7 took place at]-(cidoc:E53 Place)-\[cidoc:P89 falls within]-(cidoc:E53 Place)-\[cidoc:P2 has type]-(cidoc:E55 Type)                                                                                      |
+| (naam)   | Tyne Cot Cemetery | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Plaats)-\[valtOnder]-(Plaats)-\[heeftNaam]-(Naam)                             | (oslo:Persoon)-\[cidoc:P12 was present at]-(cidoc:E5 Event)-\[cidoc:P7 took place at]-(cidoc:E53 Place)-\[cidoc:P89 falls within]-(cidoc:E53 Place)-\[cidoc:P1 is identified by]-(cidoc:E41 Appellation)                                                                       |
+| plot     | (type)            | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Plaats)-\[heeftNaam]-(Naam)-\[bestaatUit]-(Identificator)-\[heeftType]-(Type) | (oslo:Persoon)-\[cidoc:P12 was present at]-(cidoc:E5 Event)-\[cidoc:P7 took place at]-(cidoc:E53 Place)-\[cidoc:P1 is identified by]-(E41 Appellation)-\[P106 is composed of]-(E42 Identifier)-\[cidoc:P1 is identified by]-(cidoc:E41 Appellation)                            |
+| (naam)   | XIII              | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Plaats)-\[heeftNaam]-(Naam)-\[bestaatUit]-(Identificator)-\[heeftType]-(Type) | (oslo:Persoon)-\[cidoc:P12 was present at]-(cidoc:E5 Event)-\[cidoc:P7 took place at]-(cidoc:E53 Place)-\[cidoc:P1 is identified by]-(E41 Appellation)-\[P106 is composed of]-(E42 Identifier)-\[P2 has type]-(E55 Type)                                                       |
+| row      | (type)            | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Plaats)-\[heeftNaam]-(Naam)-\[bestaatUit]-(Identificator)-\[heeftType]-(Type) | (oslo:Persoon)-\[cidoc:P12 was present at]-(cidoc:E5 Event)-\[cidoc:P7 took place at]-(cidoc:E53 Place)-\[cidoc:P1 is identified by]-(E41 Appellation)-\[P106 is composed of]-(E42 Identifier)-\[cidoc:P1 is identified by]-(cidoc:E41 Appellation)                            |
+| (naam)   | G                 | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Ding)-\[IsOnderdeelVan]-(Ding)-\[heeftNaam]-(Naam)-\[heeftTaal]-(Taal)        | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P12 occurred in the presence of]-(cidoc:E22 Human-Made Object)-\[cidoc:P46 is composed of (forms part of)]-(cidoc:E22 Human-Made Object)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation) |
+| grave    | (type)            | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Ding)-\[heeftType]-(Type)-\[heeftNaam]-(Naam)-\[heeftTaal]-(Taal)             | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P12 occurred in the presence of]-(cidoc:E22 Human-Made Object)-\[cidoc:P2 has type (is type of)]-(cidoc:E55 Type)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation)                        |
+| (naam)   | 6                 | (Persoon)-\[wordtHerdachtIn]-(Evenement)-\[heeftVerbandMet]-(Ding)-\[heeftNaam]-(Naam)-\[heeftTaal]-(Taal)                                 | (oslo:Persoon)-\[cidoc:P129 is subject of]-(cidoc:E5 Event)-\[cidoc:P12 occurred in the presence of]-(cidoc:E22 Human-Made Object)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation)                                                                           |
 
-Achternaam persoon
+**JSON-LD sample**
+
+```
+{
+  "@type": "Persoon",
+  "was aanwezig bij": {
+    "@type": "Evenement",
+    "heeft type": "Begraving",
+    "vond plaats op": {
+      "@type": "Plaats",
+      "heeft type": {
+       "@type": "Concept",
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Begraafplaats",
+          "@language": "nl"
+        }
+      }
+       "heeft naam": {
+        "@type": "Concept",
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Tyne Cot Cemetery",
+          "@language": "en"
+        }
+      }
+      
+        "@type": "Graf",
+        "wordt geïdentificeerd door": {
+          "@type": "Identificatienummer",
+          "is samengesteld uit": [
+            {
+              "@type": "Concept",
+              "heeft naam": {
+                "@type": "String",
+                "@value": "Plot",
+                "@language": "en"
+              },
+              "wordt geïdentificeerd door": {
+                "@type": "String",
+                "@value": "XXII"
+              }
+            },
+            {
+              "@type": "Concept",
+              "heeft naam": {
+                "@type": "String",
+                "@value": "Row",
+                "@language": "en"
+              },
+              "wordt geïdentificeerd door": {
+                "@type": "String",
+                "@value": "G"
+              }
+            },
+            {
+              "@type": "Concept",
+              "heeft naam": {
+                "@type": "String",
+                "@value": "Grave",
+                "@language": "en"
+              },
+              "wordt geïdentificeerd door": {
+                "@type": "String",
+                "@value": "2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+
+
+
 
