@@ -4,8 +4,6 @@ description: Modellering van een filmopname uit de Rural Film database.
 
 # Graaf
 
-Een heel schone film**Workshop tekening**
-
 <figure><img src="../../.gitbook/assets/caggraph.jpeg" alt=""><figcaption><p>workshop whiteboard</p></figcaption></figure>
 
 ## Film

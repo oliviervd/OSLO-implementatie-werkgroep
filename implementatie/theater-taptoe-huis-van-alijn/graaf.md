@@ -1,4 +1,10 @@
+---
+description: Modellering van poppcollectie Theater Taptoe en immaterieel erfgoedpraktijken.
+---
+
 # Graaf
+
+<figure><img src="../../.gitbook/assets/HvA_mapping.jpg" alt="workshop whiteboard"><figcaption><p>workshop whiteboard</p></figcaption></figure>
 
 ## **Beschrijving object**
 
