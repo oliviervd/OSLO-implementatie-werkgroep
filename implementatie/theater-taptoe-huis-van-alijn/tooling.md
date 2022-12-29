@@ -42,6 +42,7 @@ Interfaces:
 
 **Inschatting van middelen**
 
+* personeelskost geassocieerd met dataverrijking, datacleaning en registratie&#x20;
 * Dataverrijking en registratie: momenteel gebeurt de registratie en dataverrijking van de dataset poppenspel binnen het kader van een inhaalbeweging digitale collectie (momenteel 1 VTE). (In het kader van coGhent is er eveneens een voltijdse medewerker die de data opkuist en goed zet). Idealiter heb je iemand die daar vast op werkt voor de gehele collectie.
 * Publiceren van data over voorstellingen op wikidata&#x20;
 * Uitbreiding van de bestaande LDES (coGhent) en in de lucht houden van LDES, met alle velden die je wil ontsluiten.&#x20;
