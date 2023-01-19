@@ -10,5 +10,5 @@ Toolkit met tools die relevant zijn voor het implementeren van en werken met OSL
 
 * _Collectie van de Gentenaar_ (Stad Gent); [implementatie van OSLO via publicatie van Linked Data Event Streams](ldes-linked-data-event-stream.md)
 * termennetwerken
-* SPARQL queries
+* [SPARQL queries](https://coghent.github.io/basicqueries.html)
 
