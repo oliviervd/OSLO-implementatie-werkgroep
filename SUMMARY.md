@@ -36,6 +36,8 @@
     * [Transformatieplan](implementatie/theater-taptoe-huis-van-alijn/tooling.md)
   * [Erfgoedaggregator - Stad Antwerpen](implementatie/erfgoedaggregator-stad-antwerpen/README.md)
     * [Use Case](implementatie/erfgoedaggregator-stad-antwerpen/use-case.md)
+    * [Graaf](implementatie/erfgoedaggregator-stad-antwerpen/graaf.md)
+    * [Transformatieplan](implementatie/erfgoedaggregator-stad-antwerpen/transformatieplan.md)
 * [Werkgroep notes](werkgroep-notes/README.md)
   * [20220622-werkgroep1-notes](werkgroep-notes/20220622-werkgroep1-notes.md)
   * [20220629-werkgroep2-notes](werkgroep-notes/20220629-werkgroep2-notes.md)
