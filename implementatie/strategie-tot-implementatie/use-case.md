@@ -45,13 +45,21 @@ Linked data vernetwerkt data gerelateerd aan de Boer en Tuinder collectie. Dit g
 * beter collectiebeheer, beter vindbare collecties binnen de instellingen
 * toeleiding van de ene organisatie naar de andere
 
+doorzoekbaar op:
+
+* agents in TV
+* onderwerpen
+* segmenten
+* via tijdsnotatie (comma separated values mogelijk)
+* speech to text (SRT?)
+
 ### Hergebruik
 
 
 
-* Onderzoekers (digital humanities, archeologen,  landbouwhistorici en filmhistorici):
+* Onderzoekers (digital humanities, landbouwhistorici en filmhistorici):
   * verbanden leggen tussen personen, onderwerpen, plaatsen
-  * nieuwe perspectieven op de dataset creëren > nieuwe classificaties toekennen
+  * nieuwe perspectieven op de dataset creëren > verschillende datasets samen bevragen
   * documenteren van (veranderende) percepties door verschillende doelgroepen
   * evolutie van landschap, landschapsparken, landbouwpraktijken,...
   * studie naar/binnen filmgeschiedenis
@@ -71,10 +79,3 @@ Linked data vernetwerkt data gerelateerd aan de Boer en Tuinder collectie. Dit g
     * landbouwhistorici
     * filmhistorici
 
-
-* doorzoekbaar op:
-  * agents in TV
-  * onderwerpen
-  * segmenten
-  * via tijdsnotatie (comma separated values mogelijk)
-  * speech to text (SRT?)
