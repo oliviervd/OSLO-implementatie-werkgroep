@@ -70,6 +70,6 @@ Technische partners (Citybeats vzw): transformatie van bestaande databank naar l
 * Deze applicatie suggereert een route door het lokale landschap op basis van de voorkeuren of interesses van de gebruiker. Het pad verbindt locaties of punten over een persoon, object of verhaal.
 * Als meer (erfgoed)organisaties hun gegevens als linked data publiceren, kan de applicatie deze gegevens ook aan gebruikers tonen. Dit vergroot de zichtbaarheid van alle collecties in de regio.
   * bv. Een route over soldaten die stierven in de buurt van Passendale, gebaseerd op gegevens van het Passendale Museum en het In Flanders Fields Museum.
-  * bv. Een route over de recuperatie van oorlogsmateriaal tijdens de wederopbouw, aangevuld met gegevens over wederopbouwwoningen van Erfgoed.
+  * bv. Een route over de recuperatie van oorlogsmateriaal tijdens de wederopbouw, aangevuld met gegevens over wederopbouwwoningen van Agentschap Onroerend Erfgoed.
   * bv. Een route die museumobjecten verbindt met locaties in het landschap. Deze objecten zijn afkomstig uit de collectie het Talbot House en Passendale Museum.
 * Het projectplan beschrijft mogelijkheden voor WWI-LOD in het algemeen, maar de applicatie routeplanner is een goede eerste, concrete use case.
