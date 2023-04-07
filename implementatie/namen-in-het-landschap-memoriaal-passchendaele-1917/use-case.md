@@ -9,9 +9,9 @@ description: >-
 
 De applicatie combineert persoonsdata van gesneuvelde soldaten uit WOI en geografische data om unieke gepersonaliseerde routes te genereren en verrijkt dit met de verhalen over de soldaten die op deze plekken gesneuveld zijn.&#x20;
 
-Memoriaal Passchendaele 1917 zit in een regionaal netwerk van erfgoedinstellingen die vergelijkbare collecties en werking hebben: Flanders Fields Museum, Talbot House, Lijssenthoek, IJzertoren, CO7 en WHI(Willem Segers van de Belgian War Dead databank). Maar Memoriaal Passchendaele 1917 heeft ook een internationaal netwerk partners die gegevens beheren over soldaten die in Passendale gesneuveld zijn. (Commonwealth war Graves Commission, Volksbund deustsche Kriegsgraberfursorge, National Library of Canada). Memoriaal Passchendaele wil ook deze gegevens graag gebruiken in hun routeplanner.&#x20;
+Memoriaal Passchendaele 1917 zit in een regionaal netwerk van erfgoedinstellingen die vergelijkbare collecties en werking hebben: Flanders Fields Museum, Talbot House, Lijssenthoek, IJzertoren, CO7 en WHI(Willem Segers van de Belgian War Dead databank). Maar Memoriaal Passchendaele 1917 heeft ook een internationaal netwerk partners die gegevens beheren over soldaten die in Passendale gesneuveld zijn. (Commonwealth war Graves Commission, Volksbund deustsche Kriegsgraberfursorge, National Library of Canada). Memoriaal Passchendaele 1917 wil ook deze gegevens graag gebruiken in hun routeplanner.&#x20;
 
-Het Passchendaele Museum onderzoekt of LOD een technische oplossing is om een **organisatie-overschrijdende netwerk van databanken met gegevens over actoren, plaatsen, evenementen en objecten** over de slag bij Passendale te maken.&#x20;
+Het Memoriaal Passchendaele 1917 onderzoekt of LOD een technische oplossing is om een **organisatie-overschrijdende netwerk van databanken met gegevens over actoren, plaatsen, evenementen en objecten** over de slag bij Passendale te maken.&#x20;
 
 De meerwaarde van zo een netwerk is:
 
