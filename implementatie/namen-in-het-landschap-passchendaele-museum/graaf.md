@@ -10,7 +10,6 @@
 | --------- | -------------- | ------------------------------------------------------------- | ----------------------------------------------- |
 | firstName | Leonard Edward | (Persoon)-\[heeftNaam]-(Naam)-\[heeftVoornaam]-(Voornaam)     | (oslo:Persoon)-\[oslo:voornaam]-(oslo:String)   |
 | lastName  | Stump          | (Persoon)-\[heeftNaam]-(Naam)-\[heeftAchternaam]-(Achternaam) | (oslo:Persoon)-\[oslo:achternaam]-(oslo:String) |
-|           |                |                                                               |                                                 |
 
 **JSON-LD sample**
 
@@ -20,7 +19,7 @@
   "voornaam": {
   "@type": "String",
   "@value": "Leonard Edward"
-  }
+  },
   "achtenaam": {
     "@type": "String",
     "@value": "Stump"
@@ -32,26 +31,24 @@
 
 | Veld          | Voorbeeld | MMP197 pattern                     | OSLO pattern                                                                |
 | ------------- | --------- | ---------------------------------- | --------------------------------------------------------------------------- |
-| serviceNumber | 80141     | (Persoon)-\[heeftID]-(GeheelGetal) | (oslo:Persoon)-\[cidoc:P48 has preferred identifier]-(cidoc-E42 Identifier) |
-|               |           |                                    |                                                                             |
-|               |           |                                    |                                                                             |
+| serviceNumber | 80141     | (Persoon)-\[heeftID]-(GeheelGetal) | (oslo:Persoon)-\[cidoc:P48 has preferred identifier]-(cidoc:E42 Identifier) |
 
 **JSON-LD sample**
 
 ```
 {
   "@type": "Persoon",
-    "wordt geïdentificeerd door": {
-    "@type": "Identificatienummer",
-    "@value": "854254",
-    "heeft type": {
-      "@type": "Concept",
-      "heeft naam":
-       {
+    "heeft voorkeurs identificatie": {
+      "@type": "Identificatie",
+      "@value": "854254",
+      "heeft type": {
+        "@type": "Concept",
+        "heeft naam":
+         {
           "@type": "String",
           "@value": "Stamnummer",
           "@language": "nl"
-        },
+        }
      }
   }
 }
@@ -63,7 +60,6 @@
 | ---- | --------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | rank |           | (Persoon)-\[heeftPositie]-(Position)-\[heeftRang]-(Rang)-\[heeftType]-(Type)-\[heeftNaam]-(Naam)-\[heeftTaal]-(Taal) | (oslo:Persoon)-\[RiC-R054:occupies or occupied]-(RiC:position)-\[cidoc:P2 has type (is type of)]-(cidoc:E55 Type)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation) |
 |      | Private   | (Persoon)-\[heeftPositie]-(Position)-\[heeftRang]-(Rang)-\[heeftNaam]-(Naam)-\[heeftTaal]-(Taal)                     | (oslo:Persoon)-\[RiC-R054:occupies or occupied]-(RiC:position)-\[cidoc:P1 is identified by (identifies)]-(cidoc:E41 Appellation)                                                    |
-|      |           |                                                                                                                      |                                                                                                                                                                                     |
 
 **JSON-LD sample**
 
@@ -77,12 +73,11 @@
         "@type": "String",
         "@value": "Rang",
         "@language": "nl"
-      }
-      
+      },
     "is geïdentificeerd door": 
       {
         "@type": "String",
-        "@value": "Private"
+        "@value": "Private",
         "@language": "nl"
      }
   }
@@ -100,29 +95,23 @@
 **JSON-LD sample**
 
 ```
-"{
-  ""@type"": ""Persoon"",
-  ""bezet"": {
-    ""@type"": ""Positie"",
-    ""bestaat in"": {
-      ""@type"": ""Organisatie"",
-      ""heeft type"": {
-        ""@type"": ""Concept"",
-        ""heeft naam"": {
-          ""@type"": ""String"",
-          ""@value"": ""Bataljon"",
-          ""@language"": ""nl""
+{
+  "@type": "Persoon",
+  "bezet": {
+    "@type": "Positie",
+    "bestaat in": {
+      "@type": "Organisatie",
+      "heeft type": {
+        "@type": "Concept",
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Canadian Infantry, 31st Bn. (Alberta)",
+          "@language": "en"
         }
-       ""heeft naam"": {
-         ""@type"": ""String"",
-         ""@value"": ""Canadian Infantry, 31st Bn. (Alberta)"",
-         ""@language"": ""en""
-       }
       }
     }
   }
-}"
-
+}
 ```
 
 ### Geboorte
@@ -142,8 +131,8 @@
   "@type": "Persoon",
   "werd geboren": {
     "@type": "Geboorte",
-      "had tijdsspanne": {
-        "heeft naam": {
+    "had tijdsspanne": {
+      "heeft naam": {
         "@type": "String",
         "@value": "geboortedatum",
         "@language": "nl"
@@ -157,28 +146,29 @@
         "@value": "9-11-1890"
       }
     }
-  }
- "was aanwezig bij": {
-  "@type": ""Geboorte",
-  "vond plaats op": {
-    "@type": "Plaats",
-    "op een plaats binnen": {
-      "@type": "Space Primitive",
-      "@value"": "51.51116,-0.18426"
+  },
+  "was aanwezig bij": {
+    "@type": "Geboorte",
+    "vond plaats op": {
+      "@type": "Plaats",
+      "op een plaats binnen": {
+        "@type": "Space Primitive",
+        "@value": "51.51116,-0.18426"
+      },
+      "heeft type": {
+        "@type": "Concept",
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Bayswater, Middlesex, Engeland, Verenigd Koninkrijk",
+          "@language": "en"
+        }
       }
-    "heeft type": {
-      "@type": "Concept",
-      "heeft naam": {
-        "@type": "String",
-        "@value": "Bayswater, Middlesex, Engeland, Verenigd Koninkrijk",
-        "@language": "en"
+    }
+  }
 }
-
-
-
 ```
 
-### Dood
+### Sterfte
 
 | Veld                      | Voorbeeld                 | MMP197 pattern                                                                                                                                             | OSLO pattern                                                                                                                                                                   |
 | ------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -261,37 +251,13 @@
 
 ### JSON-LD sample
 
-<pre><code>{
+```
+{
   "@type": "Persoon",
   "is of was deelnemer in": {
     "@type": "Evenement",
-    "wordt geassocieerd met de datum": {
-      "@type":"Enkele datum",
-      "@value":"18/02/1915"      
-    }
-  }
-   "vond plaats te (getuige)": {
-      "@type": "Plaats",
-      "heeft naam": {
-        "@type": "String",
-        "@value": "Calgary, Alberta",
-        "@language": "nl"
-      }
-    }
-   "is of was deelnemer in": {
-    "@type": "Evenement",
     "vond plaats te (getuige)": {
       "@type": "Plaats",
-      "op een plaats binnen": {
-        "@type": "Space Primitive",
-        "@value": "50.905137, 3.024806"
-      }
-    }
-  }
-   "is of was deelnemer in": {
-    "@type": "Evenement",
-    "vond plaats te (getuige)": {
-      "@type": "Plaats",      
       "valt onder": {
         "@type": "Plaats",
         "heeft naam": {
@@ -301,32 +267,36 @@
         }
       }
     }
-  }
-  "heeft huidige of voormalige woonplaats": {
+  },
+  "vond plaats te (getuige)": {
     "@type": "Plaats",
+    "heeft naam": {
+      "@type": "String",
+      "@value": "Calgary, Alberta",
+      "@language": "nl"
+    }
+  },
+  "heeft huidige of voormalige woonplaats": {
+    "@type": "Persoon",
     "heeft naam": {
       "@type": "String",
       "@value": "811 Wakehurst St. Flin Flon, MB R8A 9K6",
       "@language": "nl"
-    }
+    },
     "op een plaats binnen": {
       "@type": "Space Primitive",
       "@value": "5.105.011, -11.408.529"
+    },
+    "heeft huidige of voormalige woonplaats": {
+      "@type": "Plaats",
+      "op een plaats binnen": {
+        "@type": "Space Primitive",
+        "@value": "5.105.011, -11.408.529"
+      }
     }
   }
 }
-
-<strong>/{
-</strong>  "@type": "Persoon",
-  "heeft huidige of voormalige woonplaats": {
-    "@type": "Plaats",
-    "op een plaats binnen": {
-      "@type": "Space Primitive",
-      "@value": "5.105.011, -11.408.529"
-    }
-  }
-}
-</code></pre>
+```
 
 ### Herdenking
 
@@ -355,13 +325,13 @@
               "@type": "String",
               "@value": "Memorial",
               "@language": "en"
-            }
+            },
             "heeft naam": {
               "@type": "String",
               "@value": "Ypres (Menin Gate) Memorial",
               "@language": "en"
             }
-          }
+          },
           "heeft naam": {
             "@type": "Concept",
             "heeft naam": {
@@ -400,66 +370,63 @@
     "@type": "Evenement",
     "heeft type": "Begraving",
     "vond plaats op": {
-      "@type": "Plaats",
+      "@type": "Graf",
       "heeft type": {
-       "@type": "Concept",
+        "@type": "Concept",
         "heeft naam": {
           "@type": "String",
           "@value": "Begraafplaats",
           "@language": "nl"
         }
-      }
-       "heeft naam": {
+      },
+      "heeft naam": {
         "@type": "Concept",
         "heeft naam": {
           "@type": "String",
           "@value": "Tyne Cot Cemetery",
           "@language": "en"
         }
-      }
-      
-        "@type": "Graf",
-        "wordt geïdentificeerd door": {
-          "@type": "Identificatienummer",
-          "is samengesteld uit": [
-            {
-              "@type": "Concept",
-              "heeft naam": {
-                "@type": "String",
-                "@value": "Plot",
-                "@language": "en"
-              },
-              "wordt geïdentificeerd door": {
-                "@type": "String",
-                "@value": "XXII"
-              }
+      },
+      "wordt geïdentificeerd door": {
+        "@type": "Identificatienummer",
+        "is samengesteld uit": [
+          {
+            "@type": "Concept",
+            "heeft naam": {
+              "@type": "String",
+              "@value": "Plot",
+              "@language": "en"
             },
-            {
-              "@type": "Concept",
-              "heeft naam": {
-                "@type": "String",
-                "@value": "Row",
-                "@language": "en"
-              },
-              "wordt geïdentificeerd door": {
-                "@type": "String",
-                "@value": "G"
-              }
-            },
-            {
-              "@type": "Concept",
-              "heeft naam": {
-                "@type": "String",
-                "@value": "Grave",
-                "@language": "en"
-              },
-              "wordt geïdentificeerd door": {
-                "@type": "String",
-                "@value": "2"
-              }
+            "wordt geïdentificeerd door": {
+              "@type": "String",
+              "@value": "XXII"
             }
-          ]
-        }
+          },
+          {
+            "@type": "Concept",
+            "heeft naam": {
+              "@type": "String",
+              "@value": "Row",
+              "@language": "en"
+            },
+            "wordt geïdentificeerd door": {
+              "@type": "String",
+              "@value": "G"
+            }
+          },
+          {
+            "@type": "Concept",
+            "heeft naam": {
+              "@type": "String",
+              "@value": "Grave",
+              "@language": "en"
+            },
+            "wordt geïdentificeerd door": {
+              "@type": "String",
+              "@value": "2"
+            }
+          }
+        ]
       }
     }
   }
