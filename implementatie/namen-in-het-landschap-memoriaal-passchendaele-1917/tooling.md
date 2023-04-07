@@ -21,7 +21,7 @@ Transformatie van de huidige databank naar OLSO (a.d.h.v. 20221109\_SQL\_OSLO\_c
     * Nadeel: grotere investering, momenteel vrij lage adoptiegraad van deze technologie.
 
 
-*   Het Passchendaele Museum kiest voor optie 1.
+*   Memoriaal Passchendaele 1917 kiest voor optie 1.
 
     * Het uitbouwen van een extensie bovenop de bestaande databank is momenteel realistischer, aangezien de OSLO standaard voor cultureel erfgoed vrij nieuw is (onduidelijk toekomstperspectief) en grote investerngingen voorlopig moeilijk te verantwoorden zijn.
     * Het “bevriezen” van het relationele model hoeft niet noodzakelijk een probleem te zijn. Het huidige model is organisch gegroeid doorheen het project, wat een algemene evaluatie en aanpassing noodzakelijk maakt (onafhankelijk van het OLSO-project). Tijdens deze evaluatie zal rekening houden met de noden van de OSLO standaard.
@@ -69,7 +69,7 @@ Technische partners (Citybeats vzw): transformatie van bestaande databank naar l
 * Een mogelijke concretisering van dit "kennisnetwerk" is een gemeenschappelijke interactieve kaart of routeplannerapplicatie op basis van gekoppelde gegevens van verschillende erfgoedorganisaties.
 * Deze applicatie suggereert een route door het lokale landschap op basis van de voorkeuren of interesses van de gebruiker. Het pad verbindt locaties of punten over een persoon, object of verhaal.
 * Als meer (erfgoed)organisaties hun gegevens als linked data publiceren, kan de applicatie deze gegevens ook aan gebruikers tonen. Dit vergroot de zichtbaarheid van alle collecties in de regio.
-  * bv. Een route over soldaten die stierven in de buurt van Passendale, gebaseerd op gegevens van het Passendale Museum en het In Flanders Fields Museum.
+  * bv. Een route over soldaten die stierven in de buurt van Passendale, gebaseerd op gegevens van Memoriaal Passchendaele 1917 en het In Flanders Fields Museum.
   * bv. Een route over de recuperatie van oorlogsmateriaal tijdens de wederopbouw, aangevuld met gegevens over wederopbouwwoningen van Agentschap Onroerend Erfgoed.
-  * bv. Een route die museumobjecten verbindt met locaties in het landschap. Deze objecten zijn afkomstig uit de collectie het Talbot House en Passendale Museum.
+  * bv. Een route die museumobjecten verbindt met locaties in het landschap. Deze objecten zijn afkomstig uit de collectie het Talbot House en Memoriaal Passchendaele 1917.
 * Het projectplan beschrijft mogelijkheden voor WWI-LOD in het algemeen, maar de applicatie routeplanner is een goede eerste, concrete use case.
