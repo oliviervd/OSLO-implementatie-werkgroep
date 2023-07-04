@@ -254,7 +254,7 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
             "@id":"cest:Waarde_objectnummer"
             },
         }
-    }isHetzelfdeAls
+    }
     ```
 * Gebruik de eigenschap "**isHetzelfdeAls**" om je Entiteit te mappen met een equivalente Entiteit in een anderen bron&#x20;
 
