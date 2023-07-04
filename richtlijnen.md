@@ -295,12 +295,177 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
 ### 6. Historische Actoren
 
 * Geboorte en dood
+
+Geboortedatum (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "werd geboren": {
+    "@type": "Geboorte",
+      "had tijdsspanne": {
+        "heeft naam": {
+        "@type": "String",
+        "@value": "geboortedatum",
+        "@language": "nl"
+      },
+      "heeft begindatum": {
+        "@type": "String",
+        "@value": "9-11-1890"
+      },
+      "heeft einddatum": {
+        "@type": "String",
+        "@value": "9-11-1890"
+      }
+    }
+  }
+}"
+```
+
+Geboorteplaats (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "was aanwezig bij": {
+    "@type": "Geboorte",
+    "vond plaats op": {
+      "@type": "Plaats",
+      "heeft type": {
+        "@type": "Concept",
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Bayswater, Middlesex, Engeland, Verenigd Koninkrijk",
+          "@language": "en"
+        }
+      }
+    }
+  }
+}"
+```
+
+Overlijdensdatum (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "stierf in": {
+    "@type": "Overlijden",
+      "had tijdsspanne": {
+        "heeft naam": {
+        "@type": "String",
+        "@value": "sterfdatum",
+        "@language": "nl"
+      },
+      "heeft begindatum": {
+        "@type": "String",
+        "@value": "6/11/1917"
+      },
+      "heeft einddatum": {
+        "@type": "String",
+        "@value": "6/11/1917"
+      }
+    }
+  }
+}"
+```
+
+Overlijdensplaats (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "stierf in": {
+    "@type": "Overlijden",
+    "vond plaats op": {
+      "@type": "Plaats",
+      "valt onder": {
+        "@type": "Plaats",
+        "heeft type": {
+          "@type": "Concept",
+          "heeft naam": {
+            "@type": "String",
+            "@value": "gemeente",
+            "@language": "nl"
+          }
+        },
+        "heeft naam": {
+          "@type": "String",
+          "@value": "Passendale, België",
+          "@language": "nl"
+        }
+      }
+    }
+  }
+}"
+```
+
 * Familiebanden
-* Posities (ric:Position)
-* Bezigheden (ric:Occupation
+* Posities (ric:Position) (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "bezet": {
+    "@type": "Positie",
+    "heeft type":
+      {
+        "@type": "String",
+        "@value": "Rang",
+        "@language": "nl"
+      }
+  }
+}"
+```
+
+* Bezigheden (ric:Occupation) (uitwerken)
+
+```json
+{
+  "@type": "Persoon",
+  "heeftBeroep": {
+    "@type": "Beroep",
+    "heeft naam": {
+      "@type": "String",
+      "@value": "Bakker",
+      "@language": "nl"
+    }
+  }
+}
+```
 
 ### 7. Historische Plaatsen
 
 * Historische Toponiemen
 * Coordinaten
+
+Coordinaten sterfteplaats (uitwerken)
+
+```json
+"{
+  "@type": "Persoon",
+  "stierf in": {
+    "@type": "Overlijden",
+    "vond plaats op": {
+      "@type": "Plaats",
+      "valt onder": {
+        "@type": "Plaats",
+        "heeft type": {
+          "@type": "Concept",
+          "heeft naam": {
+            "@type": "String",
+            "@value": "gemeente",
+            "@language": "nl"
+          }
+        },        
+        "op een plaats binnen": {
+        "@type": ""Space Primitive",
+        "@value": ""5.089.979,302.133"
+      }
+      }
+    }
+  }
+}"
+```
+
 * Archeologische Contexten
