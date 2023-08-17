@@ -174,9 +174,8 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
     ```
 * Gebruik de eigenschap "**isToegekendDoor**" en "**Toekenning**" om uit te drukken wie en wanneer een naam werd toegekend.&#x20;
 
-```json
-{
-"@type":"ZelfstandigeExpressie",
+<pre class="language-json"><code class="lang-json"><strong>{
+</strong>"@type":"ZelfstandigeExpressie",
 "@id":"https://data.cagnet.be/item/F95043",
 "heeftNaam":{
     	"@type":"Naam",
@@ -192,10 +191,11 @@ _(Let op: @context mapt op in dit geval naar ""http://www.w3.org/ns/adms#identif
   		},
         "isToegekendDoor":{
             "@type":"Toekenning",
-            (todo)
+	    "@value":"registrator x",
+    			}
  	}
  }
-```
+</code></pre>
 
 ### 3. Identificatienummers
 
