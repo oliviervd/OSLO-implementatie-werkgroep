@@ -99,7 +99,17 @@ description: Modellering van een filmopname uit de Rural Film database.
 | organisatienaam | Boerenbond | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft naam]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[agent]--(Organisatie)-\[heeft voorkeursnaam]-(TaalString) |
 | Rol             | orderer    | {Film)-\[is besteld door]-(Event)-\[is opdrachtgever]-(Agent)-\[heeft type]-(string)        | (ZelfstandigeExpressie)-\[crm:P92 was brought into existence]-(Activiteit)-\[activiteit]-(Rol)-\[type]-(Type Entiteit)-\[skos:prefLabel]-(TaalString)      |
 
-**JSON-LD sample**
+
+
+### Creation
+
+| Veld       | Voorbeeld | CAG pattern                                                                                                                                           | OSLO pattern                                                                                                         |
+| ---------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Achternaam | Nackaerts | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft familienaam]-(string)                                                           | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString) |
+| Voornaam   | Hein      | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft voornaam]-(string)                                                              | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)   |
+| Rol        | Director  | {Film)-\[is geregiseerd door]-(Event)-\[is uitgevoerd door]-(Agent)-\[heeft rol]-(string)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(String) | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[rol]-(Type Rol)-\[skos:prefLabel]-(TaalString)    |
+
+#### JSON-LD sample
 
 ```
 "{
@@ -132,16 +142,6 @@ description: Modellering van een filmopname uit de Rural Film database.
   }"
 ```
 
-
-
-### Creation
-
-| Veld       | Voorbeeld | CAG pattern                                                                                                                                           | OSLO pattern                                                                                                         |
-| ---------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Achternaam | Nackaerts | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft familienaam]-(string)                                                           | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft achternaam]-(TaalString) |
-| Voornaam   | Hein      | {Film)-\[is geregiseerd door]-(Event)-\[is regisseur]-(Agent)-\[heeft voornaam]-(string)                                                              | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[agent]-(Persoon)-\[heeft voornaam]-(TaalString)   |
-| Rol        | Director  | {Film)-\[is geregiseerd door]-(Event)-\[is uitgevoerd door]-(Agent)-\[heeft rol]-(string)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(String) | (ZelfstandigeExpressie)-\[creatie]-(Creatie)-\[activiteit]-(Rol)-\[rol]-(Type Rol)-\[skos:prefLabel]-(TaalString)    |
-
 ### Publication
 
 | Veld                         | Voorbeeld                                               | CAG pattern                                                                                   | OSLO pattern                                                                                                                                  |
@@ -157,22 +157,13 @@ description: Modellering van een filmopname uit de Rural Film database.
 
 ### Description
 
-| Veld                 | Voorbeeld               | CAG pattern                                                                           | OSLO pattern                                                                 |
-| -------------------- | ----------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Description          | Een heel schone film    | {Film)-\[wordt beschreven door]-(tekst)\[heeft waarde]-(string)                       | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |
-| Description Language | NL                      | {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |
-| Abstract             | A very beautyfull movie | {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString) |
-| Abstract Language    | EN                      | {Film)-\[wordt beschreven door]-(tekst)\[heeft taal]-(string)                         | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[taal]-(TaalCode)    |
-
-### Rights
+<table><thead><tr><th width="157">Veld</th><th>Voorbeeld</th><th>CAG pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>Description</td><td>Een heel schone film</td><td>{Film)-[wordt beschreven door]-(tekst)[heeft waarde]-(string)</td><td>(ZelfstandigeExpressie)-[beschrijving]-(Beschrijving)-[tekst]-(TaalString)</td></tr><tr><td>Description Language</td><td>NL</td><td>{Film)-[wordt beschreven door]-(tekst)[heeft taal]-(string)</td><td>(ZelfstandigeExpressie)-[beschrijving]-(Beschrijving)-[taal]-(TaalCode)</td></tr><tr><td>Abstract</td><td>A very beautyfull movie</td><td>{Film)-[wordt beschreven door]-(tekst)[heeft type]-(Concept)-[heeft naam]-(string)</td><td>(ZelfstandigeExpressie)-[beschrijving]-(Beschrijving)-[tekst]-(TaalString)</td></tr><tr><td>Abstract Language</td><td>EN</td><td>{Film)-[wordt beschreven door]-(tekst)[heeft taal]-(string)</td><td>(ZelfstandigeExpressie)-[beschrijving]-(Beschrijving)-[taal]-(TaalCode)</td></tr></tbody></table>
 
 ## Film Copy
 
 ### Film Copy Number
 
-| Veld        | Voorbeeld | CAG pattern                                                                                           | OSLO pattern                                                                                                                |
-| ----------- | --------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Filmcopy id | 3282      | {Film)-\[heeft als drager]-(Filmkopie)-\[wordt geïdentificeerd door]-(ID-nr)-\[heeft waarde]-(string) | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[identificator]-(Identificator)-\[identificator]-(GetypeerdeString) |
+<table><thead><tr><th width="157">Veld</th><th>Voorbeeld</th><th>CAG pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>Filmcopy id</td><td>3282</td><td>{Film)-[heeft als drager]-(Filmkopie)-[wordt geïdentificeerd door]-(ID-nr)-[heeft waarde]-(string)</td><td>(ZelfstandigeExpressie)-[drager]-(Mensgemaakt Object)-[identificator]-(Identificator)-[identificator]-(GetypeerdeString)</td></tr></tbody></table>
 
 **JSON-LD sample**
 
@@ -205,17 +196,9 @@ description: Modellering van een filmopname uit de Rural Film database.
 }
 ```
 
-### Rights
-
 ### Provenance
 
-| Veld             | Voorbeeld                             | CAG pattern                                                                                                               | OSLO pattern                                                                                                                            |
-| ---------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Inventory Number | G9584bF                               | {Filmkopie)-\[wordt geidentificeerd door]-(Identificatiecode)\[heeft waarde]-(string)                                     |                                                                                                                                         |
-| Institution      | Cinematek                             | {Film)-\[heeft als drager]-(Filmkopie)-\[wordt bewaard door]-(Organisatie)-\[heeft naam]-(string)                         | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[beheerder]-(Agent)-\[naam]-(TaalString)                                        |
-| Repository       | A very beautyfull movie               | {Film)-\[wordt beschreven door]-(tekst)\[heeft type]-(Concept)-\[heeft naam]-(string)                                     | (ZelfstandigeExpressie)-\[beschrijving]-(Beschrijving)-\[tekst]-(TaalString)                                                            |
-| Collection       | Filmcollectie Ministerie van Landbouw | {Film)-\[heeft als drager]-(Filmkopie)-\[is deel van]-(Collectie)-\[heeft naam]-(string)                                  | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[isOnderdeelVan]-(GecureerdeCollectie)-\[titel]-(TaalString)                    |
-| Owner            | FOD Economie                          | {Film)-\[heeft als drager]-(Filmkopie)-\[is deel van]-(Collectie)-\[is eigendom van]-(organisatie)-\[heeft naam]-(string) | (ZelfstandigeExpressie)-\[drager]-(Mensgemaakt Object)-\[isOnderdeelVan]-(GecureerdeCollectie)-\[eigenaar]-(Agent)-\[naam]-(TaalString) |
+<table><thead><tr><th width="157">Veld</th><th>Voorbeeld</th><th>CAG pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>Inventory Number</td><td>G9584bF</td><td>{Filmkopie)-[wordt geidentificeerd door]-(Identificatiecode)[heeft waarde]-(string)</td><td></td></tr><tr><td>Institution</td><td>Cinematek</td><td>{Film)-[heeft als drager]-(Filmkopie)-[wordt bewaard door]-(Organisatie)-[heeft naam]-(string)</td><td>(ZelfstandigeExpressie)-[drager]-(Mensgemaakt Object)-[beheerder]-(Agent)-[naam]-(TaalString)</td></tr><tr><td>Repository</td><td>A very beautyfull movie</td><td>{Film)-[wordt beschreven door]-(tekst)[heeft type]-(Concept)-[heeft naam]-(string)</td><td>(ZelfstandigeExpressie)-[beschrijving]-(Beschrijving)-[tekst]-(TaalString)</td></tr><tr><td>Collection</td><td>Filmcollectie Ministerie van Landbouw</td><td>{Film)-[heeft als drager]-(Filmkopie)-[is deel van]-(Collectie)-[heeft naam]-(string)</td><td>(ZelfstandigeExpressie)-[drager]-(Mensgemaakt Object)-[isOnderdeelVan]-(GecureerdeCollectie)-[titel]-(TaalString)</td></tr><tr><td>Owner</td><td>FOD Economie</td><td>{Film)-[heeft als drager]-(Filmkopie)-[is deel van]-(Collectie)-[is eigendom van]-(organisatie)-[heeft naam]-(string)</td><td>(ZelfstandigeExpressie)-[drager]-(Mensgemaakt Object)-[isOnderdeelVan]-(GecureerdeCollectie)-[eigenaar]-(Agent)-[naam]-(TaalString)</td></tr></tbody></table>
 
 **JSON-LD sample**
 
@@ -257,18 +240,9 @@ description: Modellering van een filmopname uit de Rural Film database.
 }
 ```
 
-### Rights
-
 ### Format
 
-| Veld           | Voorbeeld | CAG pattern                                                             | OSLO pattern |
-| -------------- | --------- | ----------------------------------------------------------------------- | ------------ |
-| Carrier Type   | film      | {Filmkopie)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(string) |              |
-| Carrier Format | 8 mm      | {Filmkopie)-\[heeft als classificatie]-(Concept)-\[heeft naam]-(string) |              |
-
-### Rights
-
-### Extent
+<table><thead><tr><th width="157">Veld</th><th>Voorbeeld</th><th>CAG pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>Carrier Type</td><td>film</td><td>{Filmkopie)-[heeft als classificatie]-(Concept)-[heeft naam]-(string)</td><td></td></tr><tr><td>Carrier Format</td><td>8 mm</td><td>{Filmkopie)-[heeft als classificatie]-(Concept)-[heeft naam]-(string)</td><td></td></tr></tbody></table>
 
 ### Condition
 
@@ -277,5 +251,3 @@ description: Modellering van een filmopname uit de Rural Film database.
 | Condition      |           | {Filmkopie)-\[heeft conditie]-(Conditie)-\[heeft naam]-(string)                                        | slecht             |
 | Condition Note |           | {Filmkopie)-\[heeft conditie]-(Conditie)-\[heeft beschrijving]-(Beschrijving)=\[heeft waarde]-(string) | er zit een vlek op |
 |                |           |                                                                                                        |                    |
-
-### Rights
