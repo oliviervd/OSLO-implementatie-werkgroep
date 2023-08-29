@@ -41,6 +41,7 @@
 * [Werkgroep notes](werkgroep-notes/README.md)
   * [20220622-werkgroep1-notes](werkgroep-notes/20220622-werkgroep1-notes.md)
   * [20220629-werkgroep2-notes](werkgroep-notes/20220629-werkgroep2-notes.md)
+  * [20220928 - werkgroep 3 note](werkgroep-notes/20220928-werkgroep-3-note.md)
   * [20221024-werkgroep3-notes](werkgroep-notes/20221024-werkgroep3-notes.md)
 * [Richtlijnen](richtlijnen.md)
 * [Tooling](tooling.md)
