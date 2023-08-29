@@ -80,7 +80,7 @@
 
 ### Eenheid
 
-<table><thead><tr><th>Veld</th><th width="177">Voorbeeld</th><th>MMP1917 pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>unit</td><td></td><td>(Persoon)-[heeftPositie]-(Position)-[heeftEenheid]-(Eenheid)-[heeftType]-(Type)-[heeftNaam]-(Naam)-[heeftTaal]-(Taal)</td><td>(oslo:Persoon)-[RiC-R054:occupies or occupied]-(RiC:position)-[RiC-E12:exists or existed in]-(RiC-E09:Group)-[cidoc:P2 has type]-(cidoc:E55 Type)-[cidoc:P1 is identified by]-(cidoc:E41 Appellation)</td></tr><tr><td></td><td>Canadian Infantry, 31st Bn. (Alberta)</td><td>(Persoon)-[heeftPositie]-(Position)-[heeftEenheid]-(Eenheid)-[heeftNaam]-(Naam)-[heeftTaal]-(Taal)</td><td>(oslo:Persoon)-[RiC-R054:occupies or occupied]-(RiC:position)-[RiC-E12:exists or existed in]-(RiC-E09:Group)-[cidoc:P1 is identified by]-(cidoc:E41 Appellation)</td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Veld</th><th width="177">Voorbeeld</th><th>MMP1917 pattern</th><th>OSLO pattern</th></tr></thead><tbody><tr><td>unit</td><td></td><td>(Persoon)-[heeftPositie]-(Position)-[heeftEenheid]-(Eenheid)-[heeftType]-(Type)-[heeftNaam]-(Naam)-[heeftTaal]-(Taal)</td><td>(oslo:Persoon)-[RiC-R054:occupies or occupied]-(RiC:position)-[RiC-E12:exists or existed in]-(RiC-E09:Group)-[cidoc:P2 has type]-(cidoc:E55 Type)-[cidoc:P1 is identified by]-(cidoc:E41 Appellation)</td></tr><tr><td></td><td>Canadian Infantry, 31st Bn. (Alberta)</td><td>(Persoon)-[heeftPositie]-(Position)-[heeftEenheid]-(Eenheid)-[heeftNaam]-(Naam)-[heeftTaal]-(Taal)</td><td>(oslo:Persoon)-[RiC-R054:occupies or occupied]-(RiC:position)-[RiC-E12:exists or existed in]-(RiC-E09:Group)-[cidoc:P1 is identified by]-(cidoc:E41 Appellation)</td></tr></tbody></table>
 
 **JSON-LD sample**
 
