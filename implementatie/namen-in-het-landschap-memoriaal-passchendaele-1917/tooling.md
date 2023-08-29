@@ -5,35 +5,37 @@
 Het museum bewaart vijf soorten collecties. Het belangrijkste voor de eerste stap naar OSLO is de collectie “personen”.
 
 * Wat: De collectie ‘personen’ bestaat uit historische persoonsgegevens van militairen die een verband hebben met de Slag bij Passendale.
-* Beheer en ontsluiting: Deze gegevens worden ontsloten op de Passchendaele Archives website (en de interactieve kaart) en beheerd op het achterliggende MySQL server.
 * Deze gegevens verrijken we (of willen we verrijken) met collectiedata en geografische informatie (plaatsen, coördinaten, etc.)
+* Beheer en ontsluiting: Deze gegevens worden ontsloten op de Passchendaele Archives website (en de interactieve kaart) en beheerd op het achterliggende MySQL server.
+
+
 
 Transformatie van de huidige databank naar OSLO:
 
 * Meemoo stelt twee opties voor:
-  * Optie 1: Een extensie bovenop de bestaande SQL-databank om output in JSON LD te krijgen.
-  * Voordeel: de invoerinterface blijft behouden en is de goedkoopste optie.
-  * Nadeel: het huidige relationele model moet herwerkt worden en is nadien “bevroren”.
-*   Optie 2: Een nieuwe linked data oplossing (triple store of graph databank) vervangt de huidige SQL databank.
+  * Optie 1: een extensie bovenop de bestaande SQL-databank om output in JSON LD te kunnen produceren
+    * Voordeel: de invoerinterface blijft behouden en het is de goedkoopste optie
+    * Nadeel: het huidige relationele model moet herwerkt worden en is nadien “bevroren”
+*   Optie 2: een nieuwe linked data oplossing (triple store of graph databank) vervangt de huidige SQL databank
 
-    * Voordeel 1: het datamodel is eenvoudiger, flexibeler en makkelijker uitbreidbaar,&#x20;
+    * Voordeel 1: het datamodel is eenvoudiger, flexibeler en makkelijker uitbreidbaar
     * Voordeel 2: via dezelfde endpoint kunnen wijzigingen of verrijking binnen getrokken worden (en is ten opzichte van optie 1 niet enkel éénrichtingsverkeer).
-    * Nadeel: grotere investering, momenteel vrij lage adoptiegraad van deze technologie.
+    * Nadeel: grotere investering, momenteel is er slechts een vrij lage adoptiegraad van deze technologie
 
 
-*   Het Passchendaele Museum kiest voor optie 1.
 
-    * Het uitbouwen van een extensie bovenop de bestaande databank is momenteel realistischer, aangezien de OSLO standaard voor cultureel erfgoed vrij nieuw is (onduidelijk toekomstperspectief) en grote investeringen voorlopig moeilijk te verantwoorden zijn.
-    * Het “bevriezen” van het relationele model hoeft niet noodzakelijk een probleem te zijn. Het huidige model is organisch gegroeid doorheen het project, wat een algemene evaluatie en aanpassing noodzakelijk maakt (onafhankelijk van het OLSO-project). Tijdens deze evaluatie zal er rekening houden met de noden van de OSLO standaard.
+Het Passchendaele Museum kiest voor optie 1 met de volgende redenering:
 
-
-* Technologische oplossingen voor optie 1.
-  *   Miel Vander Sande (meemoo) raadt deze optie ook aan omdat hier al oplossingen voor bestaan:
-
-      * [R2RML](https://www.w3.org/TR/r2rml/) als taal om relationele databanken mappen naar semantisch model (RDF).
-      * [Ontop ](https://ontop-vkg.org/)(opensource) of [Ontopic Studio](https://ontopic.ai/en/ontopic-studio/) (betalend) zijn twee mogelijke softwares om R2RML te implementeren.
+* Het uitbouwen van een extensie bovenop de bestaande databank is momenteel realistischer, aangezien de OSLO standaard voor cultureel erfgoed vrij nieuw is (onduidelijk toekomstperspectief) en grote investeringen voorlopig moeilijk te verantwoorden zijn.
+* Het “bevriezen” van het relationele model hoeft niet noodzakelijk een probleem te zijn. Het huidige model is organisch gegroeid doorheen het project, wat een algemene evaluatie en aanpassing noodzakelijk maakt (onafhankelijk van het OSLO-project). Tijdens deze evaluatie zal er rekening houden met de noden van de OSLO standaard.
 
 
+
+Technologische oplossingen voor optie 1:
+
+* Miel Vander Sande (meemoo) raadt deze optie ook aan omdat hier al oplossingen voor bestaan:
+  * [R2RML](https://www.w3.org/TR/r2rml/) als taal om relationele databanken mappen naar semantisch model (RDF).
+  * [Ontop ](https://ontop-vkg.org/)(opensource) of [Ontopic Studio](https://ontopic.ai/en/ontopic-studio/) (betalend) zijn twee mogelijke softwares om R2RML te implementeren.
 * De gevaren / nadelen van deze technologische oplossing:
   * Technische partners / ontwikkelaars moeten R2RML eigen maken.
   * De R2RML-taal heeft een vrij steile leercurve.
@@ -41,17 +43,17 @@ Transformatie van de huidige databank naar OSLO:
 
 ## Inschatting benodigde middelen
 
-Personeelsinzet en middelen:
-
 Projectmedewerker (Wouter De Witte) werkte onder begeleiding van meemoo in de context van hun engagement binnen het Collectie van de Gentenaar project een concrete use-case en transformatieplan uit:
 
 * Ca. 110 uren (ca. 15 werkdagen) aan weddeschaal B. Dit omvat de vijf workshops, zelfstudie en opmaken van de veldtekening en de use case).
-* Het feit dat dit traject uitgevoerd kon worden binnen het kader van de subsidie ‘inhaalbeweging digitale collectiedata’ was een groot voordeel.
+* Het feit dat dit traject uitgevoerd kon worden binnen het kader van de subsidie ‘inhaalbeweging digitale collectiedata’ was een groot voordeel:
   * Zonder deze subsidie zou het bijna onmogelijk zijn geweest om dit te realiseren binnen de context van het huidige personeelsbestand van ons regionaal museum, waar digitalisering slechts een fractie is van de bredere functie 'publieksmedewerker'.
-  * Betekent dit dat een OSLO implementatie enkel mogelijk is voor grote organisaties? Neen. Je moet niet persé beschikken over een digitaal team. Wat wel nodig is, is een personeelslid die kennis heeft van de collectie, een basiskennis heeft over digitale/ICT-concepten en die - gedurende een aaneengesloten periode - tijd kan investeren in het bijleren van de Linked Data technologie.
+  * Dit betekent dit dat een OSLO implementatie enkel mogelijk is voor grote organisaties? Neen. Je moet niet persé beschikken over een digitaal team. Wat wel nodig is, is een personeelslid die kennis heeft van de collectie, een basiskennis heeft over digitale/ICT-concepten en die - gedurende een aaneengesloten periode - tijd kan investeren in het bijleren van de Linked Data technologie.
 * Door de stimulans van het subsidieproject beschikt het museum nu over een fundament waarop verder gebouwd kan worden. Het nadeel hiervan is dat het huidige vaste museum-team een OSLO-project niet kan dragen na 1 januari 2024. Hiervoor zou er een nieuwe werkkracht moeten bijkomen of - beter nog - dat de in het traject opgedane expertise van de huidige tijdelijke werkkracht geborgd wordt door deze opdracht te verlengen.
 
-Technische partners (Citybeats vzw): transformatie van bestaande databank naar linked open data volgens de OSLO uitwisselingsstandaard. Zij verdelen de ingeschatte tijd en middelen in drie onderdelen, namelijk het aanleren van de technologie en de programmeertalen, het op orde stellen van de huidige databank in functie verder uitbouw en de effectieve implementatie van de gekozen LOD-oplossing.
+Technische partners (Citybeats vzw):&#x20;
+
+transformatie van bestaande databank naar linked open data volgens de OSLO uitwisselingsstandaard. Zij verdelen de ingeschatte tijd en middelen in drie onderdelen, namelijk het aanleren van de technologie en de programmeertalen, het op orde stellen van de huidige databank in functie verder uitbouw en de effectieve implementatie van de gekozen LOD-oplossing.
 
 | Taak                                                                                                                                                                                                                                                                                                     | Geschatte duur                                              | Kostprijs         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------- |
@@ -60,20 +62,7 @@ Technische partners (Citybeats vzw): transformatie van bestaande databank naar l
 | <p>OSLO implementatie </p><ul><li>Dit onderdeel beschrijft de implementatie van OSLO via R2RML en Ontop.</li><li>De duur van de implementatie is sterk afhankelijk van uiteindelijk gekozen oplossing (hetzij een product “off the shelf” of een volledig eigen ontwikkeling).</li></ul>                 | +- 100 - 150 uur                                            | €10.000 - €15.000 |
 | Totaal                                                                                                                                                                                                                                                                                                   | <p>+- 310-400 uur of</p><p>38 à 50 werkdagen</p><p><br></p> | €31.000 - €40.000 |
 
-\
 
-
-Projectmedewerker (Wouter De Witte) met begeleiding van meemoo: uitwerken van concrete use-case en inhoudelijke ondersteuning.&#x20;
-
-* Ca. 110 uur (ca. 15 werkdagen) aan weddeschaal B. Dit omvat de vijf workshops, zelfstudie en opmaken van de veldtekening en de use case).
-* Het feit dat dit traject uitgevoerd kon worden binnen het kader van de subsidie ‘inhaalbeweging digitale collectiedata’ was een groot voordeel.&#x20;
-  * Zonder deze subsidie zou het bijna onmogelijk zijn geweest om dit te realiseren binnen de context van het huidige personeelsbestand van ons regionaal museum, waar digitalisering slechts een fractie is van de bredere functie 'publieksmedewerker'.&#x20;
-  * Betekent dit dat een OSLO implementatie enkel mogelijk is voor grote organisaties? Neen. Je moet niet persé beschikken over een digitaal team. Wat wel nodig is, is een personeelslid die kennis heeft van de collectie, een basiskennis heeft over digitale/ICT-concepten en die - gedurende een aaneengesloten periode - tijd kan investeren in het bijleren van de Linked Data technologie.&#x20;
-* Door de stimulans van het subsidieproject beschikt het museum nu over een fundament waarop verder gebouwd kan worden. Het nadeel hiervan is dat het huidige vaste museum-team een OSLO-project niet kan dragen na 1 januari 2024. Hiervoor zou er een nieuwe werkkracht moeten bijkomen.
-
-Technische partners (Citybeats vzw): transformatie van bestaande databank naar linked open data volgens de OSLO uitwisselingsstandaard. Zij verdelen de ingeschatte tijd en middelen in drie onderdelen, namelijk het aanleren van de technologie en de programmeertalen, het op orde stellen van de huidige databank in functie verder uitbouw en de effectieve implementatie van de gekozen LOD-oplossing.
-
-<table><thead><tr><th width="322.3333333333333">Taak</th><th width="183">Geschatte duur</th><th>Kostprijs (€100 excl. btw per uur)</th></tr></thead><tbody><tr><td><p>Opleidingen LOD/OSLO</p><ul><li>Analyse van de systeemopbouw</li><li>Onderzoek en aanleren van de bestaande componenten (zie advies Miel Van Der Sande (meemoo))</li><li>Aanleren van de programmeertaal R2RML</li></ul></td><td>+-180 - 200 uur</td><td>€18.000 - €20.000</td></tr><tr><td><p>Aanpassingen aan de huidige opbouw van de PA-database </p><ul><li>De huidige SQL-database is voorlopig niet voorzien op de OSLO implementatie. </li></ul><ul><li>Als het bestaande relationele model bevroren zal worden, is het belangrijk om dit model grondig te evalueren en waar nodig aan te passen.</li></ul></td><td>+- 30 - 50 uur</td><td>€3.000 - €5.000</td></tr><tr><td><p>OSLO implementatie</p><ul><li>Dit onderdeel beschrijft de implementatie van OSLO via R2RML en Ontop. </li></ul><ul><li>De duur van de implementatie is sterk afhankelijk van de uiteindelijk gekozen oplossing (hetzij een product “off the shelf” of een volledig eigen ontwikkeling).</li></ul></td><td>+- 100 - 150 uur</td><td>€31.000 - €40.000</td></tr><tr><td>Totaal:</td><td><p>+- 310 - 400 uur </p><p>38 à 50 werkdagen</p></td><td>€31.000 - €40.000</td></tr></tbody></table>
 
 ## Link naar use-case
 
