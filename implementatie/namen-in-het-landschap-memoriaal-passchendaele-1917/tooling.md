@@ -8,7 +8,7 @@ Het museum bewaart vijf soorten collecties. Het belangrijkste voor de eerste sta
 * Beheer en ontsluiting: Deze gegevens worden ontsloten op de Passchendaele Archives website (en de interactieve kaart) en beheerd op het achterliggende MySQL server.
 * Deze gegevens verrijken we (of willen we verrijken) met collectiedata en geografische informatie (plaatsen, coördinaten, etc.)
 
-Transformatie van de huidige databank naar OSLO (a.d.h.v. 20221109\_SQL\_OSLO\_complexiteit\_haalbaarheid\_MMP1917)
+Transformatie van de huidige databank naar OSLO:
 
 * Meemoo stelt twee opties voor:
   * Optie 1: Een extensie bovenop de bestaande SQL-databank om output in JSON LD te krijgen.
